@@ -28,6 +28,7 @@ T {bias for triode
 1/3 size} 830 -380 0 0 0.2 0.2 {}
 T {bias for triode
 1/3 size} 370 -900 0 0 0.2 0.2 {}
+T {nf9 1x0.55/8} 670 -700 0 0 0.4 0.4 {}
 N 220 -780 220 -760 {
 lab=VDD}
 N 220 -500 220 -480 {
@@ -259,7 +260,7 @@ C {ldo_fc.sym} 1300 -500 0 0 {name=x1}
 C {ldo_isource.sym} 220 -640 0 0 {name=x2}
 C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 480 -850 0 1 {name=M10
 L=8
-W=0.55
+W=1
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W / nf * 0.29'"
@@ -272,9 +273,9 @@ model=pfet_01v8_lvt
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 480 -750 0 1 {name=M12
-L=8
-W=0.55
-nf=9
+L=2
+W=3
+nf=18
 mult=1
 ad="'int((nf+1)/2) * W / nf * 0.29'"
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
@@ -297,7 +298,7 @@ C {devices/lab_wire.sym} 1170 -620 0 1 {name=p9 sig_type=std_logic lab=bias4}
 C {devices/noconn.sym} 340 -660 0 1 {name=l2}
 C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 620 -850 0 0 {name=M1
 L=8
-W=0.55
+W=1
 nf=3
 mult=1
 ad="'int((nf+1)/2) * W / nf * 0.29'"
@@ -310,9 +311,9 @@ model=pfet_01v8_lvt
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 620 -750 0 0 {name=M2
-L=8
-W=0.55
-nf=9
+L=2
+W=3
+nf=18
 mult=1
 ad="'int((nf+1)/2) * W / nf * 0.29'"
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
@@ -325,7 +326,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 800 -850 0 0 {name=M3
 L=8
-W=0.55
+W=1
 nf=3
 mult=1
 ad="'int((nf+1)/2) * W / nf * 0.29'"
@@ -338,9 +339,9 @@ model=pfet_01v8_lvt
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 800 -750 0 0 {name=M4
-L=8
-W=0.55
-nf=9
+L=2
+W=3
+nf=18
 mult=1
 ad="'int((nf+1)/2) * W / nf * 0.29'"
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
@@ -353,7 +354,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 980 -850 0 0 {name=M5
 L=8
-W=0.55
+W=1
 nf=3
 mult=1
 ad="'int((nf+1)/2) * W / nf * 0.29'"
@@ -366,9 +367,9 @@ model=pfet_01v8_lvt
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 980 -750 0 0 {name=M8
-L=8
-W=0.55
-nf=9
+L=2
+W=3
+nf=18
 mult=1
 ad="'int((nf+1)/2) * W / nf * 0.29'"
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
@@ -388,7 +389,7 @@ C {devices/lab_wire.sym} 770 -750 0 0 {name=p14 sig_type=std_logic lab=bias2}
 C {devices/lab_wire.sym} 950 -750 0 0 {name=p15 sig_type=std_logic lab=bias2}
 C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 840 -530 0 1 {name=M9
 L=4
-W=0.55
+W=1
 nf=9
 mult=1
 ad="'int((nf+1)/2) * W / nf * 0.29'" 
@@ -402,7 +403,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 840 -410 0 1 {name=M11
 L=4
-W=0.55
+W=1
 nf=1
 mult=1
 ad="'int((nf+1)/2) * W / nf * 0.29'" 
@@ -416,7 +417,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 980 -530 0 0 {name=M13
 L=4
-W=0.55
+W=1
 nf=9
 mult=1
 ad="'int((nf+1)/2) * W / nf * 0.29'" 
@@ -430,7 +431,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 980 -410 0 0 {name=M14
 L=4
-W=0.55
+W=1
 nf=3
 mult=1
 ad="'int((nf+1)/2) * W / nf * 0.29'" 

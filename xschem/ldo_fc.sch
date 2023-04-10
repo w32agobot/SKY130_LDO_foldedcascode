@@ -36,14 +36,14 @@ T {   Copyright 2022 Manuel Moser
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.} 0 -240 0 0 0.2 0.2 {}
-T {15IBIAS} 650 -1030 0 0 0.2 0.2 {}
-T {15IBIAS} 810 -1030 0 0 0.2 0.2 {}
-T {6IBIAS} 370 -630 0 0 0.2 0.2 {}
+T {19IBIAS} 650 -1030 0 0 0.2 0.2 {}
+T {19IBIAS} 810 -1030 0 0 0.2 0.2 {}
+T {14IBIAS} 370 -630 0 0 0.2 0.2 {}
 T {7IBIAS + Delta I} 300 -870 1 0 0.2 0.2 {}
 T {7IBIAS - Delta I} 430 -870 1 0 0.2 0.2 {}
-T {8IBIAS - Delta I} 550 -750 0 0 0.2 0.2 {}
-T {8IBIAS + Delta I} 810 -790 0 0 0.2 0.2 {}
-T {8IBIAS - Delta I} 810 -750 0 0 0.2 0.2 {}
+T {12IBIAS - Delta I} 550 -750 0 0 0.2 0.2 {}
+T {12IBIAS + Delta I} 810 -790 0 0 0.2 0.2 {}
+T {12IBIAS - Delta I} 810 -750 0 0 0.2 0.2 {}
 T {2Delta I} 930 -790 0 0 0.2 0.2 {}
 T {TRIODE} 900 -840 0 0 0.4 0.4 {}
 T {TRIODE} 900 -700 0 0 0.4 0.4 {}
@@ -188,9 +188,9 @@ lab=outp}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 780 -700 0 0 {name=MN4
 L=4
-W=0.55
+W=1
 nf=9
-mult=8
+mult=12
 ad="'int((nf+1)/2) * W / nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
 as="'int((nf+2)/2) * W / nf * 0.29'" 
@@ -202,9 +202,9 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 780 -580 0 0 {name=MN7
 L=4
-W=0.55
+W=1
 nf=3
-mult=8
+mult=12
 ad="'int((nf+1)/2) * W / nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
 as="'int((nf+2)/2) * W / nf * 0.29'" 
@@ -216,9 +216,9 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 660 -700 0 1 {name=MN3
 L=4
-W=0.55
+W=1
 nf=9
-mult=8
+mult=12
 ad="'int((nf+1)/2) * W / nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
 as="'int((nf+2)/2) * W / nf * 0.29'" 
@@ -230,9 +230,9 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 660 -580 0 1 {name=MN6
 L=4
-W=0.55
+W=1
 nf=3
-mult=8
+mult=12
 ad="'int((nf+1)/2) * W / nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
 as="'int((nf+2)/2) * W / nf * 0.29'" 
@@ -243,10 +243,10 @@ model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 780 -830 0 0 {name=MP4
-L=8
-W=0.55
-nf=9
-mult=8
+L=2
+W=3
+nf=18
+mult=12
 ad="'int((nf+1)/2) * W / nf * 0.29'"
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
 as="'int((nf+2)/2) * W / nf * 0.29'"
@@ -258,9 +258,9 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 780 -970 0 0 {name=MP2
 L=8
-W=0.55
+W=1
 nf=3
-mult=15
+mult=19
 ad="'int((nf+1)/2) * W / nf * 0.29'"
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
 as="'int((nf+2)/2) * W / nf * 0.29'"
@@ -271,10 +271,10 @@ model=pfet_01v8_lvt
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 660 -830 0 1 {name=MP3
-L=8
-W=0.55
-nf=9
-mult=8
+L=2
+W=3
+nf=18
+mult=12
 ad="'int((nf+1)/2) * W / nf * 0.29'"
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
 as="'int((nf+2)/2) * W / nf * 0.29'"
@@ -286,9 +286,9 @@ spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 660 -970 0 1 {name=MP1
 L=8
-W=0.55
+W=1
 nf=3
-mult=15
+mult=19
 ad="'int((nf+1)/2) * W / nf * 0.29'"
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
 as="'int((nf+2)/2) * W / nf * 0.29'"
@@ -300,7 +300,7 @@ spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 340 -580 0 0 {name=MN5
 L=4
-W=0.55
+W=1
 nf=3
 mult=14
 ad="'int((nf+1)/2) * W / nf * 0.29'" 
@@ -315,7 +315,7 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 260 -700 0 0 {name=MN1
 L=0.25
 W=7
-nf=20
+nf=8
 mult=1
 ad="'int((nf+1)/2) * W / nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
@@ -329,7 +329,7 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 460 -700 0 1 {name=MN2
 L=0.25
 W=7
-nf=20
+nf=8
 mult=1
 ad="'int((nf+1)/2) * W / nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
