@@ -155,9 +155,9 @@ spiceprefix=X
 }
 C {devices/lab_wire.sym} 720 -320 0 1 {name=p4 sig_type=std_logic lab=sn}
 C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 1100 -510 0 1 {name=MP1
-L=2
+L=1
 W=3
-nf=18
+nf=9
 mult=1
 ad="'int((nf+1)/2) * W / nf * 0.29'"
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"

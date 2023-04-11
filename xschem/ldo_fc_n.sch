@@ -277,9 +277,9 @@ lab=VDD}
 N 280 -750 440 -750 {
 lab=VSS}
 N 480 -750 500 -750 {
-lab=inn}
-N 220 -750 240 -750 {
 lab=inp}
+N 220 -750 240 -750 {
+lab=inn}
 N 280 -900 280 -780 {
 lab=#net4}
 N 800 -760 860 -760 {
@@ -558,8 +558,8 @@ model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {devices/lab_wire.sym} 370 -750 3 0 {name=p1 sig_type=std_logic lab=VSS}
-C {devices/lab_wire.sym} 220 -750 0 0 {name=p2 sig_type=std_logic lab=inp}
-C {devices/lab_wire.sym} 500 -750 0 1 {name=p3 sig_type=std_logic lab=inn}
+C {devices/lab_wire.sym} 220 -750 0 0 {name=p2 sig_type=std_logic lab=inn}
+C {devices/lab_wire.sym} 500 -750 0 1 {name=p3 sig_type=std_logic lab=inp}
 C {devices/iopin.sym} 220 -310 0 1 {name=p4 lab=VSS}
 C {devices/iopin.sym} 220 -1120 0 1 {name=p5 lab=VDD}
 C {devices/ipin.sym} 220 -960 0 0 {name=p6 lab=inp}
@@ -568,7 +568,7 @@ C {devices/lab_wire.sym} 710 -970 0 1 {name=p8 sig_type=std_logic lab=bias1}
 C {devices/lab_wire.sym} 700 -830 0 1 {name=p9 sig_type=std_logic lab=bias2}
 C {devices/lab_wire.sym} 700 -700 0 1 {name=p10 sig_type=std_logic lab=bias3}
 C {devices/ipin.sym} 220 -880 0 0 {name=p12 lab=bias1}
-C {devices/opin.sym} 980 -760 0 0 {name=p11 lab=outp}
+C {devices/opin.sym} 980 -760 0 0 {name=p11 lab=outn}
 C {devices/ipin.sym} 220 -860 0 0 {name=p13 lab=bias2}
 C {devices/ipin.sym} 220 -840 0 0 {name=p14 lab=bias3}
 C {devices/ipin.sym} 220 -820 0 0 {name=p15 lab=bias4}

@@ -375,30 +375,6 @@ N 530 -440 530 -420 {
 lab=Vref}
 N 530 -420 580 -420 {
 lab=Vref}
-N 1390 -1120 1400 -1120 {
-lab=VDD}
-N 1400 -1090 1400 -1020 {
-lab=curr_p1}
-N 1390 -1190 1400 -1190 {
-lab=VDD}
-N 1400 -1160 1400 -1150 {
-lab=#net20}
-N 1390 -1190 1390 -1120 {
-lab=VDD}
-N 1440 -1190 1450 -1190 {
-lab=VGP}
-N 1450 -1190 1450 -1120 {
-lab=VGP}
-N 1400 -1240 1400 -1220 {
-lab=VDD}
-N 1390 -1220 1390 -1190 {
-lab=VDD}
-N 1390 -1220 1400 -1220 {
-lab=VDD}
-N 1440 -1120 1450 -1120 {
-lab=VGP}
-N 1450 -1120 1460 -1120 {
-lab=VGP}
 N 1390 -830 1400 -830 {
 lab=VSS}
 N 1400 -980 1400 -940 {
@@ -406,7 +382,7 @@ lab=curr_n1}
 N 1400 -940 1400 -930 {
 lab=curr_n1}
 N 1400 -870 1400 -860 {
-lab=#net21}
+lab=#net20}
 N 1440 -900 1450 -900 {
 lab=VGN}
 N 1450 -900 1450 -830 {
@@ -427,8 +403,6 @@ N 1450 -900 1460 -900 {
 lab=VGN}
 N 1060 -1260 1060 -1250 {
 lab=VDD}
-N 1400 -1020 1440 -1020 {
-lab=curr_p1}
 N 1400 -980 1440 -980 {
 lab=curr_n1}
 N 1340 -390 1420 -390 {
@@ -438,9 +412,9 @@ lab=VSS}
 N 1340 -450 1420 -450 {
 lab=VGP}
 N 1460 -420 1520 -420 {
-lab=#net22}
+lab=#net21}
 N 1520 -420 1520 -380 {
-lab=#net22}
+lab=#net21}
 N 1520 -320 1600 -320 {
 lab=VSS}
 N 1520 -350 1530 -350 {
@@ -452,33 +426,9 @@ lab=Vrefgate}
 N 1560 -460 1580 -460 {
 lab=VSS}
 N 1520 -450 1520 -420 {
-lab=#net22}
+lab=#net21}
 N 1520 -550 1520 -510 {
 lab=VDD}
-N 1590 -1120 1600 -1120 {
-lab=VDD}
-N 1600 -1090 1600 -1020 {
-lab=curr_p2}
-N 1590 -1190 1600 -1190 {
-lab=VDD}
-N 1600 -1160 1600 -1150 {
-lab=#net23}
-N 1590 -1190 1590 -1120 {
-lab=VDD}
-N 1640 -1190 1650 -1190 {
-lab=VGP}
-N 1650 -1190 1650 -1120 {
-lab=VGP}
-N 1600 -1240 1600 -1220 {
-lab=VDD}
-N 1590 -1220 1590 -1190 {
-lab=VDD}
-N 1590 -1220 1600 -1220 {
-lab=VDD}
-N 1640 -1120 1650 -1120 {
-lab=VGP}
-N 1650 -1120 1660 -1120 {
-lab=VGP}
 N 1590 -830 1600 -830 {
 lab=VSS}
 N 1600 -980 1600 -940 {
@@ -486,7 +436,7 @@ lab=curr_n2}
 N 1600 -940 1600 -930 {
 lab=curr_n2}
 N 1600 -870 1600 -860 {
-lab=#net24}
+lab=#net22}
 N 1640 -900 1650 -900 {
 lab=VGN}
 N 1650 -900 1650 -830 {
@@ -505,8 +455,6 @@ N 1640 -830 1650 -830 {
 lab=VGN}
 N 1650 -900 1660 -900 {
 lab=VGN}
-N 1600 -1020 1640 -1020 {
-lab=curr_p2}
 N 1600 -980 1640 -980 {
 lab=curr_n2}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
@@ -884,36 +832,6 @@ spiceprefix=X
 }
 C {devices/iopin.sym} 180 -920 0 1 {name=p9 lab=VDD}
 C {devices/iopin.sym} 180 -320 0 1 {name=p4 lab=VSS}
-C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 1420 -1120 0 1 {name=MP7
-L=8
-W=0.55
-nf=7
-mult=1
-ad="'int((nf+1)/2) * W / nf * 0.29'"
-pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
-as="'int((nf+2)/2) * W / nf * 0.29'"
-ps="'2*int((nf+2)/2) * (W / nf + 0.29)'"
-nrd="'0.29 / W '" nrs="'0.29 / W '"
-sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
-spiceprefix=X
-}
-C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 1420 -1190 0 1 {name=MP8
-L=8
-W=0.55
-nf=7
-mult=1
-ad="'int((nf+1)/2) * W / nf * 0.29'"
-pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
-as="'int((nf+2)/2) * W / nf * 0.29'"
-ps="'2*int((nf+2)/2) * (W / nf + 0.29)'"
-nrd="'0.29 / W '" nrs="'0.29 / W '"
-sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
-spiceprefix=X
-}
-C {devices/lab_wire.sym} 1400 -1240 0 0 {name=p1 sig_type=std_logic lab=VDD}
-C {devices/lab_wire.sym} 1460 -1120 0 1 {name=p11 sig_type=std_logic lab=VGP}
 C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 1420 -900 0 1 {name=MN16
 L=8
 W=7
@@ -945,7 +863,6 @@ spiceprefix=X
 C {devices/lab_wire.sym} 1400 -780 2 0 {name=p15 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 1460 -900 2 0 {name=p16 sig_type=std_logic lab=VGN}
 C {devices/ipin.sym} 1440 -980 0 1 {name=p10 lab=curr_n1}
-C {devices/opin.sym} 1440 -1020 0 0 {name=p13 lab=curr_p1}
 C {sky130_fd_pr/nfet_01v8_nf.sym} 1440 -420 0 1 {name=M6
 L=4
 W=1
@@ -979,39 +896,9 @@ spiceprefix=X
 }
 C {devices/lab_wire.sym} 1600 -320 0 1 {name=p20 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 1440 -350 0 0 {name=p21 sig_type=std_logic lab=Vrefgate}
-C {sky130_fd_pr/cap_var_hvt.sym} 1520 -480 0 1 {name=C1 model=cap_var_hvt W=2 L=2 VM=1 spiceprefix=X}
+C {sky130_fd_pr/cap_var_lvt.sym} 1520 -480 0 1 {name=C1 model=cap_var_lvt W=2 L=2 VM=1 spiceprefix=X}
 C {devices/lab_wire.sym} 1580 -460 0 1 {name=p22 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 1520 -550 0 1 {name=p23 sig_type=std_logic lab=VDD}
-C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 1620 -1120 0 1 {name=MP9
-L=8
-W=0.55
-nf=7
-mult=1
-ad="'int((nf+1)/2) * W / nf * 0.29'"
-pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
-as="'int((nf+2)/2) * W / nf * 0.29'"
-ps="'2*int((nf+2)/2) * (W / nf + 0.29)'"
-nrd="'0.29 / W '" nrs="'0.29 / W '"
-sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
-spiceprefix=X
-}
-C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 1620 -1190 0 1 {name=MP10
-L=8
-W=0.55
-nf=7
-mult=1
-ad="'int((nf+1)/2) * W / nf * 0.29'"
-pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
-as="'int((nf+2)/2) * W / nf * 0.29'"
-ps="'2*int((nf+2)/2) * (W / nf + 0.29)'"
-nrd="'0.29 / W '" nrs="'0.29 / W '"
-sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
-spiceprefix=X
-}
-C {devices/lab_wire.sym} 1600 -1240 0 0 {name=p24 sig_type=std_logic lab=VDD}
-C {devices/lab_wire.sym} 1660 -1120 0 1 {name=p25 sig_type=std_logic lab=VGP}
 C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 1620 -900 0 1 {name=MN18
 L=8
 W=7
@@ -1043,4 +930,3 @@ spiceprefix=X
 C {devices/lab_wire.sym} 1600 -780 2 0 {name=p26 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 1660 -900 2 0 {name=p27 sig_type=std_logic lab=VGN}
 C {devices/ipin.sym} 1640 -980 0 1 {name=p28 lab=curr_n2}
-C {devices/opin.sym} 1640 -1020 0 0 {name=p29 lab=curr_p2}
