@@ -1,5 +1,5 @@
 # SKY130 LDO with Folded Cascode OTA
-Output-capless LDO for low-power PLL source voltage generation. The folded cascode OTA, and the constant current source, have been designed for 0.9 V to 1.8 V source voltage. The LDO is stable in the output current range 0-5 mA without load capacitance. 
+Output-capless LDO for low-power PLL source voltage generation. The folded cascode OTA, and the constant current source, have been designed for 0.9 V to 1.8 V source voltage. The LDO operation begins at $V_{CC}$ = 1.5 V and is stable in the output current range 0-5 mA without load capacitance. 
 
 |Parameter| Min | Typ | Max
 |---|---|---|---|
