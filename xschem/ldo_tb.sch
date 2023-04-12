@@ -29,7 +29,7 @@ divy=10
 subdivy=1
 unity=1
 x1=0
-x2=1.02
+x2=1.05
 divx=5
 subdivx=1
 node="\\"vout (5mA);vout5ma\\"
@@ -44,8 +44,8 @@ logx=0
 logy=0
 sweep=vref1}
 B 2 1600 -2660 2120 -2460 {flags=graph,unlocked
-y1=-69
-y2=64
+y1=-70
+y2=72
 ypos1=0
 ypos2=2
 
@@ -67,15 +67,15 @@ logy=0
 divy=8
 dataset=-1}
 B 2 640 -1290 1140 -1060 {flags=graph
-y1=1.4e-06
-y2=4.1e-06
+y1=3.70865e-06
+y2=4.49508e-06
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
 x1=0
-x2=0.9
+x2=0.975
 divx=5
 subdivx=1
 
@@ -88,7 +88,7 @@ color=7
 node=i(vshunt_iq)
 sweep=vref2}
 B 2 1600 -2440 2120 -2220 {flags=graph,unlocked
-y1=-99
+y1=-120
 y2=180
 ypos1=0
 ypos2=2
@@ -111,15 +111,15 @@ node="\\"phase 0mA 0pF;ph(vout_ac_0mA_0pF)\\"
 \\"phase 5mA 0pF;ph(vout_ac_5mA_0pF)\\"
 \\"phase 5mA 30pF;ph(vout_ac_5mA_30pF)\\""}
 B 2 930 -990 1430 -760 {flags=graph
-y1=3.3e-17
-y2=4.8e-07
+y1=1.4e-18
+y2=9.1e-08
 ypos1=0
 ypos2=2
 divy=10
 subdivy=1
 unity=1
 x1=0
-x2=1.02
+x2=1.05
 divx=5
 subdivx=1
 
@@ -1205,6 +1205,76 @@ N 1380 -3320 1380 -3260 {
 lab=vout_ac_5mA_0pF}
 N 1120 -3360 1140 -3360 {
 lab=#net42}
+N 540 -1760 600 -1760 {
+lab=#net8}
+N 540 -1780 540 -1760 {
+lab=#net8}
+N 340 -1850 400 -1850 {
+lab=vout_ac_gain}
+N 440 -1860 540 -1860 {
+lab=#net46}
+N 540 -1860 540 -1840 {
+lab=#net46}
+N 400 -1810 400 -1790 {
+lab=GND}
+N 440 -1800 440 -1790 {
+lab=GND}
+N 560 -2540 620 -2540 {
+lab=#net17}
+N 560 -2560 560 -2540 {
+lab=#net17}
+N 360 -2630 420 -2630 {
+lab=vout_ac_0mA_30pF}
+N 460 -2640 560 -2640 {
+lab=#net47}
+N 560 -2640 560 -2620 {
+lab=#net47}
+N 420 -2590 420 -2570 {
+lab=GND}
+N 460 -2580 460 -2570 {
+lab=GND}
+N 1320 -2540 1380 -2540 {
+lab=#net35}
+N 1320 -2560 1320 -2540 {
+lab=#net35}
+N 1120 -2630 1180 -2630 {
+lab=vout_ac_5mA_30pF}
+N 1220 -2640 1320 -2640 {
+lab=#net48}
+N 1320 -2640 1320 -2620 {
+lab=#net48}
+N 1180 -2590 1180 -2570 {
+lab=GND}
+N 1220 -2580 1220 -2570 {
+lab=GND}
+N 1320 -3200 1380 -3200 {
+lab=#net44}
+N 1320 -3220 1320 -3200 {
+lab=#net44}
+N 1120 -3290 1180 -3290 {
+lab=vout_ac_5mA_0pF}
+N 1220 -3300 1320 -3300 {
+lab=#net49}
+N 1320 -3300 1320 -3280 {
+lab=#net49}
+N 1180 -3250 1180 -3230 {
+lab=GND}
+N 1220 -3240 1220 -3230 {
+lab=GND}
+N 560 -3200 620 -3200 {
+lab=#net26}
+N 560 -3220 560 -3200 {
+lab=#net26}
+N 360 -3290 420 -3290 {
+lab=vout_ac_0mA_0pF}
+N 460 -3300 560 -3300 {
+lab=#net50}
+N 560 -3300 560 -3280 {
+lab=#net50}
+N 420 -3250 420 -3230 {
+lab=GND}
+N 460 -3240 460 -3230 {
+lab=GND}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {devices/simulator_commands.sym} 200 -390 0 0 {name=COMMANDS
 simulator=ngspice
@@ -1215,8 +1285,8 @@ value="
 .option RSHUNT=1E15
 .option method = gear
 
-.param vsource = 1.8
-.param vdrop = 0.10
+.param vsource = 1.80
+.param vdrop = 0.20
 .param vreference = \{(vsource-vdrop)/2\}
 
 .save all
@@ -1230,8 +1300,8 @@ set appendwrite
 repeat 20
 reset
  
-*dc vsweep 0 1 0.01 temp -30 60 90 
-dc vsweep 0 1 0.01
+dc vsweep 0 1 0.01 temp -30 60 90 
+*dc vsweep 0 1 0.01
 write results_ldo.raw 
 + vref1 vout5ma vout0a x1.vota x1.vfb @m.x1.xm9.msky130_fd_pr__pfet_01v8_lvt[id]
 + vref2 i(vshunt_iq) vout_ac_gain
@@ -1247,7 +1317,7 @@ end
 .endc
 
 "}
-C {sky130_fd_pr/corner.sym} 60 -390 0 0 {name=CORNER only_toplevel=false corner=tt_mm}
+C {sky130_fd_pr/corner.sym} 60 -390 0 0 {name=CORNER only_toplevel=false corner=ff_mm}
 C {devices/vsource.sym} 660 -350 0 0 {name=Vref value=vreference}
 C {devices/vsource.sym} 560 -350 0 0 {name=Vsrc value=vsource}
 C {devices/lab_wire.sym} 560 -400 0 1 {name=p9 sig_type=std_logic lab=VDD}
@@ -1845,3 +1915,43 @@ m=1
 value=1e2
 footprint=1206
 device="ceramic capacitor"}
+C {devices/ind.sym} 540 -1810 2 0 {name=L25
+m=1
+value=1e9
+footprint=1206
+device=inductor}
+C {devices/vcvs.sym} 440 -1830 0 0 {name=E1 value=1}
+C {devices/gnd.sym} 440 -1790 0 0 {name=l26 lab=GND}
+C {devices/gnd.sym} 400 -1790 0 0 {name=l27 lab=GND}
+C {devices/ind.sym} 560 -2590 2 0 {name=L28
+m=1
+value=1e9
+footprint=1206
+device=inductor}
+C {devices/vcvs.sym} 460 -2610 0 0 {name=E4 value=1}
+C {devices/gnd.sym} 460 -2570 0 0 {name=l29 lab=GND}
+C {devices/gnd.sym} 420 -2570 0 0 {name=l30 lab=GND}
+C {devices/ind.sym} 1320 -2590 2 0 {name=L31
+m=1
+value=1e9
+footprint=1206
+device=inductor}
+C {devices/vcvs.sym} 1220 -2610 0 0 {name=E5 value=1}
+C {devices/gnd.sym} 1220 -2570 0 0 {name=l32 lab=GND}
+C {devices/gnd.sym} 1180 -2570 0 0 {name=l33 lab=GND}
+C {devices/ind.sym} 1320 -3250 2 0 {name=L34
+m=1
+value=1e9
+footprint=1206
+device=inductor}
+C {devices/vcvs.sym} 1220 -3270 0 0 {name=E6 value=1}
+C {devices/gnd.sym} 1220 -3230 0 0 {name=l35 lab=GND}
+C {devices/gnd.sym} 1180 -3230 0 0 {name=l36 lab=GND}
+C {devices/ind.sym} 560 -3250 2 0 {name=L37
+m=1
+value=1e9
+footprint=1206
+device=inductor}
+C {devices/vcvs.sym} 460 -3270 0 0 {name=E7 value=1}
+C {devices/gnd.sym} 460 -3230 0 0 {name=l38 lab=GND}
+C {devices/gnd.sym} 420 -3230 0 0 {name=l39 lab=GND}

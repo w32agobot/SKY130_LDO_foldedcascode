@@ -1,15 +1,15 @@
 # SKY130 LDO with Folded Cascode OTA
-Output-capless LDO for low-power PLL source voltage generation. The folded cascode OTA, and the constant current source, have been designed for 0.9 V to 1.8 V source voltage. The LDO operation begins at $V_{CC}$ = 1.5 V and is stable in the output current range 0-5 mA without load capacitance. 
+Output-capless LDO for low-power source voltage generation. The error amplifier is a folded cascode OTA. OTA and the constant current source have been designed for operation in the $V_{CC}$ range 0.9 V to 1.8 V. The LDO operates in the region $V_{CC}$ = 1.5 V  to 1.95 V. The LDO is stable in the output current range 0 mA to 5 mA without load capacitance. 
 
 |Parameter| Min | Typ | Max
 |---|---|---|---|
 | $V_{DD}$ (V) | 1.5  | 1.8 | 1.95 |
+| $V_{ref}$ (V) | 0.4 | ($V_{out}$-$V_{dropout}$)/2 | 0.975 |
 | $V_{out}$ (V) | 0.8 | 2*$V_{ref}$ | 1.95 |
-| $V_{ref}$ (V) | 0.4 | $V_{out}$/2 | 0.975 |
 | $V_{dropout}$ (mV) | 60 $^a$ | - | 200 $^b$|
 | $I_{out}$ (mA) | 0 |-| 5 |
-| $C_{load}$ (pF) | 0 |-| 30 |  
-| $I_{q}$ (µA)   | 1.5 $^b$ |3| 4 $^a$ | 
+| $C_{load}$ (pF) | 0 | 30 | - |  
+| $I_{q}$ (µA)   | 1.5 $^b$ |3| 4.3 $^a$ | 
 | DC gain (dB)   | 40 | 57 | 74 | 
 | Unit gain BW (kHz)   | 70 | 100 | 210 | 
 | Phase margin (°)   | 20 | 75 | 90 |
