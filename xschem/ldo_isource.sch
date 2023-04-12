@@ -41,6 +41,7 @@ T {Output} 1300 -1330 0 0 0.6 0.6 {}
 T {saturated
 current source} 520 -480 1 0 0.4 0.4 {}
 T {Startup} 1340 -560 0 0 0.6 0.6 {}
+T {~ 50 mV} 620 -440 0 0 0.4 0.4 {}
 N 390 -750 410 -750 {
 lab=VGP}
 N 530 -720 530 -710 {
@@ -375,35 +376,35 @@ N 530 -440 530 -420 {
 lab=Vref}
 N 530 -420 580 -420 {
 lab=Vref}
-N 1390 -830 1400 -830 {
+N 1310 -1110 1320 -1110 {
 lab=VSS}
-N 1400 -980 1400 -940 {
+N 1320 -1260 1320 -1220 {
 lab=curr_n1}
-N 1400 -940 1400 -930 {
+N 1320 -1220 1320 -1210 {
 lab=curr_n1}
-N 1400 -870 1400 -860 {
+N 1320 -1150 1320 -1140 {
 lab=#net20}
-N 1440 -900 1450 -900 {
+N 1360 -1180 1370 -1180 {
 lab=VGN}
-N 1450 -900 1450 -830 {
+N 1370 -1180 1370 -1110 {
 lab=VGN}
-N 1390 -900 1400 -900 {
+N 1310 -1180 1320 -1180 {
 lab=VSS}
-N 1390 -900 1390 -830 {
+N 1310 -1180 1310 -1110 {
 lab=VSS}
-N 1400 -800 1400 -780 {
+N 1320 -1080 1320 -1060 {
 lab=VSS}
-N 1390 -800 1400 -800 {
+N 1310 -1080 1320 -1080 {
 lab=VSS}
-N 1390 -830 1390 -800 {
+N 1310 -1110 1310 -1080 {
 lab=VSS}
-N 1440 -830 1450 -830 {
+N 1360 -1110 1370 -1110 {
 lab=VGN}
-N 1450 -900 1460 -900 {
+N 1370 -1180 1380 -1180 {
 lab=VGN}
 N 1060 -1260 1060 -1250 {
 lab=VDD}
-N 1400 -980 1440 -980 {
+N 1320 -1260 1360 -1260 {
 lab=curr_n1}
 N 1340 -390 1420 -390 {
 lab=VGN}
@@ -412,51 +413,57 @@ lab=VSS}
 N 1340 -450 1420 -450 {
 lab=VGP}
 N 1460 -420 1520 -420 {
-lab=#net21}
-N 1520 -420 1520 -380 {
-lab=#net21}
-N 1520 -320 1600 -320 {
+lab=vstartup}
+N 1520 -360 1530 -360 {
 lab=VSS}
-N 1520 -350 1530 -350 {
-lab=VSS}
-N 1530 -350 1530 -320 {
-lab=VSS}
-N 1440 -350 1480 -350 {
+N 1440 -360 1480 -360 {
 lab=Vrefgate}
-N 1560 -460 1580 -460 {
-lab=VSS}
 N 1520 -450 1520 -420 {
-lab=#net21}
+lab=vstartup}
 N 1520 -550 1520 -510 {
 lab=VDD}
-N 1590 -830 1600 -830 {
+N 1510 -1110 1520 -1110 {
 lab=VSS}
-N 1600 -980 1600 -940 {
+N 1520 -1260 1520 -1220 {
 lab=curr_n2}
-N 1600 -940 1600 -930 {
+N 1520 -1220 1520 -1210 {
 lab=curr_n2}
-N 1600 -870 1600 -860 {
-lab=#net22}
-N 1640 -900 1650 -900 {
+N 1520 -1150 1520 -1140 {
+lab=#net21}
+N 1560 -1180 1570 -1180 {
 lab=VGN}
-N 1650 -900 1650 -830 {
+N 1570 -1180 1570 -1110 {
 lab=VGN}
-N 1590 -900 1600 -900 {
+N 1510 -1180 1520 -1180 {
 lab=VSS}
-N 1590 -900 1590 -830 {
+N 1510 -1180 1510 -1110 {
 lab=VSS}
-N 1600 -800 1600 -780 {
+N 1520 -1080 1520 -1060 {
 lab=VSS}
-N 1590 -800 1600 -800 {
+N 1510 -1080 1520 -1080 {
 lab=VSS}
-N 1590 -830 1590 -800 {
+N 1510 -1110 1510 -1080 {
 lab=VSS}
-N 1640 -830 1650 -830 {
+N 1560 -1110 1570 -1110 {
 lab=VGN}
-N 1650 -900 1660 -900 {
+N 1570 -1180 1580 -1180 {
 lab=VGN}
-N 1600 -980 1640 -980 {
+N 1520 -1260 1560 -1260 {
 lab=curr_n2}
+N 540 -320 890 -320 {
+lab=VSS}
+N 1070 -320 1520 -320 {
+lab=VSS}
+N 1520 -320 1530 -320 {
+lab=VSS}
+N 1530 -360 1530 -320 {
+lab=VSS}
+N 1520 -330 1520 -320 {
+lab=VSS}
+N 1520 -400 1520 -390 {
+lab=vstartup}
+N 1520 -420 1520 -400 {
+lab=vstartup}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 510 -750 0 0 {name=MP2
 L=8
@@ -589,7 +596,6 @@ spiceprefix=X
 }
 C {devices/lab_wire.sym} 1060 -1260 0 0 {name=p5 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 1000 -960 2 1 {name=p7 sig_type=std_logic lab=VGP}
-C {devices/lab_wire.sym} 1070 -320 2 0 {name=p8 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 950 -510 2 0 {name=p12 sig_type=std_logic lab=Vrefgate}
 C {sky130_fd_pr/nfet_01v8_nf.sym} 1040 -720 0 0 {name=M2
 L=4
@@ -832,7 +838,7 @@ spiceprefix=X
 }
 C {devices/iopin.sym} 180 -920 0 1 {name=p9 lab=VDD}
 C {devices/iopin.sym} 180 -320 0 1 {name=p4 lab=VSS}
-C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 1420 -900 0 1 {name=MN16
+C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 1340 -1180 0 1 {name=MN16
 L=8
 W=7
 nf=1
@@ -846,7 +852,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 1420 -830 0 1 {name=MN17
+C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 1340 -1110 0 1 {name=MN17
 L=8
 W=7
 nf=1
@@ -860,9 +866,9 @@ sa=0 sb=0 sd=0
 model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {devices/lab_wire.sym} 1400 -780 2 0 {name=p15 sig_type=std_logic lab=VSS}
-C {devices/lab_wire.sym} 1460 -900 2 0 {name=p16 sig_type=std_logic lab=VGN}
-C {devices/ipin.sym} 1440 -980 0 1 {name=p10 lab=curr_n1}
+C {devices/lab_wire.sym} 1320 -1060 2 0 {name=p15 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 1380 -1180 2 0 {name=p16 sig_type=std_logic lab=VGN}
+C {devices/ipin.sym} 1360 -1260 0 1 {name=p10 lab=curr_n1}
 C {sky130_fd_pr/nfet_01v8_nf.sym} 1440 -420 0 1 {name=M6
 L=4
 W=1
@@ -880,7 +886,7 @@ spiceprefix=X
 C {devices/lab_wire.sym} 1340 -420 0 0 {name=p17 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 1340 -450 0 0 {name=p18 sig_type=std_logic lab=VGP}
 C {devices/lab_wire.sym} 1340 -390 0 0 {name=p19 sig_type=std_logic lab=VGN}
-C {sky130_fd_pr/nfet_01v8_nf.sym} 1500 -350 0 0 {name=M7
+C {sky130_fd_pr/nfet_01v8_nf.sym} 1500 -360 0 0 {name=M7
 L=4
 W=1
 nf=1 
@@ -894,12 +900,9 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {devices/lab_wire.sym} 1600 -320 0 1 {name=p20 sig_type=std_logic lab=VSS}
-C {devices/lab_wire.sym} 1440 -350 0 0 {name=p21 sig_type=std_logic lab=Vrefgate}
-C {sky130_fd_pr/cap_var_lvt.sym} 1520 -480 0 1 {name=C1 model=cap_var_lvt W=2 L=2 VM=1 spiceprefix=X}
-C {devices/lab_wire.sym} 1580 -460 0 1 {name=p22 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 1440 -360 0 0 {name=p21 sig_type=std_logic lab=Vrefgate}
 C {devices/lab_wire.sym} 1520 -550 0 1 {name=p23 sig_type=std_logic lab=VDD}
-C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 1620 -900 0 1 {name=MN18
+C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 1540 -1180 0 1 {name=MN18
 L=8
 W=7
 nf=1
@@ -913,7 +916,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 1620 -830 0 1 {name=MN19
+C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 1540 -1110 0 1 {name=MN19
 L=8
 W=7
 nf=1
@@ -927,6 +930,8 @@ sa=0 sb=0 sd=0
 model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {devices/lab_wire.sym} 1600 -780 2 0 {name=p26 sig_type=std_logic lab=VSS}
-C {devices/lab_wire.sym} 1660 -900 2 0 {name=p27 sig_type=std_logic lab=VGN}
-C {devices/ipin.sym} 1640 -980 0 1 {name=p28 lab=curr_n2}
+C {devices/lab_wire.sym} 1520 -1060 2 0 {name=p26 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 1580 -1180 2 0 {name=p27 sig_type=std_logic lab=VGN}
+C {devices/ipin.sym} 1560 -1260 0 1 {name=p28 lab=curr_n2}
+C {devices/lab_wire.sym} 1520 -400 0 1 {name=p1 sig_type=std_logic lab=vstartup}
+C {sky130_fd_pr/cap_mim_m3_2.sym} 1520 -480 0 0 {name=C1 model=cap_mim_m3_2 W=4 L=4 MF=1 spiceprefix=X}

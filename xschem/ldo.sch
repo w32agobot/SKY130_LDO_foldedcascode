@@ -120,12 +120,14 @@ N 200 -410 510 -410 {
 lab=vfb}
 N 200 -480 200 -410 {
 lab=vfb}
+N 300 -620 300 -280 {
+lab=VSS}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {ldo_ota.sym} 300 -690 0 0 {name=x1}
 C {sky130_fd_pr/pfet_01v8_hvt_nf.sym} 540 -690 0 0 {name=M1
 L=0.15
 W=5
-nf=10
+nf=5
 mult=9
 ad="'int((nf+1)/2) * W / nf * 0.29'"
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
@@ -150,7 +152,6 @@ sa=0 sb=0 sd=0
 model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {devices/lab_wire.sym} 300 -620 2 1 {name=p5 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 430 -690 0 1 {name=p11 sig_type=std_logic lab=vota}
 C {devices/lab_wire.sym} 320 -410 0 1 {name=p12 sig_type=std_logic lab=vfb}
 C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 540 -480 0 0 {name=M2
