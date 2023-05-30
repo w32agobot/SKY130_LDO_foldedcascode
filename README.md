@@ -4,8 +4,8 @@ Output-capless LDO for low-power source voltage generation. The error amplifier 
 |Parameter| Min | Typ | Max
 |---|---|---|---|
 | $V_{DD}$ (V) | 1.5  | 1.8 | 1.95 |
-| $V_{ref}$ (V) | 0.4 | ($V_{out}$-$V_{dropout}$)/2 | 0.975 |
-| $V_{out}$ (V) | 0.8 | 2*$V_{ref}$ | 1.95 |
+| $V_{ref}$ (V) | 0.4 | ($V_{out}$ - $V_{dropout}$)/2 | 0.975 |
+| $V_{out}$ (V) | 0.8 | $2 \cdot V_{ref}$ | 1.95 |
 | $V_{dropout}$ (mV) | 60 $^a$ | - | 200 $^b$|
 | $I_{out}$ (mA) | 0 |-| 5 |
 | $C_{load}$ (pF) | 0 | 30 | - |  
@@ -17,19 +17,13 @@ Output-capless LDO for low-power source voltage generation. The error amplifier 
 $^a V_{DD}=1.95V$ fast corner  
 $^b V_{DD}=1.60V$ slow corner  
 
-## Monte Carlo Simulation 
+## Mismatch Simulation 
 LDO loop gain and phase at 
 * $I_{out}$ = 0 mA or 5 mA
 * $C_{load}$ = 0 pF or 30 pF
 * $V_{DD}$ = 1.8 V 
 
-### ss corner:
-![comp_](doc/gain_phase_ss_1v8.png)  
-
 ### tt corner:
 ![comp_](doc/gain_phase_tt_1v8.png)  
-
-### ff corner:
-![comp_](doc/gain_phase_ff_1v8.png)  
 
 
