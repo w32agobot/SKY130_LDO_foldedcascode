@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.0 file_version=1.2
 }
 G {}
 K {}
@@ -161,8 +161,6 @@ T {12IBIAS - Delta I} 1180 -780 0 0 0.2 0.2 {}
 T {12IBIAS + Delta I} 1370 -780 0 0 0.2 0.2 {}
 T {12IBIAS - Delta I} 1370 -720 0 0 0.2 0.2 {}
 T {2Delta I} 1530 -760 0 0 0.2 0.2 {}
-T {TRIODE} 1390 -1010 0 0 0.4 0.4 {}
-T {TRIODE} 1390 -490 0 0 0.4 0.4 {}
 T {SATURATED} 1390 -670 0 0 0.4 0.4 {}
 T {SATURATED} 1390 -840 0 0 0.4 0.4 {}
 T {p} 1280 -1000 0 0 0.2 0.2 {}
@@ -180,6 +178,8 @@ T {OUT} 1690 -720 2 0 0.4 0.4 {}
 T {19-14=5IBIAS overdrive 
 current to prevent a 
 breakdown of MN6[vgs]} 1370 -590 0 0 0.2 0.2 {}
+T {SATURATED} 1390 -1010 0 0 0.4 0.4 {}
+T {SATURATED} 1390 -490 0 0 0.4 0.4 {}
 N 630 -700 640 -700 {
 lab=VSS}
 N 630 -700 630 -670 {

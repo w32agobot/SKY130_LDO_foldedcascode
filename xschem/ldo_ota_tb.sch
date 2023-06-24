@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.0 file_version=1.2
 }
 G {}
 K {}
@@ -247,8 +247,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.3
+x2=0.3
 divx=5
 subdivx=1
 
@@ -257,7 +257,7 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color="7 9"
+color="8 9"
 node="\\"MP1 Vds-Vsat;@m.x1.x1.xmn7.msky130_fd_pr__nfet_01v8[vds] @m.x1.x1.xmp1.msky130_fd_pr__pfet_01v8_lvt[vdsat] -\\"
 \\"VDS;@m.x1.x1.xmn7.msky130_fd_pr__nfet_01v8[vds]\\""}
 B 2 1210 -1670 1590 -1530 {flags=graph
@@ -268,8 +268,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.3
+x2=0.3
 divx=5
 subdivx=1
 
@@ -278,7 +278,7 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color="7 9"
+color="8 9"
 node="\\"MP2 Vds-Vsat;@m.x1.x1.xmp2.msky130_fd_pr__pfet_01v8_lvt[vds] @m.x1.x1.xmp2.msky130_fd_pr__pfet_01v8_lvt[vdsat] -\\"
 \\"VDS;@m.x1.x1.xmp2.msky130_fd_pr__pfet_01v8_lvt[vds]\\""}
 B 2 500 -1490 890 -1350 {flags=graph
@@ -289,8 +289,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.3
+x2=0.3
 divx=5
 subdivx=1
 
@@ -309,8 +309,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.3
+x2=0.3
 divx=5
 subdivx=1
 
@@ -322,15 +322,15 @@ logy=0
 color=8
 node="\\"MP4 Vds-Vsat;@m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[vds] @m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[vdsat] -\\""}
 B 2 500 -1300 890 -1160 {flags=graph
-y1=0.14
+y1=0.13
 y2=0.41
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.3
+x2=0.3
 divx=5
 subdivx=1
 
@@ -349,8 +349,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.3
+x2=0.3
 divx=5
 subdivx=1
 
@@ -362,15 +362,15 @@ logy=0
 color=8
 node="\\"MN4 Vds-Vsat;@m.x1.x1.xmn4.msky130_fd_pr__nfet_01v8_lvt[vds] @m.x1.x1.xmn4.msky130_fd_pr__nfet_01v8_lvt[vdsat] -\\""}
 B 2 500 -1120 890 -980 {flags=graph
-y1=0.1
-y2=0.27
+y1=0.11
+y2=0.28
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.3
+x2=0.3
 divx=5
 subdivx=1
 
@@ -379,7 +379,7 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color="7 9"
+color="8 9"
 node="\\"MN6 Vds-Vsat;@m.x1.x1.xmn6.msky130_fd_pr__nfet_01v8[vds] @m.x1.x1.xmn6.msky130_fd_pr__nfet_01v8[vdsat] -\\"
 \\"VDS;@m.x1.x1.xmn6.msky130_fd_pr__nfet_01v8[vds]\\""}
 B 2 1210 -1120 1590 -980 {flags=graph
@@ -390,8 +390,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.3
+x2=0.3
 divx=5
 subdivx=1
 
@@ -400,19 +400,19 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-color="7 9"
+color="8 9"
 node="\\"MN7 Vds-Vsat;@m.x1.x1.xmn7.msky130_fd_pr__nfet_01v8[vds] @m.x1.x1.xmn7.msky130_fd_pr__nfet_01v8[vdsat] -\\"
 \\"VDS;@m.x1.x1.xmn7.msky130_fd_pr__nfet_01v8[vds]\\""}
 B 2 1610 -1670 1990 -1530 {flags=graph
-y1=0.091
-y2=0.12
+y1=0.09
+y2=0.11
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.3
+x2=0.3
 divx=5
 subdivx=1
 
@@ -425,14 +425,14 @@ color=11
 node="\\"MP2 Vov;@m.x1.x1.xmp2.msky130_fd_pr__pfet_01v8_lvt[vgs] @m.x1.x1.xmp2.msky130_fd_pr__pfet_01v8_lvt[vth] -\\""}
 B 2 1610 -1490 1990 -1350 {flags=graph
 y1=-0.23
-y2=0.2
+y2=0.19
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.3
+x2=0.3
 divx=5
 subdivx=1
 
@@ -445,14 +445,14 @@ color=11
 node="\\"MP4 Vov;@m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[vgs] @m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[vth] -\\""}
 B 2 1610 -1300 1990 -1160 {flags=graph
 y1=-0.21
-y2=0.18
+y2=0.17
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.3
+x2=0.3
 divx=5
 subdivx=1
 
@@ -464,15 +464,15 @@ logy=0
 color=11
 node="\\"MN4 Vov;@m.x1.x1.xmn4.msky130_fd_pr__nfet_01v8_lvt[vgs] @m.x1.x1.xmn4.msky130_fd_pr__nfet_01v8_lvt[vth] -\\""}
 B 2 1610 -1120 1990 -980 {flags=graph
-y1=-0.031
+y1=-0.033
 y2=0.13
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.3
+x2=0.3
 divx=5
 subdivx=1
 
@@ -484,15 +484,15 @@ logy=0
 color=11
 node="\\"MN7 Vov;@m.x1.x1.xmn7.msky130_fd_pr__nfet_01v8[vgs] @m.x1.x1.xmn7.msky130_fd_pr__nfet_01v8[vth] -\\""}
 B 2 80 -1670 470 -1530 {flags=graph
-y1=0.091
-y2=0.12
+y1=0.09
+y2=0.11
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.3
+x2=0.3
 divx=5
 subdivx=1
 
@@ -511,8 +511,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.3
+x2=0.3
 divx=5
 subdivx=1
 
@@ -531,8 +531,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.3
+x2=0.3
 divx=5
 subdivx=1
 
@@ -545,14 +545,14 @@ color=11
 node="\\"MN3 Vov;@m.x1.x1.xmn3.msky130_fd_pr__nfet_01v8_lvt[vgs] @m.x1.x1.xmn3.msky130_fd_pr__nfet_01v8_lvt[vth] -\\""}
 B 2 80 -1120 470 -980 {flags=graph
 y1=-0.031
-y2=0.05
+y2=0.048
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.3
+x2=0.3
 divx=5
 subdivx=1
 
@@ -564,15 +564,15 @@ logy=0
 color=11
 node="\\"MN6 Vov;@m.x1.x1.xmn6.msky130_fd_pr__nfet_01v8[vgs] @m.x1.x1.xmn6.msky130_fd_pr__nfet_01v8[vth] -\\""}
 B 2 2130 -1740 2270 -1600 {flags=graph
-y1=8.3e-07
-y2=1.6e-06
+y1=8.4e-07
+y2=1.4e-06
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.3
+x2=0.3
 divx=5
 subdivx=1
 
@@ -591,8 +591,8 @@ ypos2=2
 divy=10
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.3
+x2=0.3
 divx=5
 subdivx=1
 
@@ -611,8 +611,8 @@ ypos2=2
 divy=10
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.3
+x2=0.3
 divx=5
 subdivx=1
 
@@ -631,8 +631,8 @@ ypos2=2
 divy=10
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.3
+x2=0.3
 divx=5
 subdivx=1
 
@@ -644,15 +644,15 @@ logy=0
 color=12
 node=i(@m.x1.x1.xmp3.msky130_fd_pr__pfet_01v8_lvt[id])}
 B 2 2770 -1680 2910 -1540 {flags=graph
-y1=2.9e-11
-y2=9.1e-07
+y1=3e-11
+y2=1.1e-06
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.3
+x2=0.3
 divx=5
 subdivx=1
 
@@ -672,8 +672,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.3
+x2=0.3
 divx=5
 subdivx=1
 
@@ -687,7 +687,7 @@ color="7 4"
 node="\\"MP4 gm;@m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[gm]\\"
 \\"MN4 gm;@m.x1.x1.xmn4.msky130_fd_pr__nfet_01v8_lvt[gm]\\""}
 B 2 1380 -3220 1960 -2820 {flags=graph,unlocked
-y1=0
+y1=64
 y2=180
 ypos1=0
 ypos2=2
@@ -706,15 +706,15 @@ logx=1
 logy=0
 }
 B 2 1410 -880 1990 -480 {flags=graph
-y1=0.018
+y1=0.017
 y2=1.8
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.3
+x2=0.3
 divx=5
 subdivx=1
 node=out
@@ -725,8 +725,8 @@ logx=0
 logy=0
 }
 B 2 760 -3220 1340 -2820 {flags=graph,unlocked
-y1=-20
-y2=80
+y1=-13
+y2=73
 ypos1=0
 ypos2=2
 divy=5
@@ -744,7 +744,7 @@ logx=1
 logy=0
 }
 B 2 760 -2740 1340 -2340 {flags=graph,unlocked
-y1=46
+y1=39
 y2=120
 ypos1=0
 ypos2=2
@@ -763,15 +763,15 @@ logx=1
 logy=0
 }
 B 2 760 -2260 1340 -1860 {flags=graph,unlocked
-y1=-41
-y2=95
+y1=17
+y2=94
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=7
+x1=-0.7
+x2=6.3
 divx=5
 subdivx=8
 node="\\"PSRR (dB);0 out_psrr db20() -\\""
@@ -789,8 +789,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.3
+x2=0.3
 divx=5
 subdivx=1
 
@@ -810,8 +810,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.3
+x2=0.3
 divx=5
 subdivx=1
 
@@ -831,8 +831,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.3
+x2=0.3
 divx=5
 subdivx=1
 
@@ -851,8 +851,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.3
+x2=0.3
 divx=5
 subdivx=1
 
@@ -871,8 +871,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.3
+x2=0.3
 divx=5
 subdivx=1
 
@@ -891,8 +891,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.3
+x2=0.3
 divx=5
 subdivx=1
 
@@ -912,8 +912,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.3
+x2=0.3
 divx=5
 subdivx=1
 
@@ -932,8 +932,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.3
+x2=0.3
 divx=5
 subdivx=1
 
@@ -944,6 +944,29 @@ logx=0
 logy=0
 color=11
 node="\\"M9 Vov;@m.x1.x1.xm9.msky130_fd_pr__nfet_01v8_lvt[vgs] @m.x1.x1.xm9.msky130_fd_pr__nfet_01v8_lvt[vth] -\\""}
+B 2 1480 -1990 1870 -1850 {flags=graph
+y1=0.37
+y2=0.64
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=-0.3
+x2=0.3
+divx=5
+subdivx=1
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+color="4 6 7 9"
+node="\\"MN4;@m.x1.x1.xmn4.msky130_fd_pr__nfet_01v8_lvt[vth]\\"
+\\"MN14;@m.x1.x1.xmn14.msky130_fd_pr__nfet_01v8_lvt[vth]\\"
+\\"MP4;@m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[vth]\\"
+\\"MP6;@m.x1.x1.xmp6.msky130_fd_pr__pfet_01v8_lvt[vth]\\""}
 T {   Copyright 2022 Manuel Moser
 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -967,10 +990,10 @@ T {n} 1010 -1060 0 0 0.2 0.2 {}
 T {n} 1090 -1060 0 0 0.2 0.2 {}
 T {VDS-VSAT SATURATION} 500 -1520 0 0 0.4 0.4 {}
 T {VDS-VSAT SATURATION} 1210 -1520 0 0 0.4 0.4 {}
-T {VDS-VSAT TRIODE} 500 -1700 0 0 0.4 0.4 {}
-T {VDS-VSAT TRIODE} 1210 -1700 0 0 0.4 0.4 {}
-T {VDS-VSAT TRIODE} 500 -1150 0 0 0.4 0.4 {}
-T {VDS-VSAT TRIODE} 1210 -1150 0 0 0.4 0.4 {}
+T {VDS-VSAT SATURATION} 500 -1700 0 0 0.4 0.4 {}
+T {VDS-VSAT SATURATION} 1210 -1700 0 0 0.4 0.4 {}
+T {VDS-VSAT SATURATION} 500 -1150 0 0 0.4 0.4 {}
+T {VDS-VSAT SATURATION} 1210 -1150 0 0 0.4 0.4 {}
 T {VDS-VSAT SATURATION} 500 -1330 0 0 0.4 0.4 {}
 T {VDS-VSAT SATURATION} 1210 -1330 0 0 0.4 0.4 {}
 T {VGS-VTH} 1610 -1520 0 0 0.4 0.4 {}
@@ -1011,6 +1034,9 @@ T {Output Swing} 2070 -530 3 0 0.4 0.4 {}
 T {72.05 dB 65.0° at VCC=1.8V VCM=0.9V
 53 dB 66.1° at VCC=0.9V VCM=0.55V} 760 -3390 0 0 1 1 {}
 T {darf nicht 0 werden >} 2120 -1040 3 0 0.3 0.3 {}
+T {1VOV} 970 -1110 0 0 0.2 0.2 {}
+T {VTH+1VOV} 940 -1330 0 0 0.2 0.2 {}
+T {Threshold Voltages} 1480 -2020 0 0 0.4 0.4 {}
 N 1030 -700 1050 -700 {
 lab=inp}
 N 1030 -660 1050 -660 {
@@ -1327,7 +1353,7 @@ write results.raw
 *write results_ac.raw
 set appendwrite
 
-repeat 10
+repeat 1
  reset
  dc vd -300m 300m 0.2m temp -30 60 90
  

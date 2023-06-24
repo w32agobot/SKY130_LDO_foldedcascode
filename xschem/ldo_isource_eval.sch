@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.0 file_version=1.2
 }
 G {}
 K {}
@@ -13,15 +13,15 @@ L 4 670 -560 740 -530 {}
 L 4 1450 -410 1480 -580 {}
 L 4 1630 -1070 1670 -1050 {}
 B 2 200 -1540 1000 -1140 {flags=graph
-y1=-2.2e-10
-y2=7.6e-08
+y1=2.93689e-08
+y2=6.63288e-08
 ypos1=0
 ypos2=2
 divy=5
 subdivy=4
 unity=1
-x1=0
-x2=2
+x1=0.614398
+x2=1.97336
 divx=5
 subdivx=4
 
@@ -35,15 +35,15 @@ color="17 7"
 node="i(viref1)
 i(viref2)"}
 B 2 90 -940 390 -720 {flags=graph
-y1=-1.4
-y2=2.2
+y1=-0.54
+y2=1.5
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=2
+x1=0.614398
+x2=1.97336
 divx=5
 subdivx=1
 
@@ -61,15 +61,15 @@ color="4 7"
 node="mp1_vov
 mp1_vsat"}
 B 2 90 -700 390 -480 {flags=graph
-y1=-0.43
-y2=1.4
+y1=-0.48
+y2=0.49
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=2
+x1=0.614398
+x2=1.97336
 divx=5
 subdivx=1
 
@@ -87,15 +87,15 @@ color="4 7"
 node="mn1_vov
 mn1_vsat"}
 B 2 750 -940 1050 -720 {flags=graph
-y1=-0.109338
-y2=0.645785
+y1=-0.54
+y2=0.55
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=2
+x1=0.614398
+x2=1.97336
 divx=5
 subdivx=1
 
@@ -113,15 +113,15 @@ color="4 7"
 node="mp2_vov
 mp2_vsat"}
 B 2 750 -700 1050 -480 {flags=graph
-y1=-1.3
-y2=2.3
+y1=-0.48
+y2=1.6
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=2
+x1=0.614398
+x2=1.97336
 divx=5
 subdivx=1
 
@@ -139,15 +139,15 @@ color="4 7"
 node="mn2_vov
 mn2_vsat"}
 B 2 1100 -1490 1280 -1270 {flags=graph
-y1=0
-y2=0.22
+y1=-1.3e-17
+y2=0.068
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=2
+x1=0.614398
+x2=1.97336
 divx=5
 subdivx=1
 
@@ -165,15 +165,15 @@ logy=0
 color=7
 node=vref}
 B 2 1270 -390 1570 -170 {flags=graph
-y1=0.158
-y2=0.948
+y1=-5.2e-18
+y2=0.69
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=2
+x1=0.614398
+x2=1.97336
 divx=5
 subdivx=1
 
@@ -199,8 +199,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=2
+x1=0.614398
+x2=1.97336
 divx=5
 subdivx=1
 
@@ -232,6 +232,11 @@ T {   Copyright 2022 Manuel Moser
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.} 0 -240 0 0 0.2 0.2 {}
+T {WEAK INVERSION} 470 -570 0 0 0.4 0.4 {}
+T {STRONG INVERSION} 1320 -810 1 0 0.4 0.4 {}
+T {STRONG INVERSION} 1680 -800 1 0 0.4 0.4 {}
+T {SATURATION} 1700 -800 1 0 0.4 0.4 {}
+T {LINEAR} 1290 -680 1 0 0.4 0.4 {}
 N 400 -280 420 -280 {
 lab=GND}
 N 300 -280 340 -280 {
@@ -400,14 +405,8 @@ N 1410 -430 1420 -430 {
 lab=VSS}
 N 1420 -590 1420 -480 {
 lab=VSS}
-N 1270 -430 1410 -430 {
-lab=VSS}
-N 1270 -550 1270 -480 {
-lab=VSS}
-N 1270 -770 1270 -610 {
-lab=#net10}
 N 1420 -940 1420 -930 {
-lab=#net11}
+lab=#net10}
 N 1420 -1370 1420 -1350 {
 lab=Vref}
 N 1460 -1040 1470 -1040 {
@@ -429,13 +428,13 @@ lab=VSS}
 N 1590 -900 1590 -830 {
 lab=VSS}
 N 1420 -660 1420 -650 {
-lab=#net12}
+lab=#net11}
 N 1460 -690 1470 -690 {
 lab=Vrefgate}
 N 1410 -690 1420 -690 {
 lab=VSS}
 N 1420 -730 1420 -720 {
-lab=#net13}
+lab=#net12}
 N 1410 -760 1420 -760 {
 lab=VSS}
 N 1460 -760 1470 -760 {
@@ -443,11 +442,11 @@ lab=Vrefgate}
 N 1460 -830 1470 -830 {
 lab=Vrefgate}
 N 1420 -800 1420 -790 {
-lab=#net14}
+lab=#net13}
 N 1410 -830 1420 -830 {
 lab=VSS}
 N 1420 -870 1420 -860 {
-lab=#net15}
+lab=#net14}
 N 1460 -900 1470 -900 {
 lab=Vrefgate}
 N 1410 -900 1420 -900 {
@@ -455,19 +454,17 @@ lab=VSS}
 N 1410 -1040 1410 -970 {
 lab=VSS}
 N 1420 -1010 1420 -1000 {
-lab=#net16}
+lab=#net15}
 N 1590 -480 1590 -430 {
 lab=VSS}
 N 1420 -480 1420 -430 {
 lab=VSS}
 N 1410 -480 1410 -430 {
 lab=VSS}
-N 1270 -480 1270 -430 {
-lab=VSS}
 N 1580 -590 1580 -570 {
 lab=VSS}
 N 1420 -1220 1420 -1210 {
-lab=#net17}
+lab=#net16}
 N 1460 -1320 1470 -1320 {
 lab=Vrefgate}
 N 1460 -1250 1470 -1250 {
@@ -479,11 +476,11 @@ lab=VSS}
 N 1460 -1110 1470 -1110 {
 lab=Vrefgate}
 N 1420 -1080 1420 -1070 {
-lab=#net18}
+lab=#net17}
 N 1410 -1110 1420 -1110 {
 lab=VSS}
 N 1420 -1150 1420 -1140 {
-lab=#net19}
+lab=#net18}
 N 1460 -1180 1470 -1180 {
 lab=Vrefgate}
 N 1410 -1180 1420 -1180 {
@@ -491,7 +488,7 @@ lab=VSS}
 N 1410 -1320 1410 -1250 {
 lab=VSS}
 N 1420 -1290 1420 -1280 {
-lab=#net20}
+lab=#net19}
 N 1470 -1110 1470 -1040 {
 lab=Vrefgate}
 N 1470 -1180 1470 -1110 {
@@ -525,13 +522,13 @@ lab=#net1}
 N 650 -930 660 -930 {
 lab=#net2}
 N 470 -900 470 -890 {
-lab=#net21}
+lab=#net20}
 N 470 -1050 470 -1030 {
 lab=#net1}
 N 650 -1050 650 -1030 {
 lab=#net2}
 N 650 -900 650 -890 {
-lab=#net22}
+lab=#net21}
 N 460 -930 460 -860 {
 lab=#net1}
 N 660 -930 660 -860 {
@@ -557,7 +554,7 @@ lab=#net1}
 N 460 -1000 470 -1000 {
 lab=#net1}
 N 1580 -1130 1580 -1100 {
-lab=#net23}
+lab=#net22}
 N 1590 -1230 1590 -1100 {
 lab=#net5}
 N 1580 -1230 1590 -1230 {
@@ -603,10 +600,10 @@ value="
 
 .control
 set num_threads = 12
-write results.raw
+write isource.raw
 set appendwrite
 
-repeat 40
+repeat 10
   reset
   *dc V1 0 2 0.02  
   dc V1 0 2 0.02 temp -30 60 90
@@ -625,7 +622,7 @@ repeat 40
   let MP1_vsat = (v(@m.xmp1.msky130_fd_pr__pfet_01v8_lvt[VDS])-MP1_vov)  
   let MP2_vsat = (v(@m.xmp2.msky130_fd_pr__pfet_01v8_lvt[VDS])-MP2_vov)  
   let MP3_vsat = (v(@m.xmp3.msky130_fd_pr__pfet_01v8_lvt[VDS])-MP3_vov)  
-  write results.raw MN1_vov MN2_vov MN1_vsat MN2_vsat MP1_vov MP2_vov MP3_vov MP1_vsat MP2_vsat MP3_vsat vref vrefgate i(Viref1) i(Viref2)
+  write isource.raw MN1_vov MN2_vov MN1_vsat MN2_vsat MP1_vov MP2_vov MP3_vov MP1_vsat MP2_vsat MP3_vsat vref vrefgate i(Viref1) i(Viref2)
 end
 
 .endc
@@ -639,7 +636,7 @@ C {devices/gnd.sym} 420 -280 0 0 {name=l2 lab=GND}
 C {devices/lab_wire.sym} 300 -380 0 0 {name=p10 sig_type=std_logic lab=VDD}
 C {devices/launcher.sym} 260 -460 0 0 {name=h5
 descr="load waves" 
-tclcommand="xschem raw_read $netlist_dir/results.raw dc"
+tclcommand="xschem raw_read $netlist_dir/isource.raw dc"
 }
 C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 630 -860 0 0 {name=MP2
 L=8
@@ -976,12 +973,6 @@ sa=0 sb=0 sd=0
 model=nfet_01v8_lvt
 spiceprefix=X
 }
-C {devices/res.sym} 1270 -580 0 0 {name=R2
-value=1500k
-footprint=1206
-device=resistor
-m=1
-temp=27}
 C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 490 -930 0 1 {name=MP4
 L=8
 W=0.55

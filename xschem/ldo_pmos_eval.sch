@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.0 file_version=1.2
 }
 G {}
 K {}
@@ -65,7 +65,7 @@ C {sky130_fd_pr/pfet_01v8_hvt_nf.sym} 660 -970 0 1 {name=M1
 L=0.15
 W=5
 nf=10
-mult=9
+mult=8
 ad="'int((nf+1)/2) * W / nf * 0.29'"
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
 as="'int((nf+2)/2) * W / nf * 0.29'"
@@ -75,7 +75,7 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_hvt
 spiceprefix=X
 }
-C {devices/vsource.sym} 460 -970 0 0 {name=VSD value=0.10}
+C {devices/vsource.sym} 460 -970 0 0 {name=VSD value=0.20}
 C {devices/vsource.sym} 780 -960 0 0 {name=VGS value=0.9}
 C {devices/gnd.sym} 640 -880 0 0 {name=l2 lab=GND}
 C {devices/simulator_commands.sym} 210 -1030 0 0 {name=COMMANDS

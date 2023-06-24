@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.0 file_version=1.2
 }
 G {}
 K {}
@@ -119,15 +119,15 @@ C {ldo_ota.sym} 300 -690 0 0 {name=x1}
 C {sky130_fd_pr/pfet_01v8_nf.sym} 540 -690 0 0 {name=M1
 L=0.15
 W=5
-nf=5
-mult=14
+nf=10
+mult=8
 ad="'int((nf+1)/2) * W / nf * 0.29'"
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
 as="'int((nf+2)/2) * W / nf * 0.29'"
 ps="'2*int((nf+2)/2) * (W / nf + 0.29)'"
 nrd="'0.29 / W '" nrs="'0.29 / W '"
 sa=0 sb=0 sd=0
-model=pfet_01v8
+model=pfet_01v8_hvt
 spiceprefix=X
 }
 C {devices/lab_wire.sym} 430 -690 0 1 {name=p11 sig_type=std_logic lab=vota}

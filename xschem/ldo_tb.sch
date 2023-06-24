@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.0 file_version=1.2
 }
 G {}
 K {}
@@ -21,15 +21,15 @@ L 4 2160 -3580 2160 -2150 {}
 L 4 40 -3580 2160 -3580 {}
 L 4 40 -3580 40 -2150 {}
 B 2 640 -730 1140 -500 {flags=graph
-y1=0.02
-y2=2
+y1=0
+y2=1.8
 ypos1=0
 ypos2=2
 divy=10
 subdivy=1
 unity=1
 x1=0
-x2=1.05
+x2=0.96
 divx=5
 subdivx=1
 node="\\"vout (5mA);vout5ma\\"
@@ -44,8 +44,8 @@ logx=0
 logy=0
 sweep=vref1}
 B 2 1600 -2660 2120 -2460 {flags=graph,unlocked
-y1=-70
-y2=72
+y1=-66
+y2=74
 ypos1=0
 ypos2=2
 
@@ -67,15 +67,15 @@ logy=0
 divy=8
 dataset=-1}
 B 2 640 -1290 1140 -1060 {flags=graph
-y1=3.70865e-06
-y2=4.49508e-06
+y1=1.3e-06
+y2=3e-06
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
 x1=0
-x2=0.975
+x2=0.9
 divx=5
 subdivx=1
 
@@ -111,15 +111,15 @@ node="\\"phase 0mA 0pF;ph(vout_ac_0mA_0pF)\\"
 \\"phase 5mA 0pF;ph(vout_ac_5mA_0pF)\\"
 \\"phase 5mA 30pF;ph(vout_ac_5mA_30pF)\\""}
 B 2 930 -990 1430 -760 {flags=graph
-y1=1.4e-18
-y2=9.1e-08
+y1=5.4e-12
+y2=3.4e-07
 ypos1=0
 ypos2=2
 divy=10
 subdivy=1
 unity=1
 x1=0
-x2=1.05
+x2=0.96
 divx=5
 subdivx=1
 
@@ -1297,7 +1297,7 @@ set num_threads = 12
 write results_ldo.raw
 set appendwrite
 
-repeat 20
+repeat 1
 reset
  
 dc vsweep 0 1 0.01 temp -30 60 90 
@@ -1317,7 +1317,7 @@ end
 .endc
 
 "}
-C {sky130_fd_pr/corner.sym} 60 -390 0 0 {name=CORNER only_toplevel=false corner=ff_mm}
+C {sky130_fd_pr/corner.sym} 60 -390 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {devices/vsource.sym} 660 -350 0 0 {name=Vref value=vreference}
 C {devices/vsource.sym} 560 -350 0 0 {name=Vsrc value=vsource}
 C {devices/lab_wire.sym} 560 -400 0 1 {name=p9 sig_type=std_logic lab=VDD}
@@ -1369,20 +1369,6 @@ C {devices/lab_wire.sym} 100 -1140 0 0 {name=p12 sig_type=std_logic lab=vdcsweep
 C {devices/noconn.sym} 400 -1160 0 1 {name=l2}
 C {devices/lab_wire.sym} 140 -1280 0 0 {name=p14 sig_type=std_logic lab=VDD}
 C {ldo_ota.sym} 260 -1970 0 0 {name=x4}
-C {sky130_fd_pr/pfet_01v8_nf.sym} 500 -1970 0 0 {name=M1
-L=0.15
-W=5
-nf=5
-mult=16
-ad="'int((nf+1)/2) * W / nf * 0.29'"
-pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
-as="'int((nf+2)/2) * W / nf * 0.29'"
-ps="'2*int((nf+2)/2) * (W / nf + 0.29)'"
-nrd="'0.29 / W '" nrs="'0.29 / W '"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
 C {devices/ind.sym} 340 -1810 2 0 {name=L17
 m=1
 value=1e9
@@ -1488,20 +1474,6 @@ value=1e2
 footprint=1206
 device="ceramic capacitor"}
 C {ldo_ota.sym} 280 -2730 0 0 {name=x5}
-C {sky130_fd_pr/pfet_01v8_nf.sym} 520 -2730 0 0 {name=M5
-L=0.15
-W=5
-nf=5
-mult=16
-ad="'int((nf+1)/2) * W / nf * 0.29'"
-pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
-as="'int((nf+2)/2) * W / nf * 0.29'"
-ps="'2*int((nf+2)/2) * (W / nf + 0.29)'"
-nrd="'0.29 / W '" nrs="'0.29 / W '"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
 C {devices/ind.sym} 360 -2570 2 0 {name=L12
 m=1
 value=1e9
@@ -1595,20 +1567,6 @@ value=1e2
 footprint=1206
 device="ceramic capacitor"}
 C {ldo_ota.sym} 280 -3390 0 0 {name=x6}
-C {sky130_fd_pr/pfet_01v8_nf.sym} 520 -3390 0 0 {name=M11
-L=0.15
-W=5
-nf=5
-mult=16
-ad="'int((nf+1)/2) * W / nf * 0.29'"
-pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
-as="'int((nf+2)/2) * W / nf * 0.29'"
-ps="'2*int((nf+2)/2) * (W / nf + 0.29)'"
-nrd="'0.29 / W '" nrs="'0.29 / W '"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
 C {devices/ind.sym} 360 -3230 2 0 {name=L15
 m=1
 value=1e9
@@ -1697,20 +1655,6 @@ value=1e2
 footprint=1206
 device="ceramic capacitor"}
 C {ldo_ota.sym} 1040 -2730 0 0 {name=x7}
-C {sky130_fd_pr/pfet_01v8_nf.sym} 1280 -2730 0 0 {name=M16
-L=0.15
-W=5
-nf=5
-mult=16
-ad="'int((nf+1)/2) * W / nf * 0.29'"
-pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
-as="'int((nf+2)/2) * W / nf * 0.29'"
-ps="'2*int((nf+2)/2) * (W / nf + 0.29)'"
-nrd="'0.29 / W '" nrs="'0.29 / W '"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
 C {devices/ind.sym} 1120 -2570 2 0 {name=L19
 m=1
 value=1e9
@@ -1809,20 +1753,6 @@ value=1e2
 footprint=1206
 device="ceramic capacitor"}
 C {ldo_ota.sym} 1040 -3390 0 0 {name=x8}
-C {sky130_fd_pr/pfet_01v8_nf.sym} 1280 -3390 0 0 {name=M21
-L=0.15
-W=5
-nf=5
-mult=16
-ad="'int((nf+1)/2) * W / nf * 0.29'"
-pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
-as="'int((nf+2)/2) * W / nf * 0.29'"
-ps="'2*int((nf+2)/2) * (W / nf + 0.29)'"
-nrd="'0.29 / W '" nrs="'0.29 / W '"
-sa=0 sb=0 sd=0
-model=pfet_01v8
-spiceprefix=X
-}
 C {devices/ind.sym} 1120 -3230 2 0 {name=L22
 m=1
 value=1e9
@@ -1955,3 +1885,73 @@ device=inductor}
 C {devices/vcvs.sym} 460 -3270 0 0 {name=E7 value=1}
 C {devices/gnd.sym} 460 -3230 0 0 {name=l38 lab=GND}
 C {devices/gnd.sym} 420 -3230 0 0 {name=l39 lab=GND}
+C {sky130_fd_pr/pfet_01v8_nf.sym} 500 -1970 0 0 {name=M1
+L=0.15
+W=5
+nf=10
+mult=8
+ad="'int((nf+1)/2) * W / nf * 0.29'"
+pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
+as="'int((nf+2)/2) * W / nf * 0.29'"
+ps="'2*int((nf+2)/2) * (W / nf + 0.29)'"
+nrd="'0.29 / W '" nrs="'0.29 / W '"
+sa=0 sb=0 sd=0
+model=pfet_01v8_hvt
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet_01v8_nf.sym} 520 -2730 0 0 {name=M5
+L=0.15
+W=5
+nf=10
+mult=8
+ad="'int((nf+1)/2) * W / nf * 0.29'"
+pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
+as="'int((nf+2)/2) * W / nf * 0.29'"
+ps="'2*int((nf+2)/2) * (W / nf + 0.29)'"
+nrd="'0.29 / W '" nrs="'0.29 / W '"
+sa=0 sb=0 sd=0
+model=pfet_01v8_hvt
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet_01v8_nf.sym} 1280 -2730 0 0 {name=M11
+L=0.15
+W=5
+nf=10
+mult=8
+ad="'int((nf+1)/2) * W / nf * 0.29'"
+pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
+as="'int((nf+2)/2) * W / nf * 0.29'"
+ps="'2*int((nf+2)/2) * (W / nf + 0.29)'"
+nrd="'0.29 / W '" nrs="'0.29 / W '"
+sa=0 sb=0 sd=0
+model=pfet_01v8_hvt
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet_01v8_nf.sym} 1280 -3390 0 0 {name=M16
+L=0.15
+W=5
+nf=10
+mult=8
+ad="'int((nf+1)/2) * W / nf * 0.29'"
+pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
+as="'int((nf+2)/2) * W / nf * 0.29'"
+ps="'2*int((nf+2)/2) * (W / nf + 0.29)'"
+nrd="'0.29 / W '" nrs="'0.29 / W '"
+sa=0 sb=0 sd=0
+model=pfet_01v8_hvt
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet_01v8_nf.sym} 520 -3390 0 0 {name=M21
+L=0.15
+W=5
+nf=10
+mult=8
+ad="'int((nf+1)/2) * W / nf * 0.29'"
+pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
+as="'int((nf+2)/2) * W / nf * 0.29'"
+ps="'2*int((nf+2)/2) * (W / nf + 0.29)'"
+nrd="'0.29 / W '" nrs="'0.29 / W '"
+sa=0 sb=0 sd=0
+model=pfet_01v8_hvt
+spiceprefix=X
+}
