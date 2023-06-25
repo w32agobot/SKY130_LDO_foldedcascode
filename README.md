@@ -35,22 +35,23 @@ The power transistor has been dimensioned to deliver 5 mA at 200 mV dropout volt
 | $V_{out}$ (V) | 0.8 | $2 \cdot V_{ref}$ | 1.95 |
 | $V_{dropout}$ (mV) | 60 $^a$ | - | 200 $^b$|
 | $I_{out}$ (mA) | 0 |-| 5 |
-| $C_{load}$ (pF) | 0 | 30 | - |  
-| $I_{q}$ (µA)   | 1.5 $^b$ |3| 4.3 $^a$ | 
-| DC gain (dB)   | 40 | 57 | 74 | 
-| Unit gain BW (kHz)   | 70 | 100 | 210 | 
-| Phase margin (°)   | 20 | 75 | 90 |
+| $C_{load}$ (pF) | 0 | - | 30 |  
+| $I_{q}$ (µA)   | 1 $^b$ |2| 3.25 $^a$ | 
+| DC gain (dB)   | 70 | - | 77 | 
+| Unit gain BW (kHz)   | 96 | 100 | 217 | 
+| Phase margin (°)   | $25^c$ | 90 | 90 |
 
 $^a V_{DD}=1.95V$ fast corner  
 $^b V_{DD}=1.60V$ slow corner  
+$^c$ $I_{load}=0mA$, $C_L = 30 pF$  
 
-## Mismatch Simulation 
+## Monte Carlo Simulation 
 LDO loop gain and phase at 
 * $I_{out}$ = 0 mA or 5 mA
 * $C_{load}$ = 0 pF or 30 pF
 * $V_{DD}$ = 1.8 V 
 
 ### tt corner:
-![comp_](doc/gain_phase_tt_1v8.png)  
+![comp_](doc/gain_phase_mc_1v8.png)  
 
 

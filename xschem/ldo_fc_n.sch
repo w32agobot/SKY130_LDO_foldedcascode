@@ -152,14 +152,14 @@ T {   Copyright 2022 Manuel Moser
    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
    See the License for the specific language governing permissions and
    limitations under the License.} 0 -240 0 0 0.2 0.2 {}
-T {19IBIAS} 1220 -1060 0 0 0.2 0.2 {}
-T {19IBIAS} 1380 -1060 0 0 0.2 0.2 {}
-T {14IBIAS} 1830 -660 0 0 0.2 0.2 {}
-T {7IBIAS + Delta I} 1810 -920 1 0 0.2 0.2 {}
-T {7IBIAS - Delta I} 1840 -920 1 0 0.2 0.2 {}
-T {12IBIAS - Delta I} 1180 -780 0 0 0.2 0.2 {}
-T {12IBIAS + Delta I} 1370 -780 0 0 0.2 0.2 {}
-T {12IBIAS - Delta I} 1370 -720 0 0 0.2 0.2 {}
+T {14IBIAS} 1220 -1060 0 0 0.2 0.2 {}
+T {14IBIAS} 1380 -1060 0 0 0.2 0.2 {}
+T {10IBIAS} 1830 -660 0 0 0.2 0.2 {}
+T {5IBIAS + Delta I} 1810 -920 1 0 0.2 0.2 {}
+T {5IBIAS - Delta I} 1840 -920 1 0 0.2 0.2 {}
+T {11IBIAS - Delta I} 1180 -780 0 0 0.2 0.2 {}
+T {11IBIAS + Delta I} 1370 -780 0 0 0.2 0.2 {}
+T {11IBIAS - Delta I} 1370 -720 0 0 0.2 0.2 {}
 T {2Delta I} 1530 -760 0 0 0.2 0.2 {}
 T {SATURATED} 1390 -670 0 0 0.4 0.4 {}
 T {SATURATED} 1390 -840 0 0 0.4 0.4 {}
@@ -175,7 +175,7 @@ T {MN6} 1230 -660 0 0 0.2 0.2 {}
 T {INP} 1890 -780 2 0 0.4 0.4 {}
 T {INN} 1780 -780 2 0 0.4 0.4 {}
 T {OUT} 1690 -720 2 0 0.4 0.4 {}
-T {19-14=5IBIAS overdrive 
+T {14-11=3IBIAS overdrive 
 current to prevent a 
 breakdown of MN6[vgs]} 1370 -590 0 0 0.2 0.2 {}
 T {SATURATED} 1390 -1010 0 0 0.4 0.4 {}
@@ -417,7 +417,7 @@ C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 780 -700 0 0 {name=MN4
 L=0.5
 W=1
 nf=2
-mult=12
+mult=11
 ad="'int((nf+1)/2) * W / nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
 as="'int((nf+2)/2) * W / nf * 0.29'" 
@@ -430,8 +430,8 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8_nf.sym} 780 -580 0 0 {name=MN7
 L=8
 W=0.42
-nf=3
-mult=12
+nf=4
+mult=11
 ad="'int((nf+1)/2) * W / nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
 as="'int((nf+2)/2) * W / nf * 0.29'" 
@@ -445,7 +445,7 @@ C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 660 -700 0 1 {name=MN3
 L=0.5
 W=1
 nf=2
-mult=12
+mult=11
 ad="'int((nf+1)/2) * W / nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
 as="'int((nf+2)/2) * W / nf * 0.29'" 
@@ -458,8 +458,8 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8_nf.sym} 660 -580 0 1 {name=MN6
 L=8
 W=0.42
-nf=3
-mult=12
+nf=4
+mult=11
 ad="'int((nf+1)/2) * W / nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
 as="'int((nf+2)/2) * W / nf * 0.29'" 
@@ -473,7 +473,7 @@ C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 780 -830 0 0 {name=MP4
 L=1
 W=3
 nf=3
-mult=12
+mult=11
 ad="'int((nf+1)/2) * W / nf * 0.29'"
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
 as="'int((nf+2)/2) * W / nf * 0.29'"
@@ -487,7 +487,7 @@ C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 780 -970 0 0 {name=MP2
 L=8
 W=0.55
 nf=4
-mult=19
+mult=14
 ad="'int((nf+1)/2) * W / nf * 0.29'"
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
 as="'int((nf+2)/2) * W / nf * 0.29'"
@@ -501,7 +501,7 @@ C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 660 -830 0 1 {name=MP3
 L=1
 W=3
 nf=3
-mult=12
+mult=11
 ad="'int((nf+1)/2) * W / nf * 0.29'"
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
 as="'int((nf+2)/2) * W / nf * 0.29'"
@@ -515,7 +515,7 @@ C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 660 -970 0 1 {name=MP1
 L=8
 W=0.55
 nf=4
-mult=19
+mult=14
 ad="'int((nf+1)/2) * W / nf * 0.29'"
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
 as="'int((nf+2)/2) * W / nf * 0.29'"
@@ -528,8 +528,8 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8_nf.sym} 340 -580 0 0 {name=MN5
 L=8
 W=0.42
-nf=3
-mult=14
+nf=4
+mult=11
 ad="'int((nf+1)/2) * W / nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
 as="'int((nf+2)/2) * W / nf * 0.29'" 
@@ -586,8 +586,8 @@ C {devices/lab_wire.sym} 280 -540 0 0 {name=p16 sig_type=std_logic lab=bias4}
 C {sky130_fd_pr/nfet_01v8_nf.sym} 780 -510 0 0 {name=MN9
 L=8
 W=0.42
-nf=3
-mult=12
+nf=4
+mult=11
 ad="'int((nf+1)/2) * W / nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
 as="'int((nf+2)/2) * W / nf * 0.29'" 
@@ -600,8 +600,8 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8_nf.sym} 660 -510 0 1 {name=MN10
 L=8
 W=0.42
-nf=3
-mult=12
+nf=4
+mult=11
 ad="'int((nf+1)/2) * W / nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
 as="'int((nf+2)/2) * W / nf * 0.29'" 
@@ -614,8 +614,8 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8_nf.sym} 340 -510 0 0 {name=MN11
 L=8
 W=0.42
-nf=3
-mult=14
+nf=4
+mult=11
 ad="'int((nf+1)/2) * W / nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
 as="'int((nf+2)/2) * W / nf * 0.29'" 
@@ -629,8 +629,8 @@ C {devices/opin.sym} 980 -880 0 0 {name=p17 lab=comp}
 C {sky130_fd_pr/nfet_01v8_nf.sym} 780 -440 0 0 {name=MN8
 L=8
 W=0.42
-nf=3
-mult=12
+nf=4
+mult=11
 ad="'int((nf+1)/2) * W / nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
 as="'int((nf+2)/2) * W / nf * 0.29'" 
@@ -643,8 +643,8 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8_nf.sym} 660 -440 0 1 {name=MN12
 L=8
 W=0.42
-nf=3
-mult=12
+nf=4
+mult=11
 ad="'int((nf+1)/2) * W / nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
 as="'int((nf+2)/2) * W / nf * 0.29'" 
@@ -657,8 +657,8 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8_nf.sym} 340 -440 0 0 {name=MN13
 L=8
 W=0.42
-nf=3
-mult=14
+nf=4
+mult=11
 ad="'int((nf+1)/2) * W / nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
 as="'int((nf+2)/2) * W / nf * 0.29'" 
@@ -671,8 +671,8 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8_nf.sym} 780 -370 0 0 {name=MN14
 L=8
 W=0.42
-nf=3
-mult=12
+nf=4
+mult=11
 ad="'int((nf+1)/2) * W / nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
 as="'int((nf+2)/2) * W / nf * 0.29'" 
@@ -685,8 +685,8 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8_nf.sym} 660 -370 0 1 {name=MN15
 L=8
 W=0.42
-nf=3
-mult=12
+nf=4
+mult=11
 ad="'int((nf+1)/2) * W / nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
 as="'int((nf+2)/2) * W / nf * 0.29'" 
@@ -699,8 +699,8 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8_nf.sym} 340 -370 0 0 {name=MN16
 L=8
 W=0.42
-nf=3
-mult=14
+nf=4
+mult=11
 ad="'int((nf+1)/2) * W / nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
 as="'int((nf+2)/2) * W / nf * 0.29'" 
@@ -714,7 +714,7 @@ C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 340 -650 0 0 {name=M9
 L=0.5
 W=1
 nf=2
-mult=1
+mult=11
 ad="'int((nf+1)/2) * W / nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
 as="'int((nf+2)/2) * W / nf * 0.29'" 

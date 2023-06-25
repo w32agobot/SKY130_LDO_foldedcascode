@@ -1,4 +1,4 @@
-v {xschem version=3.1.0 file_version=1.2
+v {xschem version=3.4.0 file_version=1.2
 }
 G {}
 K {}
@@ -542,7 +542,7 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8_nf.sym} 980 -610 0 0 {name=M14
 L=8
 W=0.42
-nf=3
+nf=4
 mult=1
 ad="'int((nf+1)/2) * W / nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
@@ -558,7 +558,7 @@ C {devices/lab_wire.sym} 940 -780 0 1 {name=p17 sig_type=std_logic lab=bias4}
 C {sky130_fd_pr/nfet_01v8_nf.sym} 980 -540 0 0 {name=M6
 L=8
 W=0.42
-nf=3
+nf=4
 mult=1
 ad="'int((nf+1)/2) * W / nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
@@ -602,7 +602,7 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8_nf.sym} 980 -470 0 0 {name=M16
 L=8
 W=0.42
-nf=3
+nf=4
 mult=1
 ad="'int((nf+1)/2) * W / nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
@@ -616,7 +616,7 @@ spiceprefix=X
 C {sky130_fd_pr/nfet_01v8_nf.sym} 980 -400 0 0 {name=M17
 L=8
 W=0.42
-nf=3
+nf=4
 mult=1
 ad="'int((nf+1)/2) * W / nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"

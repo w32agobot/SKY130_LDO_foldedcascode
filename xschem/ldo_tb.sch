@@ -44,8 +44,8 @@ logx=0
 logy=0
 sweep=vref1}
 B 2 1600 -2660 2120 -2460 {flags=graph,unlocked
-y1=-66
-y2=74
+y1=-70
+y2=77
 ypos1=0
 ypos2=2
 
@@ -67,8 +67,8 @@ logy=0
 divy=8
 dataset=-1}
 B 2 640 -1290 1140 -1060 {flags=graph
-y1=1.3e-06
-y2=3e-06
+y1=9.6e-07
+y2=3.3e-06
 ypos1=0
 ypos2=2
 divy=5
@@ -111,8 +111,8 @@ node="\\"phase 0mA 0pF;ph(vout_ac_0mA_0pF)\\"
 \\"phase 5mA 0pF;ph(vout_ac_5mA_0pF)\\"
 \\"phase 5mA 30pF;ph(vout_ac_5mA_30pF)\\""}
 B 2 930 -990 1430 -760 {flags=graph
-y1=5.4e-12
-y2=3.4e-07
+y1=2.9e-14
+y2=4.5e-07
 ypos1=0
 ypos2=2
 divy=10
@@ -1297,7 +1297,7 @@ set num_threads = 12
 write results_ldo.raw
 set appendwrite
 
-repeat 1
+repeat 10
 reset
  
 dc vsweep 0 1 0.01 temp -30 60 90 
@@ -1317,7 +1317,7 @@ end
 .endc
 
 "}
-C {sky130_fd_pr/corner.sym} 60 -390 0 0 {name=CORNER only_toplevel=false corner=tt}
+C {sky130_fd_pr/corner.sym} 60 -390 0 0 {name=CORNER only_toplevel=false corner=mc}
 C {devices/vsource.sym} 660 -350 0 0 {name=Vref value=vreference}
 C {devices/vsource.sym} 560 -350 0 0 {name=Vsrc value=vsource}
 C {devices/lab_wire.sym} 560 -400 0 1 {name=p9 sig_type=std_logic lab=VDD}
