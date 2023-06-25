@@ -61,7 +61,7 @@ lab=VSS}
 N 380 -620 390 -620 {
 lab=#net1}
 N 450 -620 460 -620 {
-lab=#net2}
+lab=#net1}
 N 380 -660 380 -620 {
 lab=#net1}
 N 520 -620 560 -620 {
@@ -114,6 +114,8 @@ N 440 -510 440 -410 {
 lab=vfb}
 N 440 -510 510 -510 {
 lab=vfb}
+N 390 -620 450 -620 {
+lab=#net1}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {ldo_ota.sym} 300 -690 0 0 {name=x1}
 C {sky130_fd_pr/pfet_01v8_nf.sym} 540 -690 0 0 {name=M1
@@ -141,11 +143,6 @@ m=1
 value=3e-12
 footprint=1206
 device="ceramic capacitor"}
-C {devices/res.sym} 420 -620 3 1 {name=RL2
-value=80000
-footprint=1206
-device=resistor
-m=1}
 C {sky130_fd_pr/pfet_01v8_lvt.sym} 540 -540 0 0 {name=M9
 L=8
 W=0.55
