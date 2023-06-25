@@ -7,7 +7,7 @@ The LDO should have the following parameters:
 - $I_{q} = 1..2 \texttt{µA}$
 - $I_{out} = 0..5 \texttt{mA}$
 - $C_L = 0..20 \texttt{pF}$
-- Low noise
+- Usage of low noise methods
 - No resistors
 
 ## Design idea
@@ -51,7 +51,6 @@ LDO loop gain and phase at
 * $C_{load}$ = 0 pF or 30 pF
 * $V_{DD}$ = 1.8 V 
 
-### tt corner:
 ![comp_](doc/gain_phase_mc_1v8.png)  
 
 
