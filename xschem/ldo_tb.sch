@@ -67,8 +67,8 @@ logy=0
 divy=8
 dataset=-1}
 B 2 640 -1290 1140 -1060 {flags=graph
-y1=9.6e-07
-y2=3.3e-06
+y1=-4.77276e-08
+y2=2.37147e-06
 ypos1=0
 ypos2=2
 divy=5
@@ -111,8 +111,8 @@ node="\\"phase 0mA 0pF;ph(vout_ac_0mA_0pF)\\"
 \\"phase 5mA 0pF;ph(vout_ac_5mA_0pF)\\"
 \\"phase 5mA 30pF;ph(vout_ac_5mA_30pF)\\""}
 B 2 930 -990 1430 -760 {flags=graph
-y1=2.9e-14
-y2=4.5e-07
+y1=2.1e-13
+y2=4.3e-07
 ypos1=0
 ypos2=2
 divy=10
@@ -146,7 +146,6 @@ T {   Copyright 2022 Manuel Moser
    limitations under the License.} 0 -240 0 0 0.2 0.2 {}
 T {DC Quiescent Current} 40 -1400 0 0 0.6 0.6 {}
 T {AC Gain} 40 -2120 0 0 0.6 0.6 {}
-T {crit: 22 0mA 30pF} 690 -2080 0 0 0.3 0.3 {}
 N 560 -320 560 -300 {
 lab=GND}
 N 560 -400 560 -380 {
