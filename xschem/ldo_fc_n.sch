@@ -408,7 +408,7 @@ N 690 -760 690 -580 {
 lab=#net3}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 780 -700 0 0 {name=MN4
-L=0.5
+L=4
 W=1
 nf=2
 mult=7
@@ -436,7 +436,7 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 660 -700 0 1 {name=MN3
-L=0.5
+L=4
 W=1
 nf=2
 mult=7
@@ -464,9 +464,9 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 780 -830 0 0 {name=MP4
-L=0.5
-W=1
-nf=3
+L=8
+W=0.55
+nf=4
 mult=7
 ad="'int((nf+1)/2) * W / nf * 0.29'"
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
@@ -492,9 +492,9 @@ model=pfet_01v8_lvt
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 660 -830 0 1 {name=MP3
-L=0.5
-W=1
-nf=3
+L=8
+W=0.55
+nf=4
 mult=7
 ad="'int((nf+1)/2) * W / nf * 0.29'"
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
@@ -534,9 +534,9 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 260 -750 0 0 {name=MN1
-L=0.5
+L=4
 W=1
-nf=5
+nf=1
 mult=1
 ad="'int((nf+1)/2) * W / nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
@@ -548,9 +548,9 @@ model=nfet_01v8_lvt
 spiceprefix=X
 }
 C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 460 -750 0 1 {name=MN2
-L=0.5
+L=4
 W=1
-nf=5
+nf=1
 mult=1
 ad="'int((nf+1)/2) * W / nf * 0.29'" 
 pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
@@ -704,3 +704,11 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
+C {devices/device_param_probe.sym} 900 -1000 0 0 {name=r1
+devicename=MP2
+devicemodel=pfet_01v8_lvt
+deviceparam=gds}
+C {devices/device_param_probe.sym} 450 -800 0 0 {name=r2
+devicename=MN2
+devicemodel=nfet_01v8_lvt
+deviceparam=gds}

@@ -282,8 +282,8 @@ color="8 9"
 node="\\"MP2 Vds-Vsat;@m.x1.x1.xmp2.msky130_fd_pr__pfet_01v8_lvt[vds] @m.x1.x1.xmp2.msky130_fd_pr__pfet_01v8_lvt[vdsat] -\\"
 \\"VDS;@m.x1.x1.xmp2.msky130_fd_pr__pfet_01v8_lvt[vds]\\""}
 B 2 500 -1490 890 -1350 {flags=graph
-y1=0.77
-y2=0.97
+y1=0.91
+y2=1.1
 ypos1=0
 ypos2=2
 divy=5
@@ -322,8 +322,8 @@ logy=0
 color=8
 node="\\"MP4 Vds-Vsat;@m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[vds] @m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[vdsat] -\\""}
 B 2 500 -1300 890 -1160 {flags=graph
-y1=0.15
-y2=0.41
+y1=0.19
+y2=0.4
 ypos1=0
 ypos2=2
 divy=5
@@ -404,8 +404,8 @@ color="8 9"
 node="\\"MN7 Vds-Vsat;@m.x1.x1.xmn7.msky130_fd_pr__nfet_01v8[vds] @m.x1.x1.xmn7.msky130_fd_pr__nfet_01v8[vdsat] -\\"
 \\"VDS;@m.x1.x1.xmn7.msky130_fd_pr__nfet_01v8[vds]\\""}
 B 2 1610 -1670 1990 -1530 {flags=graph
-y1=0.061
-y2=0.092
+y1=0.083
+y2=0.089
 ypos1=0
 ypos2=2
 divy=5
@@ -424,8 +424,8 @@ logy=0
 color=11
 node="\\"MP2 Vov;@m.x1.x1.xmp2.msky130_fd_pr__pfet_01v8_lvt[vgs] @m.x1.x1.xmp2.msky130_fd_pr__pfet_01v8_lvt[vth] -\\""}
 B 2 1610 -1490 1990 -1350 {flags=graph
-y1=-0.25
-y2=0.19
+y1=0.022
+y2=0.21
 ypos1=0
 ypos2=2
 divy=5
@@ -444,8 +444,8 @@ logy=0
 color=11
 node="\\"MP4 Vov;@m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[vgs] @m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[vth] -\\""}
 B 2 1610 -1300 1990 -1160 {flags=graph
-y1=-0.21
-y2=0.23
+y1=-0.081
+y2=0.27
 ypos1=0
 ypos2=2
 divy=5
@@ -464,8 +464,8 @@ logy=0
 color=11
 node="\\"MN4 Vov;@m.x1.x1.xmn4.msky130_fd_pr__nfet_01v8_lvt[vgs] @m.x1.x1.xmn4.msky130_fd_pr__nfet_01v8_lvt[vth] -\\""}
 B 2 1610 -1120 1990 -980 {flags=graph
-y1=-0.045
-y2=0.13
+y1=-0.026
+y2=0.096
 ypos1=0
 ypos2=2
 divy=5
@@ -484,8 +484,8 @@ logy=0
 color=11
 node="\\"MN7 Vov;@m.x1.x1.xmn7.msky130_fd_pr__nfet_01v8[vgs] @m.x1.x1.xmn7.msky130_fd_pr__nfet_01v8[vth] -\\""}
 B 2 80 -1670 470 -1530 {flags=graph
-y1=0.061
-y2=0.092
+y1=0.083
+y2=0.089
 ypos1=0
 ypos2=2
 divy=5
@@ -504,8 +504,8 @@ logy=0
 color=11
 node="\\"MP1 Vov;@m.x1.x1.xmp1.msky130_fd_pr__pfet_01v8_lvt[vgs] @m.x1.x1.xmp1.msky130_fd_pr__pfet_01v8_lvt[vth] -\\""}
 B 2 80 -1490 470 -1350 {flags=graph
-y1=-0.25
-y2=-0.11
+y1=0.022
+y2=0.11
 ypos1=0
 ypos2=2
 divy=5
@@ -524,8 +524,8 @@ logy=0
 color=11
 node="\\"MP3 Vov;@m.x1.x1.xmp3.msky130_fd_pr__pfet_01v8_lvt[vgs] @m.x1.x1.xmp3.msky130_fd_pr__pfet_01v8_lvt[vth] -\\""}
 B 2 80 -1300 470 -1160 {flags=graph
-y1=-0.2
-y2=-0.1
+y1=-0.07
+y2=-0.019
 ypos1=0
 ypos2=2
 divy=5
@@ -544,8 +544,8 @@ logy=0
 color=11
 node="\\"MN3 Vov;@m.x1.x1.xmn3.msky130_fd_pr__nfet_01v8_lvt[vgs] @m.x1.x1.xmn3.msky130_fd_pr__nfet_01v8_lvt[vth] -\\""}
 B 2 80 -1120 470 -980 {flags=graph
-y1=-0.045
-y2=0.049
+y1=-0.026
+y2=0.03
 ypos1=0
 ypos2=2
 divy=5
@@ -687,8 +687,8 @@ color="7 4"
 node="\\"MP4 gm;@m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[gm]\\"
 \\"MN4 gm;@m.x1.x1.xmn4.msky130_fd_pr__nfet_01v8_lvt[gm]\\""}
 B 2 1380 -3220 1960 -2820 {flags=graph,unlocked
-y1=3.36412
-y2=234.28
+y1=-36
+y2=180
 ypos1=0
 ypos2=2
 divy=5
@@ -725,8 +725,8 @@ logx=0
 logy=0
 }
 B 2 760 -3220 1340 -2820 {flags=graph,unlocked
-y1=-13
-y2=73
+y1=-24
+y2=78
 ypos1=0
 ypos2=2
 divy=5
@@ -763,8 +763,8 @@ logx=1
 logy=0
 }
 B 2 760 -2260 1340 -1860 {flags=graph,unlocked
-y1=23
-y2=89
+y1=34
+y2=98
 ypos1=0
 ypos2=2
 divy=5
@@ -865,7 +865,7 @@ color=11
 node="\\"MN5 Vov;@m.x1.x1.xmn5.msky130_fd_pr__nfet_01v8[vgs] @m.x1.x1.xmn5.msky130_fd_pr__nfet_01v8[vth] -\\""}
 B 2 2100 -750 2360 -620 {flags=graph
 y1=1.5
-y2=1.8
+y2=1.7
 ypos1=0
 ypos2=2
 divy=5
@@ -884,8 +884,8 @@ logy=0
 color=9
 node="\\"Voutmax = vbias2 + vth + vdsat - vdsat;x1.bias2 @m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[vth] +\\""}
 B 2 2100 -600 2360 -480 {flags=graph
-y1=0.11
-y2=0.23
+y1=0.22
+y2=0.29
 ypos1=0
 ypos2=2
 divy=5
@@ -904,7 +904,7 @@ logy=0
 
 color=9
 node="\\"Voutmin = vbias3 + vth + vdsat - vdsat;x1.bias3 @m.x1.x1.xmn4.msky130_fd_pr__nfet_01v8_lvt[vth] -\\""}
-B 2 1480 -1990 1870 -1850 {flags=graph
+B 2 1460 -2050 1850 -1910 {flags=graph
 y1=0.34
 y2=0.69
 ypos1=0
@@ -992,7 +992,7 @@ T {Output Swing} 2070 -530 3 0 0.4 0.4 {}
 T {darf nicht 0 werden >} 2120 -1040 3 0 0.3 0.3 {}
 T {1VOV} 970 -1110 0 0 0.2 0.2 {}
 T {VTH+1VOV} 940 -1330 0 0 0.2 0.2 {}
-T {Threshold Voltages} 1480 -2020 0 0 0.4 0.4 {}
+T {Threshold Voltages} 1460 -2080 0 0 0.4 0.4 {}
 N 1030 -700 1050 -700 {
 lab=inp}
 N 1030 -660 1050 -660 {
@@ -1290,23 +1290,23 @@ value="
 
 .save all
  + @m.x1.x1.xmn1.msky130_fd_pr__nfet_01v8_lvt[vgs] @m.x1.x1.xmn1.msky130_fd_pr__nfet_01v8_lvt[vth] @m.x1.x1.xmn1.msky130_fd_pr__nfet_01v8_lvt[vds] @m.x1.x1.xmn1.msky130_fd_pr__nfet_01v8_lvt[vdsat] @m.x1.x1.xmn1.msky130_fd_pr__nfet_01v8_lvt[id] @m.x1.x1.xmn1.msky130_fd_pr__nfet_01v8_lvt[gm]
- + @m.x1.x1.xmn2.msky130_fd_pr__nfet_01v8_lvt[vgs] @m.x1.x1.xmn2.msky130_fd_pr__nfet_01v8_lvt[vth] @m.x1.x1.xmn2.msky130_fd_pr__nfet_01v8_lvt[vds] @m.x1.x1.xmn2.msky130_fd_pr__nfet_01v8_lvt[vdsat] @m.x1.x1.xmn2.msky130_fd_pr__nfet_01v8_lvt[id] @m.x1.x1.xmn2.msky130_fd_pr__nfet_01v8_lvt[gm]
+ + @m.x1.x1.xmn2.msky130_fd_pr__nfet_01v8_lvt[vgs] @m.x1.x1.xmn2.msky130_fd_pr__nfet_01v8_lvt[vth] @m.x1.x1.xmn2.msky130_fd_pr__nfet_01v8_lvt[vds] @m.x1.x1.xmn2.msky130_fd_pr__nfet_01v8_lvt[vdsat] @m.x1.x1.xmn2.msky130_fd_pr__nfet_01v8_lvt[id] @m.x1.x1.xmn2.msky130_fd_pr__nfet_01v8_lvt[gm] @m.x1.x1.xmn2.msky130_fd_pr__nfet_01v8_lvt[gds]
  + @m.x1.x1.xmn3.msky130_fd_pr__nfet_01v8_lvt[vgs] @m.x1.x1.xmn3.msky130_fd_pr__nfet_01v8_lvt[vth] @m.x1.x1.xmn3.msky130_fd_pr__nfet_01v8_lvt[vds] @m.x1.x1.xmn3.msky130_fd_pr__nfet_01v8_lvt[vdsat] @m.x1.x1.xmn3.msky130_fd_pr__nfet_01v8_lvt[id] @m.x1.x1.xmn3.msky130_fd_pr__nfet_01v8_lvt[gm]
- + @m.x1.x1.xmn4.msky130_fd_pr__nfet_01v8_lvt[vgs] @m.x1.x1.xmn4.msky130_fd_pr__nfet_01v8_lvt[vth] @m.x1.x1.xmn4.msky130_fd_pr__nfet_01v8_lvt[vds] @m.x1.x1.xmn4.msky130_fd_pr__nfet_01v8_lvt[vdsat] @m.x1.x1.xmn4.msky130_fd_pr__nfet_01v8_lvt[id] @m.x1.x1.xmn4.msky130_fd_pr__nfet_01v8_lvt[gm]
+ + @m.x1.x1.xmn4.msky130_fd_pr__nfet_01v8_lvt[vgs] @m.x1.x1.xmn4.msky130_fd_pr__nfet_01v8_lvt[vth] @m.x1.x1.xmn4.msky130_fd_pr__nfet_01v8_lvt[vds] @m.x1.x1.xmn4.msky130_fd_pr__nfet_01v8_lvt[vdsat] @m.x1.x1.xmn4.msky130_fd_pr__nfet_01v8_lvt[id] @m.x1.x1.xmn4.msky130_fd_pr__nfet_01v8_lvt[gm] @m.x1.x1.xmn4.msky130_fd_pr__nfet_01v8_lvt[gds]
  + @m.x1.x1.xmn5.msky130_fd_pr__nfet_01v8[vgs] @m.x1.x1.xmn5.msky130_fd_pr__nfet_01v8[vth] @m.x1.x1.xmn5.msky130_fd_pr__nfet_01v8[vds] @m.x1.x1.xmn5.msky130_fd_pr__nfet_01v8[vdsat] @m.x1.x1.xmn5.msky130_fd_pr__nfet_01v8[id] @m.x1.x1.xmn5.msky130_fd_pr__nfet_01v8[gm]
  + @m.x1.x1.xmn6.msky130_fd_pr__nfet_01v8[vgs] @m.x1.x1.xmn6.msky130_fd_pr__nfet_01v8[vth] @m.x1.x1.xmn6.msky130_fd_pr__nfet_01v8[vds] @m.x1.x1.xmn6.msky130_fd_pr__nfet_01v8[vdsat] @m.x1.x1.xmn6.msky130_fd_pr__nfet_01v8[id] @m.x1.x1.xmn6.msky130_fd_pr__nfet_01v8[gm]
- + @m.x1.x1.xmn7.msky130_fd_pr__nfet_01v8[vgs] @m.x1.x1.xmn7.msky130_fd_pr__nfet_01v8[vth] @m.x1.x1.xmn7.msky130_fd_pr__nfet_01v8[vds] @m.x1.x1.xmn7.msky130_fd_pr__nfet_01v8[vdsat] @m.x1.x1.xmn7.msky130_fd_pr__nfet_01v8[id] @m.x1.x1.xmn7.msky130_fd_pr__nfet_01v8[gm]
+ + @m.x1.x1.xmn7.msky130_fd_pr__nfet_01v8[vgs] @m.x1.x1.xmn7.msky130_fd_pr__nfet_01v8[vth] @m.x1.x1.xmn7.msky130_fd_pr__nfet_01v8[vds] @m.x1.x1.xmn7.msky130_fd_pr__nfet_01v8[vdsat] @m.x1.x1.xmn7.msky130_fd_pr__nfet_01v8[id] @m.x1.x1.xmn7.msky130_fd_pr__nfet_01v8[gm] @m.x1.x1.xmn7.msky130_fd_pr__nfet_01v8[gds]
  + @m.x1.x1.xmp1.msky130_fd_pr__pfet_01v8_lvt[vgs] @m.x1.x1.xmp1.msky130_fd_pr__pfet_01v8_lvt[vth] @m.x1.x1.xmp1.msky130_fd_pr__pfet_01v8_lvt[vds] @m.x1.x1.xmp1.msky130_fd_pr__pfet_01v8_lvt[vdsat] @m.x1.x1.xmp1.msky130_fd_pr__pfet_01v8_lvt[id] @m.x1.x1.xmp1.msky130_fd_pr__pfet_01v8_lvt[gm]
- + @m.x1.x1.xmp2.msky130_fd_pr__pfet_01v8_lvt[vgs] @m.x1.x1.xmp2.msky130_fd_pr__pfet_01v8_lvt[vth] @m.x1.x1.xmp2.msky130_fd_pr__pfet_01v8_lvt[vds] @m.x1.x1.xmp2.msky130_fd_pr__pfet_01v8_lvt[vdsat] @m.x1.x1.xmp2.msky130_fd_pr__pfet_01v8_lvt[id] @m.x1.x1.xmp2.msky130_fd_pr__pfet_01v8_lvt[gm]
+ + @m.x1.x1.xmp2.msky130_fd_pr__pfet_01v8_lvt[vgs] @m.x1.x1.xmp2.msky130_fd_pr__pfet_01v8_lvt[vth] @m.x1.x1.xmp2.msky130_fd_pr__pfet_01v8_lvt[vds] @m.x1.x1.xmp2.msky130_fd_pr__pfet_01v8_lvt[vdsat] @m.x1.x1.xmp2.msky130_fd_pr__pfet_01v8_lvt[id] @m.x1.x1.xmp2.msky130_fd_pr__pfet_01v8_lvt[gm] @m.x1.x1.xmp2.msky130_fd_pr__pfet_01v8_lvt[gds]
  + @m.x1.x1.xmp3.msky130_fd_pr__pfet_01v8_lvt[vgs] @m.x1.x1.xmp3.msky130_fd_pr__pfet_01v8_lvt[vth] @m.x1.x1.xmp3.msky130_fd_pr__pfet_01v8_lvt[vds] @m.x1.x1.xmp3.msky130_fd_pr__pfet_01v8_lvt[vdsat] @m.x1.x1.xmp3.msky130_fd_pr__pfet_01v8_lvt[id] @m.x1.x1.xmp3.msky130_fd_pr__pfet_01v8_lvt[gm]
- + @m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[vgs] @m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[vth] @m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[vds] @m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[vdsat] @m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[id] @m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[gm]
+ + @m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[vgs] @m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[vth] @m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[vds] @m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[vdsat] @m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[id] @m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[gm] @m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[gds]
   
 .control
 set num_threads = 12
 write ldo_ota_tb.raw
 set appendwrite
 
-repeat 5
+repeat 1
  reset
  dc vd -200m 200m 0.4m temp -30 60 90
  
@@ -1333,7 +1333,7 @@ end
 
 .endc
 "}
-C {sky130_fd_pr/corner.sym} 20 -570 0 0 {name=CORNER only_toplevel=false corner=mc}
+C {sky130_fd_pr/corner.sym} 20 -570 0 0 {name=CORNER only_toplevel=false corner=tt}
 C {devices/vsource.sym} 340 -530 0 0 {name=V1 value=vcm}
 C {devices/vsource.sym} 620 -530 0 0 {name=Vd value="0"}
 C {devices/vsource.sym} 520 -530 0 0 {name=Vsrc value=vsource}
@@ -1565,3 +1565,15 @@ C {devices/launcher.sym} 1250 -1760 0 0 {name=h5
 descr="load op results.raw" 
 tclcommand="xschem raw_read $netlist_dir/ldo_ota_tb.raw op"
 }
+C {devices/ngspice_get_value.sym} 1120 -1530 0 0 {name=r9 node=@m.x1.x1.xmp2.msky130_fd_pr__pfet_01v8_lvt[gds]
+descr="gds="}
+C {devices/ngspice_get_value.sym} 1120 -1360 0 0 {name=r14 node=@m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[gds]
+descr="gds="}
+C {devices/ngspice_get_value.sym} 1120 -1190 0 0 {name=r15 node=@m.x1.x1.xmn4.msky130_fd_pr__nfet_01v8_lvt[gds]
+descr="gds="}
+C {devices/ngspice_get_value.sym} 1120 -1010 0 0 {name=r16 node=@m.x1.x1.xmn7.msky130_fd_pr__nfet_01v8[gds]
+descr="gds="}
+C {devices/ngspice_get_value.sym} 2740 -1430 0 0 {name=r17 node=@m.x1.x1.xmn2.msky130_fd_pr__nfet_01v8_lvt[gds]
+descr="gds="}
+C {devices/ngspice_get_value.sym} 2740 -1400 0 0 {name=r18 node=@m.x1.x1.xmn2.msky130_fd_pr__nfet_01v8_lvt[gm]
+descr="gm="}
