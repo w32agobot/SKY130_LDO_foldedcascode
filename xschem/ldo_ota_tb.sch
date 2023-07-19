@@ -247,8 +247,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.2
+x2=0.2
 divx=5
 subdivx=1
 
@@ -268,8 +268,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.2
+x2=0.2
 divx=5
 subdivx=1
 
@@ -289,8 +289,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.2
+x2=0.2
 divx=5
 subdivx=1
 
@@ -309,8 +309,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.2
+x2=0.2
 divx=5
 subdivx=1
 
@@ -329,8 +329,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.2
+x2=0.2
 divx=5
 subdivx=1
 
@@ -349,8 +349,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.2
+x2=0.2
 divx=5
 subdivx=1
 
@@ -369,8 +369,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.2
+x2=0.2
 divx=5
 subdivx=1
 
@@ -390,8 +390,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.2
+x2=0.2
 divx=5
 subdivx=1
 
@@ -411,8 +411,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.2
+x2=0.2
 divx=5
 subdivx=1
 
@@ -431,8 +431,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.2
+x2=0.2
 divx=5
 subdivx=1
 
@@ -451,8 +451,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.2
+x2=0.2
 divx=5
 subdivx=1
 
@@ -471,8 +471,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.2
+x2=0.2
 divx=5
 subdivx=1
 
@@ -491,8 +491,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.2
+x2=0.2
 divx=5
 subdivx=1
 
@@ -511,8 +511,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.2
+x2=0.2
 divx=5
 subdivx=1
 
@@ -531,8 +531,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.2
+x2=0.2
 divx=5
 subdivx=1
 
@@ -551,8 +551,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.2
+x2=0.2
 divx=5
 subdivx=1
 
@@ -571,8 +571,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.2
+x2=0.2
 divx=5
 subdivx=1
 
@@ -591,8 +591,8 @@ ypos2=2
 divy=10
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.2
+x2=0.2
 divx=5
 subdivx=1
 
@@ -611,8 +611,8 @@ ypos2=2
 divy=10
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.2
+x2=0.2
 divx=5
 subdivx=1
 
@@ -631,8 +631,8 @@ ypos2=2
 divy=10
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.2
+x2=0.2
 divx=5
 subdivx=1
 
@@ -651,8 +651,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.2
+x2=0.2
 divx=5
 subdivx=1
 
@@ -672,8 +672,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.2
+x2=0.2
 divx=5
 subdivx=1
 
@@ -694,7 +694,7 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
+x1=5.55112e-17
 x2=7
 divx=5
 subdivx=8
@@ -713,8 +713,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.2
+x2=0.2
 divx=5
 subdivx=1
 node=out
@@ -789,8 +789,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.2
+x2=0.2
 divx=5
 subdivx=1
 
@@ -810,8 +810,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.2
+x2=0.2
 divx=5
 subdivx=1
 
@@ -831,8 +831,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.2
+x2=0.2
 divx=5
 subdivx=1
 
@@ -851,8 +851,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.2
+x2=0.2
 divx=5
 subdivx=1
 
@@ -871,8 +871,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.2
+x2=0.2
 divx=5
 subdivx=1
 
@@ -891,8 +891,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.2
+x2=0.2
 divx=5
 subdivx=1
 
@@ -912,8 +912,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+07
+x1=-0.2
+x2=0.2
 divx=5
 subdivx=1
 
@@ -974,12 +974,10 @@ T {n} 2340 -1050 0 0 0.2 0.2 {}
 T {n} 2420 -1050 0 0 0.2 0.2 {}
 T {INP} 2950 -1450 2 0 0.4 0.4 {}
 T {INN} 2840 -1450 2 0 0.4 0.4 {}
-T {MP4} 1120 -1410 0 0 0.2 0.2 {}
-T {MN4} 1120 -1240 0 0 0.2 0.2 {}
+T {MP4} 1100 -1380 0 0 0.2 0.2 {}
+T {MN4} 1100 -1210 0 0 0.2 0.2 {}
 T {GM of MP4 and MN4} 80 -910 0 0 0.4 0.4 {}
-T {VDD=0.85-1.9V} 500 -280 0 0 0.6 0.6 {}
-T {corner = ss_mm; tt_mm; ff_mm} 500 -240 0 0 0.6 0.6 {}
-T {temp = -30°C .. 60°C} 500 -200 0 0 0.6 0.6 {}
+T {VDD=0.85-1.9V} 40 -440 0 0 0.6 0.6 {}
 T {AC open loop Gain A0} 120 -3200 0 0 0.4 0.4 {}
 T {DC} 920 -900 0 0 0.4 0.4 {}
 T {CMRR} 120 -2720 0 0 0.4 0.4 {}
@@ -991,7 +989,6 @@ T {VGS-VTH} 3230 -1390 0 0 0.4 0.4 {}
 T {MN1} 2800 -1400 3 0 0.4 0.4 {}
 T {MN2} 2940 -1400 3 0 0.4 0.4 {}
 T {Output Swing} 2070 -530 3 0 0.4 0.4 {}
-T {70dB 1.2MHz 79.2°PM at VCC=1.8V VCM=0.9V} 760 -3320 0 0 0.8 0.8 {}
 T {darf nicht 0 werden >} 2120 -1040 3 0 0.3 0.3 {}
 T {1VOV} 970 -1110 0 0 0.2 0.2 {}
 T {VTH+1VOV} 940 -1330 0 0 0.2 0.2 {}
@@ -1284,7 +1281,6 @@ simulator=ngspice
 only_toplevel=false 
 value="
 .temp 27
-*.options savecurrents
 .option gmin = 1e-16
 .option RSHUNT=1E20
 
@@ -1307,15 +1303,14 @@ value="
   
 .control
 set num_threads = 12
-write results.raw
-*write results_ac.raw
+write ldo_ota_tb.raw
 set appendwrite
 
 repeat 5
  reset
  dc vd -200m 200m 0.4m temp -30 60 90
  
-write results.raw out x1.bias1 x1.bias2 x1.bias3 x1.bias4
+write ldo_ota_tb.raw out x1.bias1 x1.bias2 x1.bias3 x1.bias4
  + @m.x1.x1.xmn1.msky130_fd_pr__nfet_01v8_lvt[vgs] @m.x1.x1.xmn1.msky130_fd_pr__nfet_01v8_lvt[vth] @m.x1.x1.xmn1.msky130_fd_pr__nfet_01v8_lvt[vds] @m.x1.x1.xmn1.msky130_fd_pr__nfet_01v8_lvt[vdsat] @m.x1.x1.xmn1.msky130_fd_pr__nfet_01v8_lvt[id] @m.x1.x1.xmn1.msky130_fd_pr__nfet_01v8_lvt[gm]
  + @m.x1.x1.xmn2.msky130_fd_pr__nfet_01v8_lvt[vgs] @m.x1.x1.xmn2.msky130_fd_pr__nfet_01v8_lvt[vth] @m.x1.x1.xmn2.msky130_fd_pr__nfet_01v8_lvt[vds] @m.x1.x1.xmn2.msky130_fd_pr__nfet_01v8_lvt[vdsat] @m.x1.x1.xmn2.msky130_fd_pr__nfet_01v8_lvt[id] @m.x1.x1.xmn2.msky130_fd_pr__nfet_01v8_lvt[gm]
  + @m.x1.x1.xmn3.msky130_fd_pr__nfet_01v8_lvt[vgs] @m.x1.x1.xmn3.msky130_fd_pr__nfet_01v8_lvt[vth] @m.x1.x1.xmn3.msky130_fd_pr__nfet_01v8_lvt[vds] @m.x1.x1.xmn3.msky130_fd_pr__nfet_01v8_lvt[vdsat] @m.x1.x1.xmn3.msky130_fd_pr__nfet_01v8_lvt[id] @m.x1.x1.xmn3.msky130_fd_pr__nfet_01v8_lvt[gm]
@@ -1329,7 +1324,10 @@ write results.raw out x1.bias1 x1.bias2 x1.bias3 x1.bias4
  + @m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[vgs] @m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[vth] @m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[vds] @m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[vdsat] @m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[id] @m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[gm]
  
  ac dec 10 1 10meg
- write results.raw out_ac out_cmrr out_psrr
+ write ldo_ota_tb.raw out_ac out_cmrr out_psrr
+
+ op
+ write ldo_ota_tb.raw
 
 end
 
@@ -1361,13 +1359,13 @@ C {ldo_ota.sym} 480 -2980 0 0 {name=x2}
 C {devices/lab_wire.sym} 480 -3030 0 1 {name=p13 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 480 -2930 2 1 {name=p16 sig_type=std_logic lab=VSS}
 C {devices/lab_wire.sym} 600 -2980 0 1 {name=p18 sig_type=std_logic lab=out_ac}
-C {devices/launcher.sym} 1470 -900 0 0 {name=h2
+C {devices/launcher.sym} 1250 -1820 0 0 {name=h2
 descr="load dc results.raw" 
-tclcommand="xschem raw_read $netlist_dir/results.raw dc"
+tclcommand="xschem raw_read $netlist_dir/ldo_ota_tb.raw dc"
 }
-C {devices/launcher.sym} 820 -3240 0 0 {name=h3
+C {devices/launcher.sym} 1250 -1790 0 0 {name=h3
 descr="load ac results.raw" 
-tclcommand="xschem raw_read $netlist_dir/results.raw ac"
+tclcommand="xschem raw_read $netlist_dir/ldo_ota_tb.raw ac"
 }
 C {devices/vsource.sym} 440 -530 0 0 {name=Va value="0 ac 1"}
 C {devices/lab_wire.sym} 440 -480 2 1 {name=Vac1 sig_type=std_logic lab=VSS
@@ -1530,4 +1528,40 @@ nrd="'0.29 / W '" nrs="'0.29 / W '"
 sa=0 sb=0 sd=0
 model=pfet_01v8_hvt
 spiceprefix=X
+}
+C {devices/launcher.sym} 980 -1790 0 0 {name=h1
+descr="Annotate OP" 
+tclcommand="set show_hidden_texts 1; xschem annotate_op"
+}
+C {devices/launcher.sym} 980 -1820 0 0 {name=h4
+descr="View OP Raw file" 
+tclcommand="textwindow $netlist_dir/[file tail [file rootname [ xschem get schname 0 ] ] ].raw"
+}
+C {devices/ngspice_get_value.sym} 1120 -1600 0 0 {name=r2 node=v(@m.x1.x1.xmp2.msky130_fd_pr__pfet_01v8_lvt[vth])
+descr="vth="}
+C {devices/ngspice_get_value.sym} 1120 -1570 0 0 {name=r1 node=@m.x1.x1.xmp2.msky130_fd_pr__pfet_01v8_lvt[gm]
+descr="gm="}
+C {devices/ngspice_get_value.sym} 1120 -1420 0 0 {name=r3 node=v(@m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[vth])
+descr="vth="}
+C {devices/ngspice_get_value.sym} 1120 -1390 0 0 {name=r4 node=@m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[gm]
+descr="gm="}
+C {devices/ngspice_get_value.sym} 1120 -1250 0 0 {name=r5 node=v(@m.x1.x1.xmn4.msky130_fd_pr__nfet_01v8_lvt[vth])
+descr="vth="}
+C {devices/ngspice_get_value.sym} 1120 -1220 0 0 {name=r6 node=@m.x1.x1.xmn4.msky130_fd_pr__nfet_01v8_lvt[gm]
+descr="gm="}
+C {devices/ngspice_get_value.sym} 1120 -1090 0 0 {name=r7 node=v(@m.x1.x1.xmn7.msky130_fd_pr__nfet_01v8[vth])
+descr="vth="}
+C {devices/ngspice_get_value.sym} 1120 -1060 0 0 {name=r8 node=@m.x1.x1.xmn7.msky130_fd_pr__nfet_01v8[gm]
+descr="gm="}
+C {devices/ngspice_get_value.sym} 1120 -1630 0 0 {name=r10 node=v(@m.x1.x1.xmp2.msky130_fd_pr__pfet_01v8_lvt[vgs])
+descr="vgs="}
+C {devices/ngspice_get_value.sym} 1120 -1450 0 0 {name=r11 node=v(@m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[vgs])
+descr="vgs="}
+C {devices/ngspice_get_value.sym} 1120 -1280 0 0 {name=r12 node=v(@m.x1.x1.xmn4.msky130_fd_pr__nfet_01v8_lvt[vgs])
+descr="vgs="}
+C {devices/ngspice_get_value.sym} 1120 -1120 0 0 {name=r13 node=v(@m.x1.x1.xmn7.msky130_fd_pr__nfet_01v8[vgs])
+descr="vgs="}
+C {devices/launcher.sym} 1250 -1760 0 0 {name=h5
+descr="load op results.raw" 
+tclcommand="xschem raw_read $netlist_dir/ldo_ota_tb.raw op"
 }

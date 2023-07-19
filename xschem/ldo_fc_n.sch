@@ -288,10 +288,6 @@ N 440 -880 800 -880 {
 lab=comp}
 N 280 -900 640 -900 {
 lab=#net4}
-N 690 -760 690 -580 {
-lab=#net3}
-N 640 -760 690 -760 {
-lab=#net3}
 N 860 -760 980 -760 {
 lab=outn}
 N 440 -880 440 -780 {
@@ -406,6 +402,10 @@ N 320 -440 320 -370 {
 lab=bias4}
 N 360 -680 360 -610 {
 lab=#net5}
+N 640 -760 690 -760 {
+lab=#net3}
+N 690 -760 690 -580 {
+lab=#net3}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {sky130_fd_pr/nfet_01v8_lvt_nf.sym} 780 -700 0 0 {name=MN4
 L=0.5
@@ -464,8 +464,8 @@ model=nfet_01v8
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 780 -830 0 0 {name=MP4
-L=1
-W=3
+L=0.5
+W=1
 nf=3
 mult=7
 ad="'int((nf+1)/2) * W / nf * 0.29'"
@@ -492,8 +492,8 @@ model=pfet_01v8_lvt
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 660 -830 0 1 {name=MP3
-L=1
-W=3
+L=0.5
+W=1
 nf=3
 mult=7
 ad="'int((nf+1)/2) * W / nf * 0.29'"

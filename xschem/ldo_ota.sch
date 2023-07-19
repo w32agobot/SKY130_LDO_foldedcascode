@@ -385,8 +385,8 @@ model=pfet_01v8_lvt
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 480 -950 0 1 {name=M12
-L=1
-W=3
+L=0.5
+W=1
 nf=3
 mult=1
 ad="'int((nf+1)/2) * W / nf * 0.29'"
@@ -422,8 +422,8 @@ model=pfet_01v8_lvt
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 620 -950 0 0 {name=M2
-L=1
-W=3
+L=0.5
+W=1
 nf=3
 mult=1
 ad="'int((nf+1)/2) * W / nf * 0.29'"
@@ -450,8 +450,8 @@ model=pfet_01v8_lvt
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 800 -950 0 0 {name=M4
-L=1
-W=3
+L=0.5
+W=1
 nf=3
 mult=1
 ad="'int((nf+1)/2) * W / nf * 0.29'"
@@ -478,8 +478,8 @@ model=pfet_01v8_lvt
 spiceprefix=X
 }
 C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 980 -950 0 0 {name=M8
-L=1
-W=3
+L=0.5
+W=1
 nf=3
 mult=1
 ad="'int((nf+1)/2) * W / nf * 0.29'"
