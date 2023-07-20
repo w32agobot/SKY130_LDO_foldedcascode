@@ -20,6 +20,10 @@ L 4 40 -2150 2160 -2150 {}
 L 4 2160 -3580 2160 -2150 {}
 L 4 40 -3580 2160 -3580 {}
 L 4 40 -3580 40 -2150 {}
+L 4 2200 -2830 2200 -2150 {}
+L 4 2200 -2150 3580 -2150 {}
+L 4 3580 -2830 3580 -2150 {}
+L 4 2200 -2830 3580 -2830 {}
 B 2 660 -670 1160 -440 {flags=graph
 y1=0
 y2=1.8
@@ -29,7 +33,7 @@ divy=10
 subdivy=1
 unity=1
 x1=1
-x2=1e+08
+x2=1e+07
 divx=5
 subdivx=1
 node="\\"vout (5mA);vout5ma\\"
@@ -44,8 +48,8 @@ logx=0
 logy=0
 sweep=vref1}
 B 2 1600 -2660 2120 -2460 {flags=graph,unlocked
-y1=-75
-y2=81
+y1=-73
+y2=80
 ypos1=0
 ypos2=2
 
@@ -75,7 +79,7 @@ divy=5
 subdivy=1
 unity=1
 x1=1
-x2=1e+08
+x2=1e+07
 divx=5
 subdivx=1
 
@@ -119,7 +123,7 @@ divy=10
 subdivy=1
 unity=1
 x1=1
-x2=1e+08
+x2=1e+07
 divx=5
 subdivx=1
 
@@ -131,7 +135,7 @@ logy=0
 sweep=vref1
 color=4
 node=i(@m.x1.xm9.msky130_fd_pr__pfet_01v8_lvt[id])}
-B 2 860 -1867.5 1380 -1467.5 {flags=graph
+B 2 740 -1867.5 1380 -1467.5 {flags=graph
 y1=-8.4
 y2=-4.5
 ypos1=0
@@ -139,8 +143,8 @@ ypos2=2
 divy=5
 subdivy=8
 unity=1
-x1=0
-x2=8
+x1=1
+x2=1e+07
 divx=5
 subdivx=8
 
@@ -152,6 +156,46 @@ logy=1
 color="9 4"
 node="inoise_spectrum
 onoise_spectrum"}
+B 2 2800 -2610 3320 -2410 {flags=graph,unlocked
+y1=-25
+y2=6.1
+ypos1=0
+ypos2=2
+
+subdivy=1
+unity=1
+x1=0
+x2=7
+divx=5
+subdivx=8
+node="\\"Closed loop gain 0mA 0pF;vout_ac_clg db20()\\""
+color=9
+
+unitx=1
+logx=1
+logy=0
+divy=8
+dataset=-1}
+B 2 2800 -2390 3320 -2190 {flags=graph,unlocked
+y1=-170
+y2=180
+ypos1=0
+ypos2=2
+
+subdivy=1
+unity=1
+x1=0
+x2=7
+divx=5
+subdivx=8
+node="\\"Closed loop phase;ph(vout_ac_clg)\\""
+color=9
+
+unitx=1
+logx=1
+logy=0
+divy=8
+dataset=-1}
 T {   Copyright 2022 Manuel Moser
 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -179,6 +223,7 @@ T {LDO Output Referred Noise} 1460 -1820 0 0 0.6 0.6 {}
 T {Voltage Divider Current} 660 -1000 0 0 0.6 0.6 {}
 T {VCC sweep} 660 -710 0 0 0.6 0.6 {}
 T {Open Loop Gain} 1600 -2710 0 0 0.6 0.6 {}
+T {Closed Loop Gain} 2220 -2830 0 0 0.6 0.6 {}
 N 560 -320 560 -300 {
 lab=GND}
 N 560 -400 560 -380 {
@@ -271,13 +316,11 @@ N 140 -1160 220 -1160 {
 lab=vref2}
 N 140 -1280 160 -1280 {
 lab=VDD}
-N 270 -1900 320 -1900 {
+N 80 -1660 130 -1660 {
 lab=vnoisein}
-N 200 -1780 200 -1760 {
+N 80 -1540 80 -1520 {
 lab=GND}
-N 200 -1900 200 -1880 {
-lab=vnoisein}
-N 200 -1900 270 -1900 {
+N 80 -1660 80 -1640 {
 lab=vnoisein}
 N 360 -520 460 -520 {
 lab=GND}
@@ -305,17 +348,17 @@ N 100 -1080 100 -1060 {
 lab=GND}
 N 60 -1060 100 -1060 {
 lab=GND}
-N 580 -1900 700 -1900 {
+N 390 -1660 440 -1660 {
 lab=vnoiseout}
-N 780 -1900 780 -1760 {
+N 520 -1660 520 -1610 {
 lab=vnoiseout}
-N 710 -1900 780 -1900 {
+N 450 -1660 520 -1660 {
 lab=vnoiseout}
-N 700 -1900 710 -1900 {
+N 440 -1660 450 -1660 {
 lab=vnoiseout}
-N 680 -1900 680 -1760 {
+N 420 -1660 420 -1610 {
 lab=vnoiseout}
-N 200 -1880 200 -1840 {
+N 80 -1640 80 -1600 {
 lab=vnoisein}
 N 360 -2730 500 -2730 {
 lab=#net2}
@@ -1149,28 +1192,152 @@ N 1150 -2680 1210 -2680 {
 lab=#net23}
 N 1210 -2700 1210 -2680 {
 lab=#net23}
-N 400 -1900 420 -1900 {
+N 210 -1660 230 -1660 {
 lab=vnoisein}
-N 540 -1900 580 -1900 {
+N 350 -1660 390 -1660 {
 lab=vnoiseout}
-N 480 -1980 480 -1960 {
+N 290 -1740 290 -1720 {
 lab=#net38}
-N 480 -1840 480 -1800 {
+N 290 -1600 290 -1560 {
 lab=GND}
-N 400 -2020 480 -2020 {
+N 210 -1780 290 -1780 {
 lab=#net38}
-N 480 -2020 480 -1980 {
+N 290 -1780 290 -1740 {
 lab=#net38}
-N 320 -1900 400 -1900 {
+N 130 -1660 210 -1660 {
 lab=vnoisein}
-N 320 -2020 340 -2020 {
+N 130 -1780 150 -1780 {
 lab=VDD}
-N 680 -1700 680 -1660 {
+N 420 -1550 420 -1510 {
 lab=GND}
-N 680 -1660 780 -1660 {
+N 420 -1510 520 -1510 {
 lab=GND}
-N 780 -1700 780 -1660 {
+N 520 -1550 520 -1510 {
 lab=GND}
+N 2500 -2690 2640 -2690 {
+lab=#net39}
+N 2680 -2690 2690 -2690 {
+lab=VDD}
+N 2690 -2720 2690 -2690 {
+lab=VDD}
+N 2680 -2720 2690 -2720 {
+lab=VDD}
+N 2290 -2710 2340 -2710 {
+lab=#net40}
+N 2420 -2640 2420 -2620 {
+lab=GND}
+N 2420 -2760 2420 -2740 {
+lab=VDD}
+N 2680 -2760 2680 -2720 {
+lab=VDD}
+N 2320 -2670 2320 -2540 {
+lab=#net41}
+N 2320 -2670 2340 -2670 {
+lab=#net41}
+N 2320 -2540 2320 -2440 {
+lab=#net41}
+N 2280 -2780 2680 -2780 {
+lab=VDD}
+N 2680 -2780 2680 -2760 {
+lab=VDD}
+N 2420 -2770 2420 -2760 {
+lab=VDD}
+N 2420 -2780 2420 -2770 {
+lab=VDD}
+N 2280 -2180 2620 -2180 {
+lab=GND}
+N 2420 -2620 2420 -2180 {
+lab=GND}
+N 2540 -2380 2570 -2380 {
+lab=#net41}
+N 2320 -2380 2540 -2380 {
+lab=#net41}
+N 2320 -2440 2320 -2400 {
+lab=#net41}
+N 2260 -2180 2280 -2180 {
+lab=GND}
+N 2680 -2660 2680 -2620 {
+lab=vout_ac_clg}
+N 2680 -2620 2690 -2620 {
+lab=vout_ac_clg}
+N 2320 -2400 2320 -2380 {
+lab=#net41}
+N 2220 -2590 2220 -2570 {
+lab=GND}
+N 2220 -2710 2220 -2690 {
+lab=#net40}
+N 2220 -2710 2290 -2710 {
+lab=#net40}
+N 2690 -2620 2740 -2620 {
+lab=vout_ac_clg}
+N 2520 -2660 2530 -2660 {
+lab=#net42}
+N 2590 -2660 2600 -2660 {
+lab=#net42}
+N 2660 -2660 2680 -2660 {
+lab=vout_ac_clg}
+N 2220 -2690 2220 -2650 {
+lab=#net40}
+N 2680 -2460 2680 -2450 {
+lab=vout_ac_clg}
+N 2680 -2340 2690 -2340 {
+lab=#net41}
+N 2690 -2370 2690 -2340 {
+lab=#net41}
+N 2680 -2370 2690 -2370 {
+lab=#net41}
+N 2630 -2340 2640 -2340 {
+lab=GND}
+N 2630 -2340 2630 -2310 {
+lab=GND}
+N 2630 -2310 2680 -2310 {
+lab=GND}
+N 2680 -2380 2680 -2370 {
+lab=#net41}
+N 2680 -2310 2680 -2300 {
+lab=GND}
+N 2680 -2390 2680 -2380 {
+lab=#net41}
+N 2680 -2420 2690 -2420 {
+lab=vout_ac_clg}
+N 2690 -2450 2690 -2420 {
+lab=vout_ac_clg}
+N 2680 -2450 2690 -2450 {
+lab=vout_ac_clg}
+N 2630 -2420 2640 -2420 {
+lab=#net41}
+N 2630 -2420 2630 -2390 {
+lab=#net41}
+N 2630 -2390 2680 -2390 {
+lab=#net41}
+N 2610 -2390 2630 -2390 {
+lab=#net41}
+N 2680 -2490 2680 -2460 {
+lab=vout_ac_clg}
+N 2680 -2300 2680 -2200 {
+lab=GND}
+N 2680 -2200 2680 -2190 {
+lab=GND}
+N 2500 -2660 2520 -2660 {
+lab=#net42}
+N 2530 -2660 2530 -2640 {
+lab=#net42}
+N 2530 -2640 2590 -2640 {
+lab=#net42}
+N 2590 -2660 2590 -2640 {
+lab=#net42}
+N 2740 -2620 2760 -2620 {
+lab=vout_ac_clg}
+N 2680 -2620 2680 -2490 {
+lab=vout_ac_clg}
+N 2680 -2190 2680 -2180 {
+lab=GND}
+N 2620 -2180 2680 -2180 {
+lab=GND}
+N 2570 -2390 2570 -2380 {
+lab=#net41}
+N 2570 -2390 2610 -2390 {
+lab=#net41}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {devices/simulator_commands.sym} 200 -390 0 0 {name=COMMANDS
 simulator=ngspice
@@ -1205,7 +1372,7 @@ write results_ldo.raw
 + vref2 i(vshunt_iq)
 
 ac dec 10 1 10meg
-write results_ldo.raw vout_ac_0mA_0pF vout_ac_0mA_30pF vout_ac_5mA_0pF vout_ac_5mA_30pF 
+write results_ldo.raw vout_ac_0mA_0pF vout_ac_0mA_30pF vout_ac_5mA_0pF vout_ac_5mA_30pF vout_ac_clg
 
 *pz vinject gnd vout_ac_gain gnd vol pz
 
@@ -1266,20 +1433,20 @@ C {devices/vcvs.sym} 140 -1110 0 0 {name=E3 value=\{vsource/2\}}
 C {devices/lab_wire.sym} 100 -1140 0 0 {name=p12 sig_type=std_logic lab=vdcsweep}
 C {devices/noconn.sym} 400 -1160 0 1 {name=l2}
 C {devices/lab_wire.sym} 140 -1280 0 0 {name=p14 sig_type=std_logic lab=VDD}
-C {devices/vsource.sym} 200 -1810 0 0 {name=Vnoise value="0.8 ac 1"}
-C {devices/gnd.sym} 200 -1760 0 0 {name=l5 lab=GND}
+C {devices/vsource.sym} 80 -1570 0 0 {name=Vnoise value="0.8 ac 1"}
+C {devices/gnd.sym} 80 -1520 0 0 {name=l5 lab=GND}
 C {devices/gnd.sym} 660 -300 0 0 {name=l6 lab=GND}
 C {devices/gnd.sym} 920 -300 0 0 {name=l7 lab=GND}
 C {devices/gnd.sym} 1100 -300 0 0 {name=l8 lab=GND}
 C {devices/gnd.sym} 40 -500 0 0 {name=l9 lab=GND}
 C {devices/gnd.sym} 220 -760 0 0 {name=l10 lab=GND}
 C {devices/gnd.sym} 60 -1060 0 0 {name=l11 lab=GND}
-C {devices/res.sym} 680 -1730 0 1 {name=RL1
+C {devices/res.sym} 420 -1580 0 1 {name=RL1
 value=\{1.6/1m\}
 footprint=1206
 device=resistor
 m=1}
-C {devices/capa.sym} 780 -1730 0 1 {name=C2
+C {devices/capa.sym} 520 -1580 0 1 {name=C2
 m=1
 value=10e-12
 footprint=1206
@@ -1752,10 +1919,68 @@ C {devices/launcher.sym} 1260 -1360 0 0 {name=h4
 descr="View OP Raw file" 
 tclcommand="textwindow $netlist_dir/results_ldo.raw"
 }
-C {devices/lab_wire.sym} 540 -1900 0 1 {name=p17 sig_type=std_logic lab=vnoiseout}
-C {ldo.sym} 480 -1900 0 0 {name=x9}
-C {devices/vsource.sym} 370 -2020 3 0 {name=Vshunt_iq7 value=0}
-C {devices/lab_wire.sym} 320 -2020 0 0 {name=p20 sig_type=std_logic lab=VDD}
-C {devices/gnd.sym} 480 -1800 0 0 {name=l41 lab=GND}
-C {devices/gnd.sym} 730 -1660 0 0 {name=l4 lab=GND}
-C {devices/lab_wire.sym} 310 -1900 0 1 {name=p15 sig_type=std_logic lab=vnoisein}
+C {devices/lab_wire.sym} 350 -1660 0 1 {name=p17 sig_type=std_logic lab=vnoiseout}
+C {ldo.sym} 290 -1660 0 0 {name=x9}
+C {devices/vsource.sym} 180 -1780 3 0 {name=Vshunt_iq7 value=0}
+C {devices/lab_wire.sym} 130 -1780 0 0 {name=p20 sig_type=std_logic lab=VDD}
+C {devices/gnd.sym} 290 -1560 0 0 {name=l41 lab=GND}
+C {devices/gnd.sym} 470 -1510 0 0 {name=l4 lab=GND}
+C {devices/lab_wire.sym} 120 -1660 0 1 {name=p15 sig_type=std_logic lab=vnoisein}
+C {ldo_ota.sym} 2420 -2690 0 0 {name=x4}
+C {devices/lab_wire.sym} 2280 -2780 0 0 {name=p19 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} 2720 -2620 0 1 {name=Vac1 sig_type=std_logic lab=vout_ac_clg}
+C {devices/gnd.sym} 2260 -2180 0 0 {name=l25 lab=GND}
+C {devices/gnd.sym} 2220 -2570 0 0 {name=l26 lab=GND}
+C {devices/capa.sym} 2630 -2660 1 0 {name=C3
+m=1
+value=3e-12
+footprint=1206
+device="ceramic capacitor"}
+C {devices/res.sym} 2560 -2660 3 1 {name=RL2
+value=80000
+footprint=1206
+device=resistor
+m=1}
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 2660 -2420 0 0 {name=M1
+L=8
+W=0.55
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8_lvt
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet_01v8_lvt.sym} 2660 -2340 0 0 {name=M2
+L=8
+W=0.55
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_01v8_lvt
+spiceprefix=X
+}
+C {sky130_fd_pr/pfet_01v8_nf.sym} 2660 -2690 0 0 {name=M9
+L=0.15
+W=5
+nf=10
+mult=8
+ad="'int((nf+1)/2) * W / nf * 0.29'"
+pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
+as="'int((nf+2)/2) * W / nf * 0.29'"
+ps="'2*int((nf+2)/2) * (W / nf + 0.29)'"
+nrd="'0.29 / W '" nrs="'0.29 / W '"
+sa=0 sb=0 sd=0
+model=pfet_01v8_hvt
+spiceprefix=X
+}
+C {devices/vsource.sym} 2220 -2620 0 0 {name=Vinject1 value="vreference ac 1"}
