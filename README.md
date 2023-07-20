@@ -37,9 +37,9 @@ The power transistor has been dimensioned to deliver 5 mA at 200 mV dropout volt
 | $I_{out}$ (mA) | 0 |-| 5 |
 | $C_{load}$ (pF) | 0 | - | 30 |  
 | $I_{q}$ (µA)   | 0.8 $^b$ |-| 2.2 $^a$ | 
-| DC gain (dB)   | 65 | - | 80 | 
-| Unit gain BW (kHz)   | 96 | 100 | 217 | 
-| Phase margin (°)   | $25^c$ | 90 | 90 |
+| DC gain (dB)   | 70 | - | 80 | 
+| Unit gain BW (kHz)   | 68 | - | 104 | 
+| Phase margin (°)   | $50^c$ | 90 | 90 |
 
 $^a V_{DD}=1.95V$ fast corner  
 $^b V_{DD}=1.60V$ slow corner  

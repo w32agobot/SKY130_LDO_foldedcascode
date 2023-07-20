@@ -28,8 +28,8 @@ ypos2=2
 divy=10
 subdivy=1
 unity=1
-x1=0
-x2=0.96
+x1=1
+x2=1e+08
 divx=5
 subdivx=1
 node="\\"vout (5mA);vout5ma\\"
@@ -74,8 +74,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=0
-x2=0.9
+x1=1
+x2=1e+08
 divx=5
 subdivx=1
 
@@ -118,8 +118,8 @@ ypos2=2
 divy=10
 subdivy=1
 unity=1
-x1=0
-x2=0.96
+x1=1
+x2=1e+08
 divx=5
 subdivx=1
 
@@ -132,7 +132,7 @@ sweep=vref1
 color=4
 node=i(@m.x1.xm9.msky130_fd_pr__pfet_01v8_lvt[id])}
 B 2 860 -1867.5 1380 -1467.5 {flags=graph
-y1=-8.3
+y1=-8.4
 y2=-4.5
 ypos1=0
 ypos2=2
@@ -140,7 +140,7 @@ divy=5
 subdivy=8
 unity=1
 x1=0
-x2=1
+x2=8
 divx=5
 subdivx=8
 
@@ -178,6 +178,7 @@ T {0.13u/sqrt(Hz)@1M} 1720 -1680 0 0 0.4 0.4 {}
 T {LDO Output Referred Noise} 1460 -1820 0 0 0.6 0.6 {}
 T {Voltage Divider Current} 660 -1000 0 0 0.6 0.6 {}
 T {VCC sweep} 660 -710 0 0 0.6 0.6 {}
+T {Open Loop Gain} 1600 -2710 0 0 0.6 0.6 {}
 N 560 -320 560 -300 {
 lab=GND}
 N 560 -400 560 -380 {

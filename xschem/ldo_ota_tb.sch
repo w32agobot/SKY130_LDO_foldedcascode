@@ -247,8 +247,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+08
+x1=5.55112e-17
+x2=7
 divx=5
 subdivx=1
 
@@ -268,8 +268,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+08
+x1=5.55112e-17
+x2=7
 divx=5
 subdivx=1
 
@@ -289,8 +289,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+08
+x1=5.55112e-17
+x2=7
 divx=5
 subdivx=1
 
@@ -309,8 +309,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+08
+x1=5.55112e-17
+x2=7
 divx=5
 subdivx=1
 
@@ -329,8 +329,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+08
+x1=5.55112e-17
+x2=7
 divx=5
 subdivx=1
 
@@ -349,8 +349,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+08
+x1=5.55112e-17
+x2=7
 divx=5
 subdivx=1
 
@@ -369,8 +369,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+08
+x1=5.55112e-17
+x2=7
 divx=5
 subdivx=1
 
@@ -390,8 +390,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+08
+x1=5.55112e-17
+x2=7
 divx=5
 subdivx=1
 
@@ -411,8 +411,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+08
+x1=5.55112e-17
+x2=7
 divx=5
 subdivx=1
 
@@ -431,8 +431,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+08
+x1=5.55112e-17
+x2=7
 divx=5
 subdivx=1
 
@@ -451,8 +451,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+08
+x1=5.55112e-17
+x2=7
 divx=5
 subdivx=1
 
@@ -471,8 +471,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+08
+x1=5.55112e-17
+x2=7
 divx=5
 subdivx=1
 
@@ -491,8 +491,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+08
+x1=5.55112e-17
+x2=7
 divx=5
 subdivx=1
 
@@ -511,8 +511,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+08
+x1=5.55112e-17
+x2=7
 divx=5
 subdivx=1
 
@@ -531,8 +531,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+08
+x1=5.55112e-17
+x2=7
 divx=5
 subdivx=1
 
@@ -551,8 +551,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+08
+x1=5.55112e-17
+x2=7
 divx=5
 subdivx=1
 
@@ -571,8 +571,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+08
+x1=5.55112e-17
+x2=7
 divx=5
 subdivx=1
 
@@ -591,8 +591,8 @@ ypos2=2
 divy=10
 subdivy=1
 unity=1
-x1=1
-x2=1e+08
+x1=5.55112e-17
+x2=7
 divx=5
 subdivx=1
 
@@ -611,8 +611,8 @@ ypos2=2
 divy=10
 subdivy=1
 unity=1
-x1=1
-x2=1e+08
+x1=5.55112e-17
+x2=7
 divx=5
 subdivx=1
 
@@ -631,8 +631,8 @@ ypos2=2
 divy=10
 subdivy=1
 unity=1
-x1=1
-x2=1e+08
+x1=5.55112e-17
+x2=7
 divx=5
 subdivx=1
 
@@ -651,8 +651,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+08
+x1=5.55112e-17
+x2=7
 divx=5
 subdivx=1
 
@@ -672,8 +672,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+08
+x1=5.55112e-17
+x2=7
 divx=5
 subdivx=1
 
@@ -713,8 +713,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+08
+x1=5.55112e-17
+x2=7
 divx=5
 subdivx=1
 node=out
@@ -744,7 +744,7 @@ logx=1
 logy=0
 }
 B 2 760 -2740 1340 -2340 {flags=graph,unlocked
-y1=21
+y1=-48
 y2=130
 ypos1=0
 ypos2=2
@@ -755,27 +755,31 @@ x1=0
 x2=7
 divx=5
 subdivx=8
-node="\\"CMRR (dB) A0/Acm;out_ac db20() out_cmrr db20() -\\""
-color=4
+node="\\"Open Loop Gain;out_ac db20()\\"
+\\"CM Gain;out_cmrr db20()\\"
+\\"CMRR (dB) A0/Acm;out_ac db20() out_cmrr db20() -\\""
+color="9 7 4"
 dataset=-1
 unitx=1
 logx=1
 logy=0
 }
 B 2 760 -2260 1340 -1860 {flags=graph,unlocked
-y1=34
+y1=-39
 y2=98
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=-0.35
-x2=6.65
+x1=5.55112e-17
+x2=7
 divx=5
 subdivx=8
-node="\\"PSRR (dB);0 out_psrr db20() -\\""
-color=4
+node="\\"Open Loop Gain;out_ac db20()\\"
+\\"VCC Gain;out_psrr db20()\\"
+\\"PSRR (dB);out_ac out_psrr / db20()\\""
+color="9 7 4"
 dataset=-1
 unitx=1
 logx=1
@@ -789,8 +793,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+08
+x1=5.55112e-17
+x2=7
 divx=5
 subdivx=1
 
@@ -810,8 +814,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+08
+x1=5.55112e-17
+x2=7
 divx=5
 subdivx=1
 
@@ -831,8 +835,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+08
+x1=5.55112e-17
+x2=7
 divx=5
 subdivx=1
 
@@ -851,8 +855,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+08
+x1=5.55112e-17
+x2=7
 divx=5
 subdivx=1
 
@@ -871,8 +875,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+08
+x1=5.55112e-17
+x2=7
 divx=5
 subdivx=1
 
@@ -891,8 +895,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+08
+x1=5.55112e-17
+x2=7
 divx=5
 subdivx=1
 
@@ -912,8 +916,8 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=1
-x2=1e+08
+x1=5.55112e-17
+x2=7
 divx=5
 subdivx=1
 
@@ -928,15 +932,15 @@ node="\\"MN4;@m.x1.x1.xmn4.msky130_fd_pr__nfet_01v8_lvt[vth]\\"
 \\"MP4;@m.x1.x1.xmp4.msky130_fd_pr__pfet_01v8_lvt[vth]\\"
 \\"MP6;@m.x1.x1.xmp6.msky130_fd_pr__pfet_01v8_lvt[vth]\\""}
 B 2 1480 -2277.5 2060 -1877.5 {flags=graph
-y1=-8.3
-y2=-0.98
+y1=-7.4
+y2=-0.96
 ypos1=0
 ypos2=2
 divy=5
 subdivy=8
 unity=1
-x1=0
-x2=8
+x1=5.55112e-17
+x2=7
 divx=5
 subdivx=8
 
@@ -1160,10 +1164,6 @@ N 300 -2000 340 -2000 {
 lab=vcm}
 N 220 -2000 260 -2000 {
 lab=vcm}
-N 320 -1900 400 -1900 {
-lab=out_psrr}
-N 460 -1900 560 -1900 {
-lab=out_psrr}
 N 560 -2020 560 -1900 {
 lab=out_psrr}
 N 440 -2200 440 -2180 {
@@ -1182,8 +1182,6 @@ N 280 -2000 300 -2000 {
 lab=vcm}
 N 260 -2000 280 -2000 {
 lab=vcm}
-N 400 -1900 460 -1900 {
-lab=out_psrr}
 N 1220 -740 1220 -680 {
 lab=out}
 N 1250 -780 1260 -780 {
@@ -1285,9 +1283,9 @@ lab=#net1}
 N 320 -2960 400 -2960 {
 lab=#net4}
 N 320 -2040 320 -1900 {
-lab=out_psrr}
+lab=#net17}
 N 320 -2040 360 -2040 {
-lab=out_psrr}
+lab=#net17}
 N 320 -2480 400 -2480 {
 lab=#net9}
 N 360 -2520 360 -2380 {
@@ -1296,6 +1294,16 @@ N 320 -2620 320 -2480 {
 lab=#net9}
 N 320 -3100 320 -2960 {
 lab=#net4}
+N 320 -1900 410 -1900 {
+lab=#net17}
+N 470 -1900 560 -1900 {
+lab=out_psrr}
+N 300 -1900 320 -1900 {
+lab=#net17}
+N 220 -1900 240 -1900 {
+lab=GND}
+N 220 -1900 220 -1880 {
+lab=GND}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {devices/simulator_commands.sym} 160 -570 0 0 {name=COMMANDS
 simulator=ngspice
@@ -1334,11 +1342,17 @@ noise v(out_ac) Va dec 10 1 100meg
 write ldo_ota_tb.raw noise1.all noise2.all
 
 
-repeat 1
+repeat 5
+ set temp = -30
  reset
-
  ac dec 10 1 10meg
  write ldo_ota_tb.raw out_ac out_cmrr out_psrr
+
+ set temp = 60
+ reset
+ ac dec 10 1 10meg
+ write ldo_ota_tb.raw out_ac out_cmrr out_psrr
+
 
  dc vd -200m 200m 0.1m temp -30 60 90
  
@@ -1360,7 +1374,7 @@ end
 
 .endc
 "}
-C {sky130_fd_pr/corner.sym} 20 -570 0 0 {name=CORNER only_toplevel=false corner=tt}
+C {sky130_fd_pr/corner.sym} 20 -570 0 0 {name=CORNER only_toplevel=false corner=mc}
 C {devices/vsource.sym} 340 -530 0 0 {name=V1 value=vcm}
 C {devices/vsource.sym} 620 -530 0 0 {name=Vd value="0"}
 C {devices/vsource.sym} 520 -530 0 0 {name=Vsrc value=vsource}
@@ -1608,3 +1622,14 @@ C {devices/launcher.sym} 1250 -1730 0 0 {name=h6
 descr="load noise results.raw" 
 tclcommand="xschem raw_read $netlist_dir/ldo_ota_tb.raw Noise Spectral Density Curves"
 }
+C {devices/ind.sym} 440 -1900 1 0 {name=L4
+m=1
+value=1e18
+footprint=1206
+device=inductor}
+C {devices/capa.sym} 270 -1900 3 1 {name=C6
+m=1
+value=1e6
+footprint=1206
+device="ceramic capacitor"}
+C {devices/gnd.sym} 220 -1880 0 0 {name=l12 lab=GND}
