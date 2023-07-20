@@ -168,12 +168,8 @@ N 1000 -1220 1000 -1180 {
 lab=VDD}
 N 300 -800 580 -800 {
 lab=bias1}
-N 580 -800 640 -800 {
-lab=bias1}
 N 640 -900 640 -800 {
 lab=bias1}
-N 300 -820 460 -820 {
-lab=bias2}
 N 460 -860 460 -820 {
 lab=bias2}
 N 1170 -880 1240 -880 {
@@ -368,6 +364,12 @@ N 810 -400 820 -400 {
 lab=VSS}
 N 1000 -400 1010 -400 {
 lab=VSS}
+N 300 -820 420 -820 {
+lab=bias2}
+N 580 -800 640 -800 {
+lab=bias1}
+N 420 -820 460 -820 {
+lab=bias2}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {ldo_isource.sym} 220 -840 0 0 {name=x2}
 C {sky130_fd_pr/pfet_01v8_lvt_nf.sym} 480 -1050 0 1 {name=M10

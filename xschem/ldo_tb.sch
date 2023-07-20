@@ -20,7 +20,7 @@ L 4 40 -2150 2160 -2150 {}
 L 4 2160 -3580 2160 -2150 {}
 L 4 40 -3580 2160 -3580 {}
 L 4 40 -3580 40 -2150 {}
-B 2 640 -730 1140 -500 {flags=graph
+B 2 660 -670 1160 -440 {flags=graph
 y1=0
 y2=1.8
 ypos1=0
@@ -44,8 +44,8 @@ logx=0
 logy=0
 sweep=vref1}
 B 2 1600 -2660 2120 -2460 {flags=graph,unlocked
-y1=-66
-y2=70
+y1=-75
+y2=81
 ypos1=0
 ypos2=2
 
@@ -88,7 +88,7 @@ color=7
 node=i(vshunt_iq)
 sweep=vref2}
 B 2 1600 -2440 2120 -2220 {flags=graph,unlocked
-y1=-110
+y1=-140
 y2=180
 ypos1=0
 ypos2=2
@@ -110,7 +110,7 @@ node="\\"phase 0mA 0pF;ph(vout_ac_0mA_0pF)\\"
 \\"phase 0mA 30pF;ph(vout_ac_0mA_30pF)\\"
 \\"phase 5mA 0pF;ph(vout_ac_5mA_0pF)\\"
 \\"phase 5mA 30pF;ph(vout_ac_5mA_30pF)\\""}
-B 2 930 -990 1430 -760 {flags=graph
+B 2 660 -960 1160 -730 {flags=graph
 y1=2.1e-13
 y2=4.3e-07
 ypos1=0
@@ -131,6 +131,27 @@ logy=0
 sweep=vref1
 color=4
 node=i(@m.x1.xm9.msky130_fd_pr__pfet_01v8_lvt[id])}
+B 2 860 -1867.5 1380 -1467.5 {flags=graph
+y1=-8.3
+y2=-4.5
+ypos1=0
+ypos2=2
+divy=5
+subdivy=8
+unity=1
+x1=0
+x2=1
+divx=5
+subdivx=8
+
+
+dataset=-1
+unitx=1
+logx=1
+logy=1
+color="9 4"
+node="inoise_spectrum
+onoise_spectrum"}
 T {   Copyright 2022 Manuel Moser
 
    Licensed under the Apache License, Version 2.0 (the "License");
@@ -145,7 +166,18 @@ T {   Copyright 2022 Manuel Moser
    See the License for the specific language governing permissions and
    limitations under the License.} 0 -240 0 0 0.2 0.2 {}
 T {DC Quiescent Current} 40 -1400 0 0 0.6 0.6 {}
-T {AC Gain} 40 -2120 0 0 0.6 0.6 {}
+T {Noise analysis} 40 -2120 0 0 0.6 0.6 {}
+T {LDO 350nm AMS} 1430 -1780 0 0 0.6 0.6 {}
+T {2.7u/sqrt(Hz)@10k} 1500 -1740 0 0 0.4 0.4 {}
+T {LDO SKY130} 1720 -1780 0 0 0.6 0.6 {}
+T {0.53u/sqrt(Hz)@10k} 1720 -1740 0 0 0.4 0.4 {}
+T {1.13u/sqrt(Hz)@100k} 1480 -1710 0 0 0.4 0.4 {}
+T {0.41u/sqrt(Hz)@100k} 1720 -1710 0 0 0.4 0.4 {}
+T {0.32u/sqrt(Hz)@500k} 1480 -1680 0 0 0.4 0.4 {}
+T {0.13u/sqrt(Hz)@1M} 1720 -1680 0 0 0.4 0.4 {}
+T {LDO Output Referred Noise} 1460 -1820 0 0 0.6 0.6 {}
+T {Voltage Divider Current} 660 -1000 0 0 0.6 0.6 {}
+T {VCC sweep} 660 -710 0 0 0.6 0.6 {}
 N 560 -320 560 -300 {
 lab=GND}
 N 560 -400 560 -380 {
@@ -238,80 +270,14 @@ N 140 -1160 220 -1160 {
 lab=vref2}
 N 140 -1280 160 -1280 {
 lab=VDD}
-N 340 -1970 480 -1970 {
-lab=#net2}
-N 520 -1970 530 -1970 {
-lab=VDD}
-N 530 -2000 530 -1970 {
-lab=VDD}
-N 520 -2000 530 -2000 {
-lab=VDD}
-N 130 -1990 180 -1990 {
-lab=#net3}
-N 260 -1920 260 -1900 {
+N 270 -1900 320 -1900 {
+lab=vnoisein}
+N 200 -1780 200 -1760 {
 lab=GND}
-N 260 -2040 260 -2020 {
-lab=VDD}
-N 520 -2040 520 -2000 {
-lab=VDD}
-N 160 -1950 160 -1820 {
-lab=#net4}
-N 160 -1950 180 -1950 {
-lab=#net4}
-N 160 -1820 160 -1720 {
-lab=#net4}
-N 120 -2060 520 -2060 {
-lab=VDD}
-N 520 -2060 520 -2040 {
-lab=VDD}
-N 260 -2050 260 -2040 {
-lab=VDD}
-N 260 -2060 260 -2050 {
-lab=VDD}
-N 120 -1460 460 -1460 {
-lab=GND}
-N 260 -1900 260 -1460 {
-lab=GND}
-N 380 -1660 410 -1660 {
-lab=#net4}
-N 160 -1660 380 -1660 {
-lab=#net4}
-N 160 -1720 160 -1680 {
-lab=#net4}
-N 100 -1460 120 -1460 {
-lab=GND}
-N 520 -1940 520 -1900 {
-lab=vout_ac_gain}
-N 480 -1900 520 -1900 {
-lab=vout_ac_gain}
-N 340 -1580 340 -1560 {
-lab=GND}
-N 340 -1560 340 -1460 {
-lab=GND}
-N 520 -1900 530 -1900 {
-lab=vout_ac_gain}
-N 160 -1680 160 -1660 {
-lab=#net4}
-N 340 -1680 340 -1640 {
-lab=vin_ac_gain}
-N 340 -1760 340 -1740 {
-lab=#net5}
-N 340 -1900 480 -1900 {
-lab=vout_ac_gain}
-N 340 -1900 340 -1880 {
-lab=vout_ac_gain}
-N 340 -1780 340 -1760 {
-lab=#net5}
-N 340 -1760 380 -1760 {
-lab=#net5}
-N 60 -1870 60 -1850 {
-lab=GND}
-N 60 -1990 60 -1970 {
-lab=#net3}
-N 60 -1990 130 -1990 {
-lab=#net3}
-N 530 -1900 580 -1900 {
-lab=vout_ac_gain}
+N 200 -1900 200 -1880 {
+lab=vnoisein}
+N 200 -1900 270 -1900 {
+lab=vnoisein}
 N 360 -520 460 -520 {
 lab=GND}
 N 280 -520 360 -520 {
@@ -338,122 +304,20 @@ N 100 -1080 100 -1060 {
 lab=GND}
 N 60 -1060 100 -1060 {
 lab=GND}
-N 460 -1460 640 -1460 {
-lab=GND}
 N 580 -1900 700 -1900 {
-lab=vout_ac_gain}
+lab=vnoiseout}
 N 780 -1900 780 -1760 {
-lab=vout_ac_gain}
+lab=vnoiseout}
 N 710 -1900 780 -1900 {
-lab=vout_ac_gain}
+lab=vnoiseout}
 N 700 -1900 710 -1900 {
-lab=vout_ac_gain}
+lab=vnoiseout}
 N 680 -1900 680 -1760 {
-lab=vout_ac_gain}
-N 680 -1700 680 -1460 {
-lab=GND}
-N 640 -1460 680 -1460 {
-lab=GND}
-N 780 -1700 780 -1460 {
-lab=GND}
-N 680 -1460 780 -1460 {
-lab=GND}
-N 360 -1940 370 -1940 {
-lab=#net6}
-N 430 -1940 440 -1940 {
-lab=#net6}
-N 500 -1940 520 -1940 {
-lab=vout_ac_gain}
-N 60 -1970 60 -1930 {
-lab=#net3}
-N 340 -1880 340 -1840 {
-lab=vout_ac_gain}
-N 480 -1730 480 -1720 {
-lab=#net5}
-N 480 -1610 490 -1610 {
-lab=#net4}
-N 490 -1640 490 -1610 {
-lab=#net4}
-N 480 -1640 490 -1640 {
-lab=#net4}
-N 430 -1610 440 -1610 {
-lab=GND}
-N 430 -1610 430 -1580 {
-lab=GND}
-N 430 -1580 480 -1580 {
-lab=GND}
-N 480 -1650 480 -1640 {
-lab=#net4}
-N 480 -1580 480 -1570 {
-lab=GND}
-N 480 -1660 480 -1650 {
-lab=#net4}
-N 480 -1690 490 -1690 {
-lab=#net5}
-N 490 -1720 490 -1690 {
-lab=#net5}
-N 480 -1720 490 -1720 {
-lab=#net5}
-N 430 -1690 440 -1690 {
-lab=#net4}
-N 430 -1690 430 -1660 {
-lab=#net4}
-N 430 -1660 480 -1660 {
-lab=#net4}
-N 410 -1660 430 -1660 {
-lab=#net4}
-N 480 -1760 480 -1730 {
-lab=#net5}
-N 380 -1760 480 -1760 {
-lab=#net5}
-N 480 -1570 480 -1470 {
-lab=GND}
-N 480 -1470 480 -1460 {
-lab=GND}
-N 600 -1730 600 -1720 {
-lab=#net7}
-N 600 -1610 610 -1610 {
-lab=#net8}
-N 610 -1640 610 -1610 {
-lab=#net8}
-N 600 -1640 610 -1640 {
-lab=#net8}
-N 550 -1610 560 -1610 {
-lab=GND}
-N 550 -1610 550 -1580 {
-lab=GND}
-N 550 -1580 600 -1580 {
-lab=GND}
-N 600 -1650 600 -1640 {
-lab=#net8}
-N 600 -1580 600 -1570 {
-lab=GND}
-N 600 -1660 600 -1650 {
-lab=#net8}
-N 600 -1690 610 -1690 {
-lab=#net7}
-N 610 -1720 610 -1690 {
-lab=#net7}
-N 600 -1720 610 -1720 {
-lab=#net7}
-N 550 -1690 560 -1690 {
-lab=#net8}
-N 550 -1690 550 -1660 {
-lab=#net8}
-N 550 -1660 600 -1660 {
-lab=#net8}
-N 600 -1760 600 -1730 {
-lab=#net7}
-N 600 -1570 600 -1460 {
-lab=GND}
-N 600 -1780 600 -1760 {
-lab=#net7}
-N 600 -1900 600 -1840 {
-lab=vout_ac_gain}
-N 340 -1940 360 -1940 {
-lab=#net6}
+lab=vnoiseout}
+N 200 -1880 200 -1840 {
+lab=vnoisein}
 N 360 -2730 500 -2730 {
-lab=#net9}
+lab=#net2}
 N 540 -2730 550 -2730 {
 lab=VDD}
 N 550 -2760 550 -2730 {
@@ -461,7 +325,7 @@ lab=VDD}
 N 540 -2760 550 -2760 {
 lab=VDD}
 N 150 -2750 200 -2750 {
-lab=#net10}
+lab=#net3}
 N 280 -2680 280 -2660 {
 lab=GND}
 N 280 -2800 280 -2780 {
@@ -469,11 +333,11 @@ lab=VDD}
 N 540 -2800 540 -2760 {
 lab=VDD}
 N 180 -2710 180 -2580 {
-lab=#net11}
+lab=#net4}
 N 180 -2710 200 -2710 {
-lab=#net11}
+lab=#net4}
 N 180 -2580 180 -2480 {
-lab=#net11}
+lab=#net4}
 N 140 -2820 540 -2820 {
 lab=VDD}
 N 540 -2820 540 -2800 {
@@ -487,11 +351,11 @@ lab=GND}
 N 280 -2660 280 -2220 {
 lab=GND}
 N 400 -2420 430 -2420 {
-lab=#net11}
+lab=#net4}
 N 180 -2420 400 -2420 {
-lab=#net11}
+lab=#net4}
 N 180 -2480 180 -2440 {
-lab=#net11}
+lab=#net4}
 N 120 -2220 140 -2220 {
 lab=GND}
 N 540 -2700 540 -2660 {
@@ -505,25 +369,25 @@ lab=GND}
 N 540 -2660 550 -2660 {
 lab=vout_ac_0mA_30pF}
 N 180 -2440 180 -2420 {
-lab=#net11}
+lab=#net4}
 N 360 -2440 360 -2400 {
-lab=#net12}
+lab=#net5}
 N 360 -2520 360 -2500 {
-lab=#net13}
+lab=#net6}
 N 360 -2660 500 -2660 {
 lab=vout_ac_0mA_30pF}
 N 360 -2660 360 -2640 {
 lab=vout_ac_0mA_30pF}
 N 360 -2540 360 -2520 {
-lab=#net13}
+lab=#net6}
 N 360 -2520 400 -2520 {
-lab=#net13}
+lab=#net6}
 N 80 -2630 80 -2610 {
 lab=GND}
 N 80 -2750 80 -2730 {
-lab=#net10}
+lab=#net3}
 N 80 -2750 150 -2750 {
-lab=#net10}
+lab=#net3}
 N 550 -2660 600 -2660 {
 lab=vout_ac_0mA_30pF}
 N 480 -2220 660 -2220 {
@@ -547,23 +411,23 @@ lab=GND}
 N 700 -2220 800 -2220 {
 lab=GND}
 N 380 -2700 390 -2700 {
-lab=#net14}
+lab=#net7}
 N 450 -2700 460 -2700 {
-lab=#net14}
+lab=#net7}
 N 520 -2700 540 -2700 {
 lab=vout_ac_0mA_30pF}
 N 80 -2730 80 -2690 {
-lab=#net10}
+lab=#net3}
 N 360 -2640 360 -2600 {
 lab=vout_ac_0mA_30pF}
 N 500 -2490 500 -2480 {
-lab=#net13}
+lab=#net6}
 N 500 -2370 510 -2370 {
-lab=#net11}
+lab=#net4}
 N 510 -2400 510 -2370 {
-lab=#net11}
+lab=#net4}
 N 500 -2400 510 -2400 {
-lab=#net11}
+lab=#net4}
 N 450 -2370 460 -2370 {
 lab=GND}
 N 450 -2370 450 -2340 {
@@ -571,41 +435,41 @@ lab=GND}
 N 450 -2340 500 -2340 {
 lab=GND}
 N 500 -2410 500 -2400 {
-lab=#net11}
+lab=#net4}
 N 500 -2340 500 -2330 {
 lab=GND}
 N 500 -2420 500 -2410 {
-lab=#net11}
+lab=#net4}
 N 500 -2450 510 -2450 {
-lab=#net13}
+lab=#net6}
 N 510 -2480 510 -2450 {
-lab=#net13}
+lab=#net6}
 N 500 -2480 510 -2480 {
-lab=#net13}
+lab=#net6}
 N 450 -2450 460 -2450 {
-lab=#net11}
+lab=#net4}
 N 450 -2450 450 -2420 {
-lab=#net11}
+lab=#net4}
 N 450 -2420 500 -2420 {
-lab=#net11}
+lab=#net4}
 N 430 -2420 450 -2420 {
-lab=#net11}
+lab=#net4}
 N 500 -2520 500 -2490 {
-lab=#net13}
+lab=#net6}
 N 400 -2520 500 -2520 {
-lab=#net13}
+lab=#net6}
 N 500 -2330 500 -2230 {
 lab=GND}
 N 500 -2230 500 -2220 {
 lab=GND}
 N 620 -2490 620 -2480 {
-lab=#net15}
+lab=#net8}
 N 620 -2370 630 -2370 {
-lab=#net16}
+lab=#net9}
 N 630 -2400 630 -2370 {
-lab=#net16}
+lab=#net9}
 N 620 -2400 630 -2400 {
-lab=#net16}
+lab=#net9}
 N 570 -2370 580 -2370 {
 lab=GND}
 N 570 -2370 570 -2340 {
@@ -613,35 +477,35 @@ lab=GND}
 N 570 -2340 620 -2340 {
 lab=GND}
 N 620 -2410 620 -2400 {
-lab=#net16}
+lab=#net9}
 N 620 -2340 620 -2330 {
 lab=GND}
 N 620 -2420 620 -2410 {
-lab=#net16}
+lab=#net9}
 N 620 -2450 630 -2450 {
-lab=#net15}
+lab=#net8}
 N 630 -2480 630 -2450 {
-lab=#net15}
+lab=#net8}
 N 620 -2480 630 -2480 {
-lab=#net15}
+lab=#net8}
 N 570 -2450 580 -2450 {
-lab=#net16}
+lab=#net9}
 N 570 -2450 570 -2420 {
-lab=#net16}
+lab=#net9}
 N 570 -2420 620 -2420 {
-lab=#net16}
+lab=#net9}
 N 620 -2520 620 -2490 {
-lab=#net15}
+lab=#net8}
 N 620 -2330 620 -2220 {
 lab=GND}
 N 620 -2540 620 -2520 {
-lab=#net15}
+lab=#net8}
 N 620 -2660 620 -2600 {
 lab=vout_ac_0mA_30pF}
 N 360 -2700 380 -2700 {
-lab=#net14}
+lab=#net7}
 N 360 -3390 500 -3390 {
-lab=#net17}
+lab=#net10}
 N 540 -3390 550 -3390 {
 lab=VDD}
 N 550 -3420 550 -3390 {
@@ -649,7 +513,7 @@ lab=VDD}
 N 540 -3420 550 -3420 {
 lab=VDD}
 N 150 -3410 200 -3410 {
-lab=#net18}
+lab=#net11}
 N 280 -3340 280 -3320 {
 lab=GND}
 N 280 -3460 280 -3440 {
@@ -657,11 +521,11 @@ lab=VDD}
 N 540 -3460 540 -3420 {
 lab=VDD}
 N 180 -3370 180 -3240 {
-lab=#net19}
+lab=#net12}
 N 180 -3370 200 -3370 {
-lab=#net19}
+lab=#net12}
 N 180 -3240 180 -3140 {
-lab=#net19}
+lab=#net12}
 N 140 -3480 540 -3480 {
 lab=VDD}
 N 540 -3480 540 -3460 {
@@ -675,11 +539,11 @@ lab=GND}
 N 280 -3320 280 -2880 {
 lab=GND}
 N 400 -3080 430 -3080 {
-lab=#net19}
+lab=#net12}
 N 180 -3080 400 -3080 {
-lab=#net19}
+lab=#net12}
 N 180 -3140 180 -3100 {
-lab=#net19}
+lab=#net12}
 N 120 -2880 140 -2880 {
 lab=GND}
 N 540 -3360 540 -3320 {
@@ -693,25 +557,25 @@ lab=GND}
 N 540 -3320 550 -3320 {
 lab=vout_ac_0mA_0pF}
 N 180 -3100 180 -3080 {
-lab=#net19}
+lab=#net12}
 N 360 -3100 360 -3060 {
-lab=#net20}
+lab=#net13}
 N 360 -3180 360 -3160 {
-lab=#net21}
+lab=#net14}
 N 360 -3320 500 -3320 {
 lab=vout_ac_0mA_0pF}
 N 360 -3320 360 -3300 {
 lab=vout_ac_0mA_0pF}
 N 360 -3200 360 -3180 {
-lab=#net21}
+lab=#net14}
 N 360 -3180 400 -3180 {
-lab=#net21}
+lab=#net14}
 N 80 -3290 80 -3270 {
 lab=GND}
 N 80 -3410 80 -3390 {
-lab=#net18}
+lab=#net11}
 N 80 -3410 150 -3410 {
-lab=#net18}
+lab=#net11}
 N 550 -3320 600 -3320 {
 lab=vout_ac_0mA_0pF}
 N 480 -2880 660 -2880 {
@@ -735,23 +599,23 @@ lab=GND}
 N 700 -2880 800 -2880 {
 lab=GND}
 N 380 -3360 390 -3360 {
-lab=#net22}
+lab=#net15}
 N 450 -3360 460 -3360 {
-lab=#net22}
+lab=#net15}
 N 520 -3360 540 -3360 {
 lab=vout_ac_0mA_0pF}
 N 80 -3390 80 -3350 {
-lab=#net18}
+lab=#net11}
 N 360 -3300 360 -3260 {
 lab=vout_ac_0mA_0pF}
 N 500 -3150 500 -3140 {
-lab=#net21}
+lab=#net14}
 N 500 -3030 510 -3030 {
-lab=#net19}
+lab=#net12}
 N 510 -3060 510 -3030 {
-lab=#net19}
+lab=#net12}
 N 500 -3060 510 -3060 {
-lab=#net19}
+lab=#net12}
 N 450 -3030 460 -3030 {
 lab=GND}
 N 450 -3030 450 -3000 {
@@ -759,41 +623,41 @@ lab=GND}
 N 450 -3000 500 -3000 {
 lab=GND}
 N 500 -3070 500 -3060 {
-lab=#net19}
+lab=#net12}
 N 500 -3000 500 -2990 {
 lab=GND}
 N 500 -3080 500 -3070 {
-lab=#net19}
+lab=#net12}
 N 500 -3110 510 -3110 {
-lab=#net21}
+lab=#net14}
 N 510 -3140 510 -3110 {
-lab=#net21}
+lab=#net14}
 N 500 -3140 510 -3140 {
-lab=#net21}
+lab=#net14}
 N 450 -3110 460 -3110 {
-lab=#net19}
+lab=#net12}
 N 450 -3110 450 -3080 {
-lab=#net19}
+lab=#net12}
 N 450 -3080 500 -3080 {
-lab=#net19}
+lab=#net12}
 N 430 -3080 450 -3080 {
-lab=#net19}
+lab=#net12}
 N 500 -3180 500 -3150 {
-lab=#net21}
+lab=#net14}
 N 400 -3180 500 -3180 {
-lab=#net21}
+lab=#net14}
 N 500 -2990 500 -2890 {
 lab=GND}
 N 500 -2890 500 -2880 {
 lab=GND}
 N 620 -3150 620 -3140 {
-lab=#net23}
+lab=#net16}
 N 620 -3030 630 -3030 {
-lab=#net24}
+lab=#net17}
 N 630 -3060 630 -3030 {
-lab=#net24}
+lab=#net17}
 N 620 -3060 630 -3060 {
-lab=#net24}
+lab=#net17}
 N 570 -3030 580 -3030 {
 lab=GND}
 N 570 -3030 570 -3000 {
@@ -801,35 +665,35 @@ lab=GND}
 N 570 -3000 620 -3000 {
 lab=GND}
 N 620 -3070 620 -3060 {
-lab=#net24}
+lab=#net17}
 N 620 -3000 620 -2990 {
 lab=GND}
 N 620 -3080 620 -3070 {
-lab=#net24}
+lab=#net17}
 N 620 -3110 630 -3110 {
-lab=#net23}
+lab=#net16}
 N 630 -3140 630 -3110 {
-lab=#net23}
+lab=#net16}
 N 620 -3140 630 -3140 {
-lab=#net23}
+lab=#net16}
 N 570 -3110 580 -3110 {
-lab=#net24}
+lab=#net17}
 N 570 -3110 570 -3080 {
-lab=#net24}
+lab=#net17}
 N 570 -3080 620 -3080 {
-lab=#net24}
+lab=#net17}
 N 620 -3180 620 -3150 {
-lab=#net23}
+lab=#net16}
 N 620 -2990 620 -2880 {
 lab=GND}
 N 620 -3200 620 -3180 {
-lab=#net23}
+lab=#net16}
 N 620 -3320 620 -3260 {
 lab=vout_ac_0mA_0pF}
 N 360 -3360 380 -3360 {
-lab=#net22}
+lab=#net15}
 N 1120 -2730 1260 -2730 {
-lab=#net25}
+lab=#net18}
 N 1300 -2730 1310 -2730 {
 lab=VDD}
 N 1310 -2760 1310 -2730 {
@@ -837,7 +701,7 @@ lab=VDD}
 N 1300 -2760 1310 -2760 {
 lab=VDD}
 N 910 -2750 960 -2750 {
-lab=#net26}
+lab=#net19}
 N 1040 -2680 1040 -2660 {
 lab=GND}
 N 1040 -2800 1040 -2780 {
@@ -845,11 +709,11 @@ lab=VDD}
 N 1300 -2800 1300 -2760 {
 lab=VDD}
 N 940 -2710 940 -2580 {
-lab=#net27}
+lab=#net20}
 N 940 -2710 960 -2710 {
-lab=#net27}
+lab=#net20}
 N 940 -2580 940 -2480 {
-lab=#net27}
+lab=#net20}
 N 900 -2820 1300 -2820 {
 lab=VDD}
 N 1300 -2820 1300 -2800 {
@@ -863,11 +727,11 @@ lab=GND}
 N 1040 -2660 1040 -2220 {
 lab=GND}
 N 1160 -2420 1190 -2420 {
-lab=#net27}
+lab=#net20}
 N 940 -2420 1160 -2420 {
-lab=#net27}
+lab=#net20}
 N 940 -2480 940 -2440 {
-lab=#net27}
+lab=#net20}
 N 880 -2220 900 -2220 {
 lab=GND}
 N 1300 -2700 1300 -2660 {
@@ -881,25 +745,25 @@ lab=GND}
 N 1300 -2660 1310 -2660 {
 lab=vout_ac_5mA_30pF}
 N 940 -2440 940 -2420 {
-lab=#net27}
+lab=#net20}
 N 1120 -2440 1120 -2400 {
-lab=#net28}
+lab=#net21}
 N 1120 -2520 1120 -2500 {
-lab=#net29}
+lab=#net22}
 N 1120 -2660 1260 -2660 {
 lab=vout_ac_5mA_30pF}
 N 1120 -2660 1120 -2640 {
 lab=vout_ac_5mA_30pF}
 N 1120 -2540 1120 -2520 {
-lab=#net29}
+lab=#net22}
 N 1120 -2520 1160 -2520 {
-lab=#net29}
+lab=#net22}
 N 840 -2630 840 -2610 {
 lab=GND}
 N 840 -2750 840 -2730 {
-lab=#net26}
+lab=#net19}
 N 840 -2750 910 -2750 {
-lab=#net26}
+lab=#net19}
 N 1310 -2660 1360 -2660 {
 lab=vout_ac_5mA_30pF}
 N 1240 -2220 1420 -2220 {
@@ -923,23 +787,23 @@ lab=GND}
 N 1460 -2220 1560 -2220 {
 lab=GND}
 N 1140 -2700 1150 -2700 {
-lab=#net30}
+lab=#net23}
 N 1210 -2700 1220 -2700 {
-lab=#net30}
+lab=#net23}
 N 1280 -2700 1300 -2700 {
 lab=vout_ac_5mA_30pF}
 N 840 -2730 840 -2690 {
-lab=#net26}
+lab=#net19}
 N 1120 -2640 1120 -2600 {
 lab=vout_ac_5mA_30pF}
 N 1260 -2490 1260 -2480 {
-lab=#net29}
+lab=#net22}
 N 1260 -2370 1270 -2370 {
-lab=#net27}
+lab=#net20}
 N 1270 -2400 1270 -2370 {
-lab=#net27}
+lab=#net20}
 N 1260 -2400 1270 -2400 {
-lab=#net27}
+lab=#net20}
 N 1210 -2370 1220 -2370 {
 lab=GND}
 N 1210 -2370 1210 -2340 {
@@ -947,41 +811,41 @@ lab=GND}
 N 1210 -2340 1260 -2340 {
 lab=GND}
 N 1260 -2410 1260 -2400 {
-lab=#net27}
+lab=#net20}
 N 1260 -2340 1260 -2330 {
 lab=GND}
 N 1260 -2420 1260 -2410 {
-lab=#net27}
+lab=#net20}
 N 1260 -2450 1270 -2450 {
-lab=#net29}
+lab=#net22}
 N 1270 -2480 1270 -2450 {
-lab=#net29}
+lab=#net22}
 N 1260 -2480 1270 -2480 {
-lab=#net29}
+lab=#net22}
 N 1210 -2450 1220 -2450 {
-lab=#net27}
+lab=#net20}
 N 1210 -2450 1210 -2420 {
-lab=#net27}
+lab=#net20}
 N 1210 -2420 1260 -2420 {
-lab=#net27}
+lab=#net20}
 N 1190 -2420 1210 -2420 {
-lab=#net27}
+lab=#net20}
 N 1260 -2520 1260 -2490 {
-lab=#net29}
+lab=#net22}
 N 1160 -2520 1260 -2520 {
-lab=#net29}
+lab=#net22}
 N 1260 -2330 1260 -2230 {
 lab=GND}
 N 1260 -2230 1260 -2220 {
 lab=GND}
 N 1380 -2490 1380 -2480 {
-lab=#net31}
+lab=#net24}
 N 1380 -2370 1390 -2370 {
-lab=#net32}
+lab=#net25}
 N 1390 -2400 1390 -2370 {
-lab=#net32}
+lab=#net25}
 N 1380 -2400 1390 -2400 {
-lab=#net32}
+lab=#net25}
 N 1330 -2370 1340 -2370 {
 lab=GND}
 N 1330 -2370 1330 -2340 {
@@ -989,35 +853,35 @@ lab=GND}
 N 1330 -2340 1380 -2340 {
 lab=GND}
 N 1380 -2410 1380 -2400 {
-lab=#net32}
+lab=#net25}
 N 1380 -2340 1380 -2330 {
 lab=GND}
 N 1380 -2420 1380 -2410 {
-lab=#net32}
+lab=#net25}
 N 1380 -2450 1390 -2450 {
-lab=#net31}
+lab=#net24}
 N 1390 -2480 1390 -2450 {
-lab=#net31}
+lab=#net24}
 N 1380 -2480 1390 -2480 {
-lab=#net31}
+lab=#net24}
 N 1330 -2450 1340 -2450 {
-lab=#net32}
+lab=#net25}
 N 1330 -2450 1330 -2420 {
-lab=#net32}
+lab=#net25}
 N 1330 -2420 1380 -2420 {
-lab=#net32}
+lab=#net25}
 N 1380 -2520 1380 -2490 {
-lab=#net31}
+lab=#net24}
 N 1380 -2330 1380 -2220 {
 lab=GND}
 N 1380 -2540 1380 -2520 {
-lab=#net31}
+lab=#net24}
 N 1380 -2660 1380 -2600 {
 lab=vout_ac_5mA_30pF}
 N 1120 -2700 1140 -2700 {
-lab=#net30}
+lab=#net23}
 N 1120 -3390 1260 -3390 {
-lab=#net33}
+lab=#net26}
 N 1300 -3390 1310 -3390 {
 lab=VDD}
 N 1310 -3420 1310 -3390 {
@@ -1025,7 +889,7 @@ lab=VDD}
 N 1300 -3420 1310 -3420 {
 lab=VDD}
 N 910 -3410 960 -3410 {
-lab=#net34}
+lab=#net27}
 N 1040 -3340 1040 -3320 {
 lab=GND}
 N 1040 -3460 1040 -3440 {
@@ -1033,11 +897,11 @@ lab=VDD}
 N 1300 -3460 1300 -3420 {
 lab=VDD}
 N 940 -3370 940 -3240 {
-lab=#net35}
+lab=#net28}
 N 940 -3370 960 -3370 {
-lab=#net35}
+lab=#net28}
 N 940 -3240 940 -3140 {
-lab=#net35}
+lab=#net28}
 N 900 -3480 1300 -3480 {
 lab=VDD}
 N 1300 -3480 1300 -3460 {
@@ -1051,11 +915,11 @@ lab=GND}
 N 1040 -3320 1040 -2880 {
 lab=GND}
 N 1160 -3080 1190 -3080 {
-lab=#net35}
+lab=#net28}
 N 940 -3080 1160 -3080 {
-lab=#net35}
+lab=#net28}
 N 940 -3140 940 -3100 {
-lab=#net35}
+lab=#net28}
 N 880 -2880 900 -2880 {
 lab=GND}
 N 1300 -3360 1300 -3320 {
@@ -1069,25 +933,25 @@ lab=GND}
 N 1300 -3320 1310 -3320 {
 lab=vout_ac_5mA_0pF}
 N 940 -3100 940 -3080 {
-lab=#net35}
+lab=#net28}
 N 1120 -3100 1120 -3060 {
-lab=#net36}
+lab=#net29}
 N 1120 -3180 1120 -3160 {
-lab=#net37}
+lab=#net30}
 N 1120 -3320 1260 -3320 {
 lab=vout_ac_5mA_0pF}
 N 1120 -3320 1120 -3300 {
 lab=vout_ac_5mA_0pF}
 N 1120 -3200 1120 -3180 {
-lab=#net37}
+lab=#net30}
 N 1120 -3180 1160 -3180 {
-lab=#net37}
+lab=#net30}
 N 840 -3290 840 -3270 {
 lab=GND}
 N 840 -3410 840 -3390 {
-lab=#net34}
+lab=#net27}
 N 840 -3410 910 -3410 {
-lab=#net34}
+lab=#net27}
 N 1310 -3320 1360 -3320 {
 lab=vout_ac_5mA_0pF}
 N 1240 -2880 1420 -2880 {
@@ -1111,23 +975,23 @@ lab=GND}
 N 1460 -2880 1560 -2880 {
 lab=GND}
 N 1140 -3360 1150 -3360 {
-lab=#net38}
+lab=#net31}
 N 1210 -3360 1220 -3360 {
-lab=#net38}
+lab=#net31}
 N 1280 -3360 1300 -3360 {
 lab=vout_ac_5mA_0pF}
 N 840 -3390 840 -3350 {
-lab=#net34}
+lab=#net27}
 N 1120 -3300 1120 -3260 {
 lab=vout_ac_5mA_0pF}
 N 1260 -3150 1260 -3140 {
-lab=#net37}
+lab=#net30}
 N 1260 -3030 1270 -3030 {
-lab=#net35}
+lab=#net28}
 N 1270 -3060 1270 -3030 {
-lab=#net35}
+lab=#net28}
 N 1260 -3060 1270 -3060 {
-lab=#net35}
+lab=#net28}
 N 1210 -3030 1220 -3030 {
 lab=GND}
 N 1210 -3030 1210 -3000 {
@@ -1135,41 +999,41 @@ lab=GND}
 N 1210 -3000 1260 -3000 {
 lab=GND}
 N 1260 -3070 1260 -3060 {
-lab=#net35}
+lab=#net28}
 N 1260 -3000 1260 -2990 {
 lab=GND}
 N 1260 -3080 1260 -3070 {
-lab=#net35}
+lab=#net28}
 N 1260 -3110 1270 -3110 {
-lab=#net37}
+lab=#net30}
 N 1270 -3140 1270 -3110 {
-lab=#net37}
+lab=#net30}
 N 1260 -3140 1270 -3140 {
-lab=#net37}
+lab=#net30}
 N 1210 -3110 1220 -3110 {
-lab=#net35}
+lab=#net28}
 N 1210 -3110 1210 -3080 {
-lab=#net35}
+lab=#net28}
 N 1210 -3080 1260 -3080 {
-lab=#net35}
+lab=#net28}
 N 1190 -3080 1210 -3080 {
-lab=#net35}
+lab=#net28}
 N 1260 -3180 1260 -3150 {
-lab=#net37}
+lab=#net30}
 N 1160 -3180 1260 -3180 {
-lab=#net37}
+lab=#net30}
 N 1260 -2990 1260 -2890 {
 lab=GND}
 N 1260 -2890 1260 -2880 {
 lab=GND}
 N 1380 -3150 1380 -3140 {
-lab=#net39}
+lab=#net32}
 N 1380 -3030 1390 -3030 {
-lab=#net40}
+lab=#net33}
 N 1390 -3060 1390 -3030 {
-lab=#net40}
+lab=#net33}
 N 1380 -3060 1390 -3060 {
-lab=#net40}
+lab=#net33}
 N 1330 -3030 1340 -3030 {
 lab=GND}
 N 1330 -3030 1330 -3000 {
@@ -1177,133 +1041,135 @@ lab=GND}
 N 1330 -3000 1380 -3000 {
 lab=GND}
 N 1380 -3070 1380 -3060 {
-lab=#net40}
+lab=#net33}
 N 1380 -3000 1380 -2990 {
 lab=GND}
 N 1380 -3080 1380 -3070 {
-lab=#net40}
+lab=#net33}
 N 1380 -3110 1390 -3110 {
-lab=#net39}
+lab=#net32}
 N 1390 -3140 1390 -3110 {
-lab=#net39}
+lab=#net32}
 N 1380 -3140 1390 -3140 {
-lab=#net39}
+lab=#net32}
 N 1330 -3110 1340 -3110 {
-lab=#net40}
+lab=#net33}
 N 1330 -3110 1330 -3080 {
-lab=#net40}
+lab=#net33}
 N 1330 -3080 1380 -3080 {
-lab=#net40}
+lab=#net33}
 N 1380 -3180 1380 -3150 {
-lab=#net39}
+lab=#net32}
 N 1380 -2990 1380 -2880 {
 lab=GND}
 N 1380 -3200 1380 -3180 {
-lab=#net39}
+lab=#net32}
 N 1380 -3320 1380 -3260 {
 lab=vout_ac_5mA_0pF}
 N 1120 -3360 1140 -3360 {
-lab=#net38}
-N 540 -1760 600 -1760 {
-lab=#net7}
-N 540 -1780 540 -1760 {
-lab=#net7}
-N 340 -1850 400 -1850 {
-lab=vout_ac_gain}
-N 440 -1860 540 -1860 {
-lab=#net41}
-N 540 -1860 540 -1840 {
-lab=#net41}
-N 400 -1810 400 -1790 {
-lab=GND}
-N 440 -1800 440 -1790 {
-lab=GND}
+lab=#net31}
 N 560 -2540 620 -2540 {
-lab=#net15}
+lab=#net8}
 N 560 -2560 560 -2540 {
-lab=#net15}
+lab=#net8}
 N 360 -2630 420 -2630 {
 lab=vout_ac_0mA_30pF}
 N 460 -2640 560 -2640 {
-lab=#net42}
+lab=#net34}
 N 560 -2640 560 -2620 {
-lab=#net42}
+lab=#net34}
 N 420 -2590 420 -2570 {
 lab=GND}
 N 460 -2580 460 -2570 {
 lab=GND}
 N 1320 -2540 1380 -2540 {
-lab=#net31}
+lab=#net24}
 N 1320 -2560 1320 -2540 {
-lab=#net31}
+lab=#net24}
 N 1120 -2630 1180 -2630 {
 lab=vout_ac_5mA_30pF}
 N 1220 -2640 1320 -2640 {
-lab=#net43}
+lab=#net35}
 N 1320 -2640 1320 -2620 {
-lab=#net43}
+lab=#net35}
 N 1180 -2590 1180 -2570 {
 lab=GND}
 N 1220 -2580 1220 -2570 {
 lab=GND}
 N 1320 -3200 1380 -3200 {
-lab=#net39}
+lab=#net32}
 N 1320 -3220 1320 -3200 {
-lab=#net39}
+lab=#net32}
 N 1120 -3290 1180 -3290 {
 lab=vout_ac_5mA_0pF}
 N 1220 -3300 1320 -3300 {
-lab=#net44}
+lab=#net36}
 N 1320 -3300 1320 -3280 {
-lab=#net44}
+lab=#net36}
 N 1180 -3250 1180 -3230 {
 lab=GND}
 N 1220 -3240 1220 -3230 {
 lab=GND}
 N 560 -3200 620 -3200 {
-lab=#net23}
+lab=#net16}
 N 560 -3220 560 -3200 {
-lab=#net23}
+lab=#net16}
 N 360 -3290 420 -3290 {
 lab=vout_ac_0mA_0pF}
 N 460 -3300 560 -3300 {
-lab=#net45}
+lab=#net37}
 N 560 -3300 560 -3280 {
-lab=#net45}
+lab=#net37}
 N 420 -3250 420 -3230 {
 lab=GND}
 N 460 -3240 460 -3230 {
 lab=GND}
-N 370 -1940 370 -1920 {
-lab=#net6}
-N 370 -1920 430 -1920 {
-lab=#net6}
-N 430 -1940 430 -1920 {
-lab=#net6}
 N 390 -2700 390 -2680 {
-lab=#net14}
+lab=#net7}
 N 390 -2680 450 -2680 {
-lab=#net14}
+lab=#net7}
 N 450 -2700 450 -2680 {
-lab=#net14}
+lab=#net7}
 N 390 -3360 390 -3340 {
-lab=#net22}
+lab=#net15}
 N 390 -3340 450 -3340 {
-lab=#net22}
+lab=#net15}
 N 450 -3360 450 -3340 {
-lab=#net22}
+lab=#net15}
 N 1150 -3360 1150 -3340 {
-lab=#net38}
+lab=#net31}
 N 1150 -3340 1210 -3340 {
-lab=#net38}
+lab=#net31}
 N 1210 -3360 1210 -3340 {
-lab=#net38}
+lab=#net31}
 N 1150 -2700 1150 -2680 {
-lab=#net30}
+lab=#net23}
 N 1150 -2680 1210 -2680 {
-lab=#net30}
+lab=#net23}
 N 1210 -2700 1210 -2680 {
-lab=#net30}
+lab=#net23}
+N 400 -1900 420 -1900 {
+lab=vnoisein}
+N 540 -1900 580 -1900 {
+lab=vnoiseout}
+N 480 -1980 480 -1960 {
+lab=#net38}
+N 480 -1840 480 -1800 {
+lab=GND}
+N 400 -2020 480 -2020 {
+lab=#net38}
+N 480 -2020 480 -1980 {
+lab=#net38}
+N 320 -1900 400 -1900 {
+lab=vnoisein}
+N 320 -2020 340 -2020 {
+lab=VDD}
+N 680 -1700 680 -1660 {
+lab=GND}
+N 680 -1660 780 -1660 {
+lab=GND}
+N 780 -1700 780 -1660 {
+lab=GND}
 C {devices/title.sym} 170 -40 0 0 {name=l1 author="Manuel Moser"}
 C {devices/simulator_commands.sym} 200 -390 0 0 {name=COMMANDS
 simulator=ngspice
@@ -1326,14 +1192,16 @@ set num_threads = 12
 write results_ldo.raw
 set appendwrite
 
-repeat 10
+noise v(vnoiseout) Vnoise dec 10 1 100meg
+write results_ldo.raw noise1.all noise2.all
+
+repeat 5
 reset
  
 dc vsweep 0 1 0.01 temp -30 60 90 
-*dc vsweep 0 1 0.01
 write results_ldo.raw 
 + vref1 vout5ma vout0a x1.vota x1.vfb @m.x1.xm9.msky130_fd_pr__pfet_01v8_lvt[id]
-+ vref2 i(vshunt_iq) vout_ac_gain
++ vref2 i(vshunt_iq)
 
 ac dec 10 1 10meg
 write results_ldo.raw vout_ac_0mA_0pF vout_ac_0mA_30pF vout_ac_5mA_0pF vout_ac_5mA_30pF 
@@ -1360,12 +1228,12 @@ value=1f
 footprint=1206
 device="ceramic capacitor"}
 C {devices/lab_wire.sym} 500 -620 0 1 {name=p8 sig_type=std_logic lab=vout5ma}
-C {devices/launcher.sym} 700 -750 0 0 {name=h5
-descr="load waves" 
+C {devices/launcher.sym} 1260 -1400 0 0 {name=h5
+descr="load DC waves" 
 tclcommand="xschem raw_read $netlist_dir/results_ldo.raw dc"
 }
-C {devices/launcher.sym} 1660 -2680 0 0 {name=h1
-descr="load waves" 
+C {devices/launcher.sym} 1260 -1300 0 0 {name=h1
+descr="load AC waves" 
 tclcommand="xschem raw_read $netlist_dir/results_ldo.raw ac"
 }
 C {devices/res.sym} 460 -570 0 0 {name=RL
@@ -1397,23 +1265,8 @@ C {devices/vcvs.sym} 140 -1110 0 0 {name=E3 value=\{vsource/2\}}
 C {devices/lab_wire.sym} 100 -1140 0 0 {name=p12 sig_type=std_logic lab=vdcsweep}
 C {devices/noconn.sym} 400 -1160 0 1 {name=l2}
 C {devices/lab_wire.sym} 140 -1280 0 0 {name=p14 sig_type=std_logic lab=VDD}
-C {ldo_ota.sym} 260 -1970 0 0 {name=x4}
-C {devices/ind.sym} 340 -1810 2 0 {name=L17
-m=1
-value=1e9
-footprint=1206
-device=inductor}
-C {devices/capa.sym} 340 -1710 0 1 {name=C3
-m=1
-value=1e9
-footprint=1206
-device="ceramic capacitor"}
-C {devices/lab_wire.sym} 120 -2060 0 0 {name=p15 sig_type=std_logic lab=VDD}
-C {devices/lab_wire.sym} 560 -1900 0 1 {name=Vac19 sig_type=std_logic lab=vout_ac_gain}
-C {devices/vsource.sym} 340 -1610 0 0 {name=Vinject value="0 ac 1"}
-C {devices/vsource.sym} 60 -1900 0 0 {name=Vbridge3 value=vreference}
-C {devices/gnd.sym} 100 -1460 0 0 {name=l4 lab=GND}
-C {devices/gnd.sym} 60 -1850 0 0 {name=l5 lab=GND}
+C {devices/vsource.sym} 200 -1810 0 0 {name=Vnoise value="0.8 ac 1"}
+C {devices/gnd.sym} 200 -1760 0 0 {name=l5 lab=GND}
 C {devices/gnd.sym} 660 -300 0 0 {name=l6 lab=GND}
 C {devices/gnd.sym} 920 -300 0 0 {name=l7 lab=GND}
 C {devices/gnd.sym} 1100 -300 0 0 {name=l8 lab=GND}
@@ -1421,85 +1274,13 @@ C {devices/gnd.sym} 40 -500 0 0 {name=l9 lab=GND}
 C {devices/gnd.sym} 220 -760 0 0 {name=l10 lab=GND}
 C {devices/gnd.sym} 60 -1060 0 0 {name=l11 lab=GND}
 C {devices/res.sym} 680 -1730 0 1 {name=RL1
-value=\{(vsource-vdrop)/5n\}
+value=\{1.6/1m\}
 footprint=1206
 device=resistor
 m=1}
 C {devices/capa.sym} 780 -1730 0 1 {name=C2
 m=1
-value=30e-12
-footprint=1206
-device="ceramic capacitor"}
-C {devices/lab_wire.sym} 340 -1640 0 0 {name=Vac1 sig_type=std_logic lab=vin_ac_gain}
-C {devices/capa.sym} 470 -1940 1 0 {name=C1
-m=1
-value=3e-12
-footprint=1206
-device="ceramic capacitor"}
-C {devices/res.sym} 400 -1940 3 1 {name=RL2
-value=80000
-footprint=1206
-device=resistor
-m=1}
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 460 -1690 0 0 {name=M9
-L=8
-W=0.55
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
-spiceprefix=X
-}
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 460 -1610 0 0 {name=M3
-L=8
-W=0.55
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
-spiceprefix=X
-}
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 580 -1690 0 0 {name=M2
-L=8
-W=0.55
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
-spiceprefix=X
-}
-C {sky130_fd_pr/pfet_01v8_lvt.sym} 580 -1610 0 0 {name=M4
-L=8
-W=0.55
-nf=1
-mult=1
-ad="'int((nf+1)/2) * W/nf * 0.29'" 
-pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
-as="'int((nf+2)/2) * W/nf * 0.29'" 
-ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
-nrd="'0.29 / W'" nrs="'0.29 / W'"
-sa=0 sb=0 sd=0
-model=pfet_01v8_lvt
-spiceprefix=X
-}
-C {devices/capa.sym} 600 -1810 0 1 {name=C4
-m=1
-value=1e2
+value=10e-12
 footprint=1206
 device="ceramic capacitor"}
 C {ldo_ota.sym} 280 -2730 0 0 {name=x5}
@@ -1874,14 +1655,6 @@ m=1
 value=1e2
 footprint=1206
 device="ceramic capacitor"}
-C {devices/ind.sym} 540 -1810 2 0 {name=L25
-m=1
-value=1e9
-footprint=1206
-device=inductor}
-C {devices/vcvs.sym} 440 -1830 0 0 {name=E1 value=1}
-C {devices/gnd.sym} 440 -1790 0 0 {name=l26 lab=GND}
-C {devices/gnd.sym} 400 -1790 0 0 {name=l27 lab=GND}
 C {devices/ind.sym} 560 -2590 2 0 {name=L28
 m=1
 value=1e9
@@ -1914,20 +1687,6 @@ device=inductor}
 C {devices/vcvs.sym} 460 -3270 0 0 {name=E7 value=1}
 C {devices/gnd.sym} 460 -3230 0 0 {name=l38 lab=GND}
 C {devices/gnd.sym} 420 -3230 0 0 {name=l39 lab=GND}
-C {sky130_fd_pr/pfet_01v8_nf.sym} 500 -1970 0 0 {name=M1
-L=0.15
-W=5
-nf=10
-mult=8
-ad="'int((nf+1)/2) * W / nf * 0.29'"
-pd="'2*int((nf+1)/2) * (W / nf + 0.29)'"
-as="'int((nf+2)/2) * W / nf * 0.29'"
-ps="'2*int((nf+2)/2) * (W / nf + 0.29)'"
-nrd="'0.29 / W '" nrs="'0.29 / W '"
-sa=0 sb=0 sd=0
-model=pfet_01v8_hvt
-spiceprefix=X
-}
 C {sky130_fd_pr/pfet_01v8_nf.sym} 520 -2730 0 0 {name=M5
 L=0.15
 W=5
@@ -1984,3 +1743,18 @@ sa=0 sb=0 sd=0
 model=pfet_01v8_hvt
 spiceprefix=X
 }
+C {devices/launcher.sym} 1260 -1330 0 0 {name=h6
+descr="load noise results_ldo.raw" 
+tclcommand="xschem raw_read $netlist_dir/results_ldo.raw Noise Spectral Density Curves"
+}
+C {devices/launcher.sym} 1260 -1360 0 0 {name=h4
+descr="View OP Raw file" 
+tclcommand="textwindow $netlist_dir/results_ldo.raw"
+}
+C {devices/lab_wire.sym} 540 -1900 0 1 {name=p17 sig_type=std_logic lab=vnoiseout}
+C {ldo.sym} 480 -1900 0 0 {name=x9}
+C {devices/vsource.sym} 370 -2020 3 0 {name=Vshunt_iq7 value=0}
+C {devices/lab_wire.sym} 320 -2020 0 0 {name=p20 sig_type=std_logic lab=VDD}
+C {devices/gnd.sym} 480 -1800 0 0 {name=l41 lab=GND}
+C {devices/gnd.sym} 730 -1660 0 0 {name=l4 lab=GND}
+C {devices/lab_wire.sym} 310 -1900 0 1 {name=p15 sig_type=std_logic lab=vnoisein}
